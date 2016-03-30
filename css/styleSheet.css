@@ -124,23 +124,23 @@ section{
 
 
 
-#infotable{flex-wrap:wrap;
-	margin-left:2em;
+#infotable{
+flex-wrap:wrap;
+	margin-left:3em;
 	margin-right:2%;
 	margin-top:2em;
 	flex: 1;
 	flex-shrink:5;	
-	width:35%; 
+	width:25%; 
 	background-color:#EAF2D3;
-	font-size:1.4em;
+	font-size:1.2em;
 	text-align:center;
 	border-collapse:collapse;
 	z-index:0;
 	text-overflow:ellipsis;
 	}
 #infotable td, #infotable th{
-	border: 0.1em solid #98bf21;
-	height:2.9em;
+	border:thin;
 	text-overflow: ellipsis
 }
 #experience{
@@ -208,7 +208,7 @@ blockquote{
 }
 .paragraph{
 	column-rule-width:thin;
-	max-height: 40em;
+	max-height: 30em;
 	min-width: 20%;
 	width:auto;
 	flex: 3;
