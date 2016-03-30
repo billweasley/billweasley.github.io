@@ -126,25 +126,27 @@ section{
 
 #infotable{
 flex-wrap:wrap;
-	margin-left:0.4em;
+	margin-left:3em;
 	margin-right:2%;
 	margin-top:2em;
 	flex: 1;
 	flex-shrink:5;	
-	height:85%; 
+	height:40em;
+	weight:35%;
 	background-color:#EAF2D3;
-	font-size:1.4em;
+	font-size:auto;
 	text-align:center;
 	border-collapse:collapse;
 	z-index:0;
 	text-overflow:ellipsis;
 	}
 #infotable td, #infotable th{
-	border:thin solid #BBFF00;
-	text-overflow: ellipsis
+	
+	border:thin solid  #66DD00;
+	text-overflow: ellipsis;
 }
 #experience{
-    	text-overflow: ellipsis
+    	text-overflow: ellipsis;
   }
 
 #video1{
