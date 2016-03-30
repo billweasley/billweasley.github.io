@@ -130,7 +130,7 @@ section{
 	margin-top:2em;
 	flex: 1;
 	flex-shrink:5;	
-	width:40%; 
+	width:35%; 
 	background-color:#EAF2D3;
 	font-size:1.4em;
 	text-align:center;
@@ -140,7 +140,7 @@ section{
 	}
 #infotable td, #infotable th{
 	border: 0.1em solid #98bf21;
-	height:2.3em;
+	height:2.9em;
 	text-overflow: ellipsis
 }
 #experience{
@@ -167,8 +167,8 @@ blockquote{
 #video1 video{
 
 	align:center;
-	width="30%"
-	margin-right:10%;
+	margin-left:6%;
+	margin-right:5%;
 	overflow-x: hidden;
 }
 
@@ -208,7 +208,7 @@ blockquote{
 }
 .paragraph{
 	column-rule-width:thin;
-	max-height: 45em;
+	max-height: 40em;
 	min-width: 20%;
 	width:auto;
 	flex: 3;
@@ -217,8 +217,8 @@ blockquote{
 	-moz-columns:2;
 	-webkit-columns:2;
 	columns:2;
-	column-gap:1%;
-	line-height:120%;
+	column-gap:auto;
+	line-height:auto;
 	margin-top:10%;
 }
 
