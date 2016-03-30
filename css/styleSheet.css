@@ -126,21 +126,21 @@ section{
 
 #infotable{
 flex-wrap:wrap;
-	margin-left:3em;
+	margin-left:0.4em;
 	margin-right:2%;
 	margin-top:2em;
 	flex: 1;
 	flex-shrink:5;	
-	width:25%; 
+	height:85%; 
 	background-color:#EAF2D3;
-	font-size:1.2em;
+	font-size:1.4em;
 	text-align:center;
 	border-collapse:collapse;
 	z-index:0;
 	text-overflow:ellipsis;
 	}
 #infotable td, #infotable th{
-	border:thin;
+	border:thin solid #BBFF00;
 	text-overflow: ellipsis
 }
 #experience{
@@ -167,7 +167,7 @@ blockquote{
 #video1 video{
 
 	align:center;
-	margin-left:6%;
+	margin-left:3%;
 	margin-right:5%;
 	overflow-x: hidden;
 }
@@ -181,6 +181,7 @@ blockquote{
 	display: flex;
 	font-family:Lucida;
 	color:#FFFAFA;	
+	min-width: 20%;
 }
 .upper{	flex:1;
 	height:auto;
@@ -207,7 +208,7 @@ blockquote{
 	filter:opacity(.3);
 }
 .paragraph{
-	column-rule-width:thin;
+
 	max-height: 30em;
 	min-width: 20%;
 	width:auto;
