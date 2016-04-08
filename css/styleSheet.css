@@ -28,10 +28,10 @@ img, object,video{ max-width: 100%;}
 opacity:0.9;-webkit-filter:opacity(90%);
 margin-right:15%;
 font-size:1.5em;
-margin-top:3%;
+margin-top:4%;
 width:60%;
 position:absolute;
-left:20%;
+left:0%;
 color:#FFFAFA;
 	font-family:"Yahei,Lucida Family,Helvetica";
 	z-index:0;}
@@ -45,11 +45,11 @@ color:#FFFAFA;
 	z-index:0;
 	
 }
-#titles h3{
-	margin-left:3%;
+#titles h3{margin-top:1.5%;
+	margin-left:45%;
 	font-size:100%;
 	position:absolute;
-	opacity:0.8;-webkit-filter:opacity(70%);
+	opacity:0.9;-webkit-filter:opacity(90%);
 }
 
 #contectWay{
@@ -261,7 +261,7 @@ blockquote{
 #wrap {
 	float:left;
 	min-width:65%;
-	margin-top:1.5%;
+	margin-top:2.2%;
 	width:65%;
 	height:90%;
 	overflow:hidden;
@@ -312,21 +312,20 @@ blockquote{
 
 /*The travelling*/
 .travelling{
-	height:54em;
 	background-color:#F0FFF0;
 }
 #trtextframe{
 	margin-top:5%;
 	float:left;
 	width:19%;
-	max-height:45em;
+	max-height:40em;
 	margin-left:5%;
 	margin-bottom:5%;
 }
 .trtext,#trtexttitle{
 
 	font-family:"Yahei,Lucida Family,Helvetica"; 
-	font-size:2.3em;
+	font-size:2.2em;
 	margin-top:5%;
 }
 #trtexttitle{
@@ -337,15 +336,14 @@ padding:0;
 	list-style:none;
 }
 
-#trwrap {
+#trwrap {text-align:justify;
 	margin-left:-400%;
 	float:right;
 	margin-bottom:5%;
-	min-width:65%;
-	margin-top:3%;
+	margin-top:4%;
 	padding:0;
 	width:70%;
-	height:83%;
+	height:80%;
 	overflow:hidden;
 
 }
@@ -378,13 +376,10 @@ width:40%
 	50% { margin-left:-100%;}
 	70% { margin-left:-100%;}
 	75% { margin-left:0;}
-	99% { margin-left:0;}
-	100% {margin-left:-300;}
+	95% { margin-left:0;}
+	100% {margin-left:-300%;}
 }
-#reserveforfooter{
- height:4em;
 
-}
 footer{
 	width: 100%; 
 	height: 3em; 
