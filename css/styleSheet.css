@@ -1,18 +1,22 @@
-body{
+/*Define the proprety of the main components. It was tring to using flow layout but had given up and the min-width property are added.*/
+body{						
 	margin: auto;
 	font-size:100%;
 	min-width:95em;
 }
 
+img, object,video{ 
+	max-width: 100%;
+}
+
+/*header section*/
 header{
-	position:relative;
-	z-index:10;
+	position:relative;				/*define the type of section position, the height of this section */
+	z-index:10;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
 	height: 50em;
 }
 
-img, object,video{ max-width: 100%;}
-
-#background{
+#background{						/*background: height,width,position,the stacking order of elemnts(have to lower than others),size and repeating way*/
 	width: 100%; 
 	position:absolute;
 	background-position: 0% 0%;	
@@ -20,26 +24,27 @@ img, object,video{ max-width: 100%;}
 	z-index:-1;
 	background-image:url(../resources/bg.jpg);
 	background-repeat:no-repeat;
-	background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
-	filter:brightness(70%);-webkit-filter: brightness(70%);
+	background-size:cover;
+		background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+	filter:brightness(70%);-webkit-filter: brightness(70%);			/*filter:endow background with an effect that covering a layer of shadow*/
 }
 
-#linker{
-opacity:0.9;-webkit-filter:opacity(90%);
-margin-right:15%;
-font-size:1.5em;
-margin-top:4%;
-width:60%;
-position:absolute;
-left:0%;
-color:#FFFAFA;
+#linker{							/*opacity: endow the object with an effect that not distinct*/
+	-webkit-filter:opacity(90%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);opacity:0.9;				/*preproties for navigation links(bar)*/
+	margin-right:15%;
+	font-size:1.5em;
+	margin-top:4%;
+	width:60%;
+	position:absolute;
+	left:0%;
+	color:#FFFAFA;
 	font-family:"Yahei,Lucida Family,Helvetica";
 	z-index:0;}
 
 #linker li{list-style:none;float:left;padding-left:4%;}
-#linker li a:link{color:#FFFAFA;}
+#linker li a:link{color:#FFFAFA;}		/*pseudo class: regulate the color of these links before and after visit(keep white)*/
 #linker li a:visited{color:#FFFAFA;}
-#titles{
+#titles{								/*preproties for different text in the section*/
 	color:#FFFAFA;
 	font-family:"Yahei,Lucida Family,Helvetica";
 	z-index:0;
@@ -49,7 +54,7 @@ color:#FFFAFA;
 	margin-left:45%;
 	font-size:100%;
 	position:absolute;
-	opacity:0.9;-webkit-filter:opacity(90%);
+	-webkit-filter:opacity(90%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);opacity:0.9;
 }
 
 #contectWay{
@@ -81,8 +86,8 @@ color:#FFFAFA;
 
 }
 #cover{
-	opacity:0.7;
-	-webkit-filter:opacity(70%);
+	
+	-webkit-filter:opacity(70%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity:0.7;
 	position:absolute;
 	top:70%;
 	margin-left:0.8%;
@@ -94,8 +99,7 @@ color:#FFFAFA;
 	z-index:0;
 }
 #place{
-	opacity:0.4;
-	-webkit-filter:opacity(40%);
+	-webkit-filter:opacity(40%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);opacity:0.4;
 	position:absolute;
 	top:90%;
 	right:5%;
@@ -118,14 +122,14 @@ section{
 }
 
 
-/*The information section: css3 flexible box model*/
+/*The Personal Info. Section : css3 flexible box model*/
 
 .personal_info{	
 
-	background-color:#FFFFE0;
+	background-color:#FFFFE0;				/*background color: light yellow*/
 	
 }
-.personal_info h2{
+.personal_info h2{							/*properties for Section Title*/
 	height:0%; 
 	font-size:3em;
 	z-index:0;
@@ -133,14 +137,14 @@ section{
 	font-style:italic;
 }
 
-.info{	
+.info{										/*properties for container: flexible box model && leave space around every elements in this container */
 	display:flex;
 	justify-content:space-around;
 }
 
 
 
-#infotable{
+#infotable{									/*properties for table; flex:1 1 of total fractions(1+1)=2*/
 	margin-left:5%;
 	margin-right:2%;
 	margin-top:1.5em;
@@ -160,11 +164,11 @@ section{
 	border:thin solid  #66DD00;
 	text-overflow: ellipsis;
 }
-#experience{
-    	text-overflow: ellipsis;
+#experience{								/*properties for unordered list in the table*/
+    	text-overflow: ellipsis;   
   }
 
-#video1{
+#video1{									/*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
 	flex:1;	
 	flex-shrink:3;
 	overflow-x: hidden;
@@ -172,7 +176,7 @@ section{
 }
 		
 
-blockquote{
+blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
 	font-style:italic;
 	font-size:2.1em;
 	font-family:"Lucida Family,Helvetica";
@@ -182,7 +186,7 @@ blockquote{
 	width:auto;
 	quotes:"\201C""\201D""\2018""\2019";
 }
-#video1 video{
+#video1 video{								/*properties for the self introduction video*/
 	max-height:35em;
 	width:90%;
 	margin-left:auto;
@@ -192,8 +196,8 @@ blockquote{
 
 
 /*The programming section*/
-.computer{
-	background-color:#1E90FF;
+.computer{									/*properties for section: flexible box model && box model arraies in column order && leave space around every elements in this container */
+	background-color:#1E90FF;				/*backgraound color: blue*/
 	justify-content:space-around;
 	flex-direction:column; 
 	display: flex;
@@ -201,14 +205,14 @@ blockquote{
 	color:#FFFAFA;	
 
 }
-.upper{
-	flex:2;
+.upper{										
+	flex:2;						/*properties for upper container (containing the title and picture):flex:2 of total fractions (2+3) && hidden if the height of the elements overflow*/
 	max-height:30%;
 	overflow-y: hidden;
 	min-height:0%;
 
 }
-.upper h2{ 
+.upper h2{ 						/*properties for the title*/
 	
 	overflow-x: hidden;
 	float:left;	
@@ -219,46 +223,44 @@ blockquote{
 	margin-left:5%;}
 
 
-.upper img{
+.upper img{					/*properties for the picture*/
 	float:right;
 	margin-top:2%;
 	margin-right:10%;
 	height:10em;
 	min-width:30em;
 	width:20%;
-	filter:opacity(.25);
-	-webkit-filter:opacity(.25);
+	-webkit-filter:opacity(0.25);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=25);filter:opacity(0.3);
+
 }
-.paragraph{
-	margin-top:2%;
+.paragraph{				/*properties for text container (containing the main paragraph):flex:3 of total fractions (2+3) */
+	margin-top:2%;		
 	max-height: 30em;
 	min-width: 20em;
 	width:auto;
 	flex: 3;
-	font-size:2em;
-	-moz-columns:2;
-	-webkit-columns:2;
-	columns:2;
+	font-size:2em;	
+	columns:2;			/*columns layout: devided into two colunms and the gap between two colunms is 2em*/
 	column-gap:2em;
 	margin-left:5%;
 	margin-right:5%;
 	
 }
 
-.paragraph p{max-width:30em;min-width:10em;text-overflow:ellipsis;}
-.paragraph p:first-letter {font:2em Yahei; }
+.paragraph p{max-width:30em;min-width:10em;text-overflow:ellipsis;}  /*properties for paragraphs*/
+.paragraph p:first-letter {font:2em Yahei; }   /*pseudo class:Enlarge the size of every inital letter of a paragraph*/
 
 
 /*The photograph*/
 
 .photography{
-	background-color:#C22F22;
+	background-color:#C22F22;	/*background color:red*/
 }
 .photography ul {
-	list-style:none;
+	list-style:none;        /*ready for the carousel effect: clear the point before every unordered list item*/
 }
 
-#wrap {
+#wrap {						/*properties for container of 5 moving photos (regulate the visable area) && hidden if the width or height of the elements overflow*/
 	float:left;
 	min-width:65%;
 	margin-top:2.2%;
@@ -268,21 +270,21 @@ blockquote{
 
 }
 
-#slider { 
+#slider { 				/*properties for unordered list which items are 5 moving photos */
 	margin:0;
 	padding:0;
 	width:500%;
 	height:100%;	
-	animation:slide 30s ease-out infinite;
+	animation:slide 30s ease-out infinite; /*animation way: slide(defined below) && lasting for 30s && end slowly && repeat this animation constantly*/
 }
 
-#slider li {
+#slider li {				/*let the photo float to a horizontal line*/
 	float:left;
 	width:20%;
 	height:auto;
 }
 
-@keyframes slide {
+@keyframes slide {         /*animation way: modify the space to left container edge at different stage of this animation therefore form the carousel effect */
 	0% { margin-left:0;}
 	17% { margin-left:0;}
 	20% { margin-left:-100%;}
@@ -295,7 +297,7 @@ blockquote{
 	97% { margin-left:-400%;}
 	100% {margin-left:0;}
 }
-#pgtext,#pgtexttitle{
+#pgtext,#pgtexttitle{    /*properties for text on the right*/
 	margin-right:5%;
 	width:25%;
 	float:right;
@@ -304,7 +306,7 @@ blockquote{
 	font-size:2.5em;
 	margin-top:5%;
 }
-#pgtexttitle{
+#pgtexttitle{			 /*enlarge the title on the right*/
 	font-size:4em;
 }
 
@@ -312,9 +314,9 @@ blockquote{
 
 /*The travelling*/
 .travelling{
-	background-color:#F0FFF0;
+	background-color:#F0FFF0;   /*background color:light green*/
 }
-#trtextframe{
+#trtextframe{					 /*properties for text container on the left*/
 	margin-top:5%;
 	float:left;
 	width:19%;
@@ -322,21 +324,21 @@ blockquote{
 	margin-left:5%;
 	margin-bottom:5%;
 }
-.trtext,#trtexttitle{
+.trtext,#trtexttitle{		/*properties for text on the left*/
 
 	font-family:"Yahei,Lucida Family,Helvetica"; 
 	font-size:2.2em;
 	margin-top:5%;
 }
-#trtexttitle{
+#trtexttitle{				/*enlarge the title on the right*/
 padding:0;	
 	font-size:4em;
 }
-.travelling ul {
+.travelling ul {			 /*ready for the carousel effect: clear the point before every unordered list item*/
 	list-style:none;
 }
 
-#trwrap {text-align:justify;
+#trwrap {text-align:justify;		/*properties for container of 4 moving photos (regulate the visable area) && hidden if the width or height of the elements overflow*/
 	margin-left:-400%;
 	float:right;
 	margin-bottom:5%;
@@ -348,7 +350,7 @@ padding:0;
 
 }
 
-#trslider { 
+#trslider { 		/*animation way: trslide(defined below) && lasting for 30s && end slowly && repeat this animation constantly*/
 	margin:0;
 	padding:0;
 	width:500%;
@@ -356,19 +358,16 @@ padding:0;
 	animation:trslide 25s ease-out infinite;
 }
 
-#trslider li {
+#trslider li {			/*let the photo float to a horizontal line*/
 	float:right;
 	width:20%;
 	height:auto;
 }
-#trslider li:first-child{
-
-width:40%
-
-
+#trslider li:first-child{		/*Since the first picture has less width than other photos, if without this pseudo class, */
+width:40%								/*this photo cannot be arranged in a line and this photo will be hidden */
 }
 
-@keyframes trslide {
+@keyframes trslide {				 /*animation way: modify the space to left container edge at different stage of this animation therefore form the carousel effect */
 	0% { margin-left:-300%;}
 	20% { margin-left:-300%;}
 	25% { margin-left:-200%;}
@@ -380,7 +379,7 @@ width:40%
 	100% {margin-left:-300%;}
 }
 
-footer{
+footer{						/*properties for footer*/
 	width: 100%; 
 	height: 3em; 
 	background: #eaeaea;
@@ -388,5 +387,3 @@ footer{
 	bottom: 0px; 
 	text-align: center;
  }
-
- footer p{text-align:right;margin-left:80%;}
