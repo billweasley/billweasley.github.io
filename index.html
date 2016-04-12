@@ -1,29 +1,36 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>   
 <html lang="en">
+
+<!--head part, 
+defined character set, search engine keywords, auther, page title (page name) and Cascading Style Sheets (CSS) file... 
+that all info. of the whole page needed by the server and the browsers  -->
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="HaoxuanWang,Personal Statement,introduction, XJTLU">
+    <meta name="keywords" content="HaoxuanWang,Personal Statement,introduction, XJTLU"> 
     <meta name="author" content="Haoxuan&#46;Wang">
     <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
     <title>Shell Cottage</title>
 </head>
 
-<body>
-    <header id="top">
-        <div id="background"></div>
+<body>  <!--devided into 5 different sections,ordered in flow-->
+<!--header section -->
+    <header id="top">    
+        <div id="background"></div>  <!--Section Background, 
+										since the background have to applies some CSS filter effect 
+										which should not have an effect on the text in it, the background is seperated from the word in different division <div></div>-->
         <div id="titles">
-            <h3>Author: Haoxuan Wang&nbsp;/&nbsp;Bill</h3>
-            <ul id="linker">
-                <li><a href="#personal_info">Personal Information</a></li>
+            <h3>Author: Haoxuan Wang&nbsp;/&nbsp;Bill</h3>						<!--Name prominently centred at the top-->
+            <ul id="linker">													<!--A menu of links, using list-->
+                <li><a href="#personal_info">Personal Information</a></li> 				<!--Internal Links,link to and jump to the below sections-->
                 <li><a href="#computer">Programming</a></li>
                 <li><a href="#photography">Photography</a></li>
                 <li><a href="#travelling">Travelling</a></li>
-                <li><a href="http://www.xjtlu.edu.cn">My University</a></li>
+                <li><a href="http://www.xjtlu.edu.cn">My University</a></li>			<!--External Link-->
             </ul>
-            <table id="contectWay">
+            <table id="contectWay">												<!--A menu of graphic contact information (obvious is fake), using simple table (1 row 2 colunmns)-->
                 <tr>
                     <td>Contact me :&nbsp;</td>
-                    <td><a href="mailto:haoxuan.wang14@Student.xjtlu.edu.cn">
+                    <td><a href="mailto:aaa@bbb.cn">
                         <img src="resources/mail.png" alt="mail.png" style="width: 100%; height: 100%" /></a>
                     <td>
                     <td><a href="tel:(+86)10000000000">
@@ -31,21 +38,21 @@
                     <td>
                 </tr>
             </table>
-            <h1>Shell Cottage </h1>
-            <h2><b>This is a shelter for a <i>lazy</i> and <i>terrible</i> programmer&#44;&nbsp;
+            <h1>Shell Cottage </h1>												<!--Title-->
+            <h2><b>This is a shelter for a <i>lazy</i> and <i>terrible</i> programmer&#44;&nbsp; <!--Subtitle-->
                 loving photograph and travelling.</b></h2>
         </div>
-        <h4 id="cover">Cover Shot:&nbsp;&copy;Jie Zhang&nbsp;</h4>
+        <h4 id="cover">Cover Shot:&nbsp;&copy;Jie Zhang&nbsp;</h4>				<!--Additional Info. for Background Cover-->
         <h4 id="place">@Caka Salt Lake&#44;&nbsp;Qinghai&#44;&nbsp;CHINA.&nbsp;&nbsp;2015
         </h4>
     </header>
 
 
-
-    <section class="personal_info" id="personal_info">
-        <h2>Introduce myself...</h2>
-        <div class="info">
-            <table id="infotable">
+<!--Personal Info. Section-->
+    <section class="personal_info" id="personal_info">	
+        <h2>Introduce myself...</h2>											<!--Section Title-->
+        <div class="info">														<!--Context Container-->
+            <table id="infotable">												<!--Information table to present my personal information(5 rows 3 columns)-->
                 <tbody>
                     <tr>
                         <th>Name</th>
@@ -67,7 +74,7 @@
                     </tr>
                     <tr>
                         <th>Experience</th>
-                        <td style="text-align: left" id="experience" colspan="2">
+                        <td style="text-align: left" id="experience" colspan="2">		<!-- List in a spanned cell of Information table  -->
                             <ul>
                                 <li>2014-2015 &nbsp;<b>Undergraduate&nbsp;Student</b><br>
                                     <small>&nbsp;Major&nbsp;in&nbsp;<i>Information&nbsp;System&nbsp;and&nbsp;Information&nbsp;Management</i>
@@ -92,24 +99,25 @@
             </table>
             <div id="video1">
 
-                <video src="resources/DSC_0163.MOV" controls="controls" width="900">
-                </video>
+                <video src="resources/DSC_0163.MOV" controls="controls" width="900"> </video>		   
+			         <!--video to introduce myself (but now is just a short video I took during my travelling, I will produce it when I am avaiable later. )-->
+
                 <blockquote>
-                    "This video will show more about <em>ME</em>."<br>
+                    "This video will show more about <em>ME</em>."<br>					 <!--a short inductive slogin for the video-->
                 </blockquote>
             </div>
         </div>
     </section>
 
-
-    <section class="computer" id="computer">
-        <div class="upper">
+ <!--programming background section -->
+    <section class="computer" id="computer">   
+        <div class="upper">																
             <h2>Getting to be
                 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp; a  programmer...</h2>
-            <img src="resources/hello_world.jpg" alt="helloworld.jpg" />
+                &nbsp;&nbsp;&nbsp;&nbsp; a  programmer...</h2>							  <!--Section Title-->
+            <img src="http://i4.piimg.com/c7a1fc0833fd8deb.jpg" alt="helloworld.jpg" />				  <!--A picture to decorate this section linking from web-->
         </div>
-        <div class="paragraph">
+        <div class="paragraph">															  <!--Container for text, this devided by columns property in CSS-->
             <p>
                 It was and is smooth for me to help others to deal with their commen software problems.
                 The most crazy matter I did was that I seted up a DOS Operating System and then
@@ -124,11 +132,11 @@
             </p>
             <p>
                 I did NOT aware that when I choose the category. However, thanks to the <em>support</em>
-                of   <a href="http://www.xjtlu.edu.cn" style="color: #FFFAFA; }">XJTLU</a>, my <em>patience</em>
+                of   <a href="http://www.xjtlu.edu.cn" style="color: #FFFAFA; }">XJTLU</a>, my <em>patience</em>   <!--Link within a paragraph-->
                 and <em>love</em>, I became a Computer Science student
                 now.
             </p>
-            <p>So far, I have leant: </p>
+            <p>So far, I have leant: </p>																			<!--Unordered List within text container-->
             <ul>
                 <li>Java J2ME programming</li>
                 <li>basic Inline Assembly Language</li>
@@ -136,10 +144,10 @@
             </ul>
         </div>
     </section>
-
-    <section class="photography"  id="photography">
-        <div id="wrap">
-            <ul id="slider">
+<!--hobby: photograph section -->
+    <section class="photography"  id="photography"> 
+        <div id="wrap">																							<!--container of 5 moving photos (regulate the visable area) -->
+            <ul id="slider">													<!--Unordered List cooperating with CSS 3 animation property to achive picture carousel effects -->
                 <li>
                     <img src="resources/photograph/1.jpg" alt="pic1"></li>
                 <li>
@@ -151,7 +159,7 @@
                 <li>
                     <img src="resources/photograph/5.jpg" alt="pic5"></li>
             </ul>
-        </div>
+        </div>																	<!--the text blocks-->
 
         <h2 id="pgtexttitle">Photography</h2>
         <p id="pgtext">
@@ -161,18 +169,18 @@
 
 
     </section>
-
-    <section class="travelling" id="travelling">
-        <div id="trtextframe">
+<!--hobby: travelling section -->
+    <section class="travelling" id="travelling">														<!--similar with the photograph section above-->
+        <div id="trtextframe">																			
             <h2 id="trtexttitle">Travelling <em>alone</em>.</h2>
-            <p class="trtext">
+            <p class="trtext">																			<!--the text blocks-->
                 <i>The meaning of a journey is always to make new friends.<br>
                     If possible, I am willing to travel accompanying with my Mrs.RIGHT if I could find
                     her in the future.</i>
             </p>
         </div>
-        <div id="trwrap">
-            <ul id="trslider">
+        <div id="trwrap">																				<!--container of 4 moving photos (regulate the visable area) -->
+            <ul id="trslider">													<!--Unordered List cooperating with CSS 3 animation property to achive picture carousel effects -->
                 <li>
                     <img src="resources/photograph/6.jpg" alt="pic6"></li>
                 <li>
@@ -187,10 +195,10 @@
     </section>
 
 
-    <footer>
+    <footer>																							<!--fixed footer, the user can see this at any positions-->
         <br>
         Copyright &copy; Haoxuan WANG / Bill , 2016 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#top">Return to top</a>
+        <a href="#top">Return to top</a>																<!--a link jumping back to the top-->
     </footer>
 
 </body>
