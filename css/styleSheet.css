@@ -1,4 +1,4 @@
-/*Define the proprety of the main components. It was tring to using flow layout but had given up and the min-width property are added.*/
+﻿/*Define the proprety of the main components. It was tring to using flow layout but had given up and the min-width property are added.*/
 body{						
 	margin: auto;
 	font-size:100%;
@@ -240,7 +240,9 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	width:auto;
 	flex: 3;
 	font-size:2em;	
-	columns:2;			/*columns layout: devided into two colunms and the gap between two colunms is 2em*/
+	columns:2;	
+-moz-columns:2;
+-webkit-columns:2;	/*columns layout: devided into two colunms and the gap between two colunms is 2em*/
 	column-gap:2em;
 	margin-left:5%;
 	margin-right:5%;
@@ -319,7 +321,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 #trtextframe{					 /*properties for text container on the left*/
 	margin-top:5%;
 	float:left;
-	width:19%;
+	width:20%;
 	max-height:40em;
 	margin-left:5%;
 	margin-bottom:5%;
@@ -327,7 +329,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 .trtext,#trtexttitle{		/*properties for text on the left*/
 
 	font-family:"Yahei,Lucida Family,Helvetica"; 
-	font-size:2.2em;
+	font-size:2.0em;
 	margin-top:5%;
 }
 #trtexttitle{				/*enlarge the title on the right*/
@@ -345,7 +347,7 @@ padding:0;
 	margin-top:4%;
 	padding:0;
 	width:70%;
-	height:80%;
+	height:78%;
 	overflow:hidden;
 
 }
