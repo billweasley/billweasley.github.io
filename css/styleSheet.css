@@ -11,7 +11,7 @@ img, object,video{
 /*header section*/
 header{
 	position:relative;				/*define the type of section position, the height of this section */
-	z-index:10;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
+	z-index:0;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
 	height: 50em;
 }
 
