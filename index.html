@@ -10,30 +10,39 @@ that all info. of the whole page needed by the server and the browsers  -->
     <meta name="author" content="Haoxuan&#46;Wang">
     <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
     <title>Shell Cottage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<script type="text/javascript" >
+				window.onload = function(){
+				var userAgent = navigator.userAgent; 
+				if (userAgent.indexOf("Mozilla/5.0") == -1 || userAgent.indexOf("MSIE 9.0")> 0){
+				alert("Your browser has been obsoleted. Please upgrade your browser to the latest version. This page cannot be shown correctly.")	
+				}
+				}	
+	</script>
 </head>
 
 <body>  <!--devided into 5 different sections,ordered in flow-->
+<audio src="resources/audio/渴.mp3" id="audio" autoplay="" loop="" >Your browser does not support the audio :(
+</audio>
 <!--header section -->
-    <header id="top">    
+    <header id="top">   
         <div id="background"></div>  <!--Section Background, 
 										since the background have to applies some CSS filter effect 
 										which should not have an effect on the text in it, the background is seperated from the word in different division <div></div>-->
         <div id="titles">
-            <h3>Author: Haoxuan Wang&nbsp;/&nbsp;Bill</h3>						<!--Name prominently centred at the top-->
             <ul id="linker">													<!--A menu of links, using list-->
                 <li><a href="#personal_info">Personal Information</a></li> 				<!--Internal Links,link to and jump to the below sections-->
                 <li><a href="#computer">Programming</a></li>
                 <li><a href="#photography">Photography</a></li>
                 <li><a href="#travelling">Travelling</a></li>
-                <li><a href="http://www.xjtlu.edu.cn">My University</a></li>			<!--External Link-->
             </ul>
             <table id="contectWay">												<!--A menu of graphic contact information (obvious is fake), using simple table (1 row 2 colunmns)-->
                 <tr>
                     <td>Contact me :&nbsp;</td>
-                    <td><a href="mailto:aaa@bbb.cn">
+                    <td><a href="mailto:haoxuan.wang14@student.xjtlu.edu.cn" hideFocus=true>
                         <img src="resources/mail.png" alt="mail.png" style="width: 100%; height: 100%" /></a>
                     <td>
-                    <td><a href="tel:(+86)10000000000">
+                    <td><a href="tel:(+86)18622468042" hideFocus=true	>
                         <img src="resources/phone.png" alt="phone.png" style="width: 100%; height: 100%" /></a>
                     <td>
                 </tr>
@@ -42,9 +51,10 @@ that all info. of the whole page needed by the server and the browsers  -->
             <h2><b>This is a shelter for a <i>lazy</i> and <i>terrible</i> programmer&#44;&nbsp; <!--Subtitle-->
                 loving photograph and travelling.</b></h2>
         </div>
-        <h4 id="cover">Cover Shot:&nbsp;&copy;Jie Zhang&nbsp;</h4>				<!--Additional Info. for Background Cover-->
-        <h4 id="place">@Caka Salt Lake&#44;&nbsp;Qinghai&#44;&nbsp;CHINA.&nbsp;&nbsp;2015
-        </h4>
+
+        <h3 id="cover">Cover Shot:&nbsp;&copy;Jie Zhang&nbsp;</h3>				<!--Additional Info. for Background Cover-->
+        <h3 id="place">@Caka Salt Lake&#44;&nbsp;Qinghai&#44;&nbsp;CHINA.&nbsp;&nbsp;2015
+        </h3>
     </header>
 
 
@@ -55,11 +65,13 @@ that all info. of the whole page needed by the server and the browsers  -->
             <table id="infotable">												<!--Information table to present my personal information(5 rows 3 columns)-->
                 <tbody>
                     <tr>
-                        <th>Name</th>
-                        <td>Haoxuan Wang</td>
-                        <td>Also: Bill
-                        </td>
+                        <th>Chinese Name</th>
+                        <td colspan="2">王昊轩</td>
                     </tr>
+					<tr> 
+						<th>English Name</th>
+						<td colspan="2">Bill</td>
+					</tr>
                     <tr>
                         <th>Gender</th>
                         <td colspan="2">Male</td>
@@ -67,10 +79,6 @@ that all info. of the whole page needed by the server and the browsers  -->
                     <tr>
                         <th>Date of Birth</th>
                         <td colspan="2">1996-02-03</td>
-                    </tr>
-                    <tr>
-                        <th>Current ID Number</th>
-                        <td colspan="2">1404459</td>
                     </tr>
                     <tr>
                         <th>Experience</th>
@@ -99,7 +107,7 @@ that all info. of the whole page needed by the server and the browsers  -->
             </table>
             <div id="video1">
 
-                <video src="resources/DSC_0163.MOV" controls="controls" width="900"> </video>		   
+                <video id="video" src="resources/DSC_0163.MOV" controls="controls" width="900" preload="none"> This is a video, unforunately your browser does not support it. </video>		   
 			         <!--video to introduce myself (but now is just a short video I took during my travelling, I will produce it when I am avaiable later. )-->
 
                 <blockquote>
@@ -115,7 +123,7 @@ that all info. of the whole page needed by the server and the browsers  -->
             <h2>Getting to be
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp; a  programmer...</h2>							  <!--Section Title-->
-            <img src="http://i4.piimg.com/c7a1fc0833fd8deb.jpg" alt="helloworld.jpg" />				  <!--A picture to decorate this section linking from web-->
+            <img src="resources/hello_world.jpg" alt="helloworld.jpg" />				  <!--A picture to decorate this section linking from web-->
         </div>
         <div class="paragraph">															  <!--Container for text, this devided by columns property in CSS-->
             <p>
@@ -196,11 +204,59 @@ that all info. of the whole page needed by the server and the browsers  -->
 
 
     <footer>																							<!--fixed footer, the user can see this at any positions-->
-        <br>
+	<div id="fttext">
         Copyright &copy; Haoxuan WANG / Bill , 2016 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#top">Return to top</a>																<!--a link jumping back to the top-->
+        <a href="#top">Return to TOP</a><!--a link jumping back to the top-->
+	</div>							
+        		<div id="audio_button">
+				<img src="resources/pause.png" id="action_icon" width = 60em/>
+				<span class="audio_text">Thirsty 渴 <small><i>--Stefanie Sun</i></small></span>
+				<script type="text/javascript" >
+				var audio = document.getElementById("audio");
+				var image = document.getElementById("action_icon");
+				var video = document.getElementById("video")
+				audio.addEventListener("pause", function(e) {
+				image.src = "resources/play.png";
+				});
+			
+				audio.addEventListener("play", function(e) {
+				image.src = "resources/pause.png";
+				});
+				
+				video.onplay =function() {
+					audio.pause();
+				}
+				video.onpause =function() {
+					audio.play();
+				}
+				
+				image.onclick = function() {
+				if (audio.paused) {
+				audio.play();
+				
+				} else {
+				audio.pause();
+				}	
+				}
+				
+				<!--function vol(){function vol(type){
+				<!--if(type == 'up'){
+				<!--var volume = audio.volume  + 0.1;
+				<!--if(volume >=1 ){
+				<!--	volume = 1 ;
+				<!--}
+				<!--audio.volume =  volume;
+				<!--}else if(type == 'down'){
+				<!--var volume = audio.volume  - 0.1;
+				<!--if(volume <=0 ){
+				<!--volume = 0 ;
+				<!--}
+				<!--audio.volume =  volume;
+				<!--}
+				<!--}}-->
+				</script>
+	</div>	
     </footer>
 
 </body>
-
 </html>
