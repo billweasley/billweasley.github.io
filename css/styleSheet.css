@@ -1,5 +1,4 @@
-﻿/*Define the proprety of the main components. It was tring to using flow layout but had given up and the min-width property are added.*/
-body{						
+﻿body{						
 	margin: auto;
 	font-size:100%;
 	min-width:95em;
@@ -12,7 +11,7 @@ img, object,video{
 /*header section*/
 header{
 	position:relative;				/*define the type of section position, the height of this section */
-	z-index:0;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
+	z-index:10;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
 	height: 50em;
 }
 
@@ -25,11 +24,12 @@ header{
 	background-image:url(../resources/bg.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
-	filter:brightness(70%);			/*filter:endow background with an effect that covering a layer of shadow*/
+		background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+	filter:brightness(70%);-webkit-filter: brightness(70%);			/*filter:endow background with an effect that covering a layer of shadow*/
 }
 
 #linker{							/*opacity: endow the object with an effect that not distinct*/
-	opacity:0.9;					/*preproties for navigation links(bar)*/
+	-webkit-filter:opacity(90%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);opacity:0.9;				/*preproties for navigation links(bar)*/
 	margin-right:15%;
 	font-size:1.5em;
 	margin-top:4%;
@@ -53,7 +53,7 @@ header{
 	margin-left:45%;
 	font-size:100%;
 	position:absolute;
-	opacity:0.9;
+	-webkit-filter:opacity(90%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);opacity:0.9;
 }
 
 #contectWay{
@@ -85,7 +85,8 @@ header{
 
 }
 #cover{
-	opacity:0.7;
+	
+	-webkit-filter:opacity(70%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity:0.7;
 	position:absolute;
 	top:70%;
 	margin-left:0.8%;
@@ -97,7 +98,7 @@ header{
 	z-index:0;
 }
 #place{
-	opacity:0.4;
+	-webkit-filter:opacity(40%);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);opacity:0.4;
 	position:absolute;
 	top:90%;
 	right:5%;
@@ -228,7 +229,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	height:10em;
 	min-width:30em;
 	width:20%;
-	filter:opacity(.25);
+	-webkit-filter:opacity(0.25);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=25);filter:opacity(0.3);
 
 }
 .paragraph{				/*properties for text container (containing the main paragraph):flex:3 of total fractions (2+3) */
@@ -238,7 +239,9 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	width:auto;
 	flex: 3;
 	font-size:2em;	
-	columns:2;			/*columns layout: devided into two colunms and the gap between two colunms is 2em*/
+	columns:2;	
+-moz-columns:2;
+-webkit-columns:2;	/*columns layout: devided into two colunms and the gap between two colunms is 2em*/
 	column-gap:2em;
 	margin-left:5%;
 	margin-right:5%;
@@ -317,7 +320,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 #trtextframe{					 /*properties for text container on the left*/
 	margin-top:5%;
 	float:left;
-	width:19%;
+	width:20%;
 	max-height:40em;
 	margin-left:5%;
 	margin-bottom:5%;
@@ -325,7 +328,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 .trtext,#trtexttitle{		/*properties for text on the left*/
 
 	font-family:Yahei,"Lucida Family",Helvetica; 
-	font-size:2.2em;
+	font-size:2.0em;
 	margin-top:5%;
 }
 #trtexttitle{				/*enlarge the title on the right*/
@@ -376,15 +379,6 @@ width:40%								/*this photo cannot be arranged in a line and this photo will b
 	95% { margin-left:0;}
 	100% {margin-left:-300%;}
 }
-
-footer{						/*properties for footer*/
-	width: 100%; 
-	height: 3em; 
-	background: #eaeaea;
-	position: fixed; 
-	bottom: 0px; 
-	text-align: center;
- }
 
 
 /*properties for footer*/
