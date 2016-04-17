@@ -418,11 +418,4 @@ footer{
 #fttext a:visited{color:#FFFAFA;}
 
 
-@media screen and (max-width: 1050px) {
-	footer{font-size:90%;}
-	#fttext{font-size:80%;}
-	#action_icon{width:25%;}
-	#audio_button{margin-left:2%;font-size:100%;}
-
-}
 
