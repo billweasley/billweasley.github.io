@@ -391,7 +391,7 @@ footer{
 	position: fixed; 
 	bottom: 0px; 
 	text-align:center;margin-left:auto; margin-right:auto;
-	font-style: bold;margin-top:50em;
+	font-style: bold;
 	z-index:11；
  }
  #audio_button img{z-index:11；}	
