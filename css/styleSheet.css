@@ -431,8 +431,8 @@ footer{
 
 }
 @media screen and (orientation:portrait) {
-    body {
-       	width:50%;
+    footer {
+       display:none;
     }
 }
 
