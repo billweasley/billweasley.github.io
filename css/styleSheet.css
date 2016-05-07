@@ -1,7 +1,7 @@
 ﻿body{						
 	margin: auto;
 	font-size:100%;
-	min-width:95em;
+	min-width:40em;
 }
 
 img, object,video{ 
@@ -422,11 +422,13 @@ footer{
 	#audio_button{margin-left:2%;font-size:100%;}
 
 }
-@media screen and (max-width: 1050px) {
-	footer{font-size:90%;}
-	#fttext{font-size:80%;}
+@media screen and (max-width: 750px) {
+	footer{font-size:60%;}
+	#fttext{font-size:60%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
+#video1 {display:none;}	
+.upper h2 img{display:none;}
 
 }
 
