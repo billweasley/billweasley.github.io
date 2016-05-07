@@ -424,7 +424,7 @@ footer{
 
 }
 @media screen and (max-width: 1050px) {
-	#linker{margin-right:20%;font-size:1em;width:40%;}
+	#linker{margin-right:25%;font-size:0.7em;width:30%;}
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
 	#action_icon{width:25%;}
@@ -434,7 +434,7 @@ footer{
 
 }
 @media screen and (max-width: 750px) {
-	#linker{margin-right:20%;font-size:1em;width:40%;}
+	#linker{margin-right:30%;font-size:0.5em;width:20%;}
 	footer{font-size:60%;}
 	#fttext{font-size:60%;}
 	#action_icon{width:25%;}
