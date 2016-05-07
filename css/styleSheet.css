@@ -415,7 +415,7 @@ footer{
 }
 #fttext a:link{color:#FFFAFA;}
 #fttext a:visited{color:#FFFAFA;}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
 
 	.upper {display:none;max-height:0%;}
 
