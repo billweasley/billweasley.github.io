@@ -416,7 +416,9 @@ footer{
 #fttext a:link{color:#FFFAFA;}
 #fttext a:visited{color:#FFFAFA;}
 @media screen and (max-width: 1500px) {
-
+	﻿body{						
+	font-size:95%;
+}
 	.upper {display:none;max-height:0%;}
 
 }
@@ -435,7 +437,6 @@ footer{
 	#fttext{font-size:60%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
-	#video1 {display:none;}	
 	.upper h2 img{display:none;}
 	.upper {display:none;max-height:0%;}
 	#infotable{margin:10%;}
