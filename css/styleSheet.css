@@ -420,6 +420,8 @@ footer{
 	#fttext{font-size:80%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
+	.upper h2 img{display:none;}
+.upper {display:none;}
 
 }
 @media screen and (max-width: 750px) {
