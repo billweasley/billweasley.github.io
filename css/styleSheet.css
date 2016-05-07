@@ -137,6 +137,7 @@ section{
 
 .info{										/*properties for container: flexible box model && leave space around every elements in this container */
 	display:flex;
+	flex-flow: column wrap;
 	justify-content:space-around;
 }
 
