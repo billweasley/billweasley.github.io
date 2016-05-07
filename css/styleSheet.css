@@ -1,6 +1,7 @@
 ﻿body{						
 	margin: auto;
 	font-size:100%;
+	min-width:5em;
 }
 
 img, object,video{ 
@@ -423,7 +424,7 @@ footer{
 
 }
 @media screen and (max-width: 1050px) {
-	
+	#linker{margin-right:20%;font-size:1em;width:40%;}
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
 	#action_icon{width:25%;}
@@ -433,13 +434,14 @@ footer{
 
 }
 @media screen and (max-width: 750px) {
+	#linker{margin-right:20%;font-size:1em;width:40%;}
 	footer{font-size:60%;}
 	#fttext{font-size:60%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
 	.upper h2 img{display:none;}
 	.upper {display:none;max-height:0%;}
-	#infotable{margin:10%;}
+	#infotable{margin:5%;}
 }
 
 }
