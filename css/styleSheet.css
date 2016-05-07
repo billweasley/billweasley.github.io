@@ -416,12 +416,13 @@ footer{
 #fttext a:link{color:#FFFAFA;}
 #fttext a:visited{color:#FFFAFA;}
 @media screen and (max-width: 1050px) {
+	
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
 	.upper h2 img{display:none;}
-.upper {display:none;}
+	.upper {display:none;max-height:0%;}
 
 }
 @media screen and (max-width: 750px) {
@@ -429,9 +430,10 @@ footer{
 	#fttext{font-size:60%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
-#video1 {display:none;}	
-.upper h2 img{display:none;}
-.upper {display:none;}
+	#video1 {display:none;}	
+	.upper h2 img{display:none;}
+	.upper {display:none;max-height:0%;}
+	#infotable{margin:10%;}
 }
 
 }
