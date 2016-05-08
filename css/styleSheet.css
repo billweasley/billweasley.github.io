@@ -420,7 +420,7 @@ footer{
 @media screen and (max-width: 1450px) {
 .personal_info{	
 	height:70em;
-			/*background color: light yellow*/
+	flex-flow:column;	/*background color: light yellow*/
 }
 .personal_info h2{							/*properties for Section Title*/
 	margin-left:30%;
