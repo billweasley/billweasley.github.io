@@ -424,6 +424,7 @@ footer{
 
 }
 @media screen and (max-width: 1050px) {
+	.paragraph{margin-top:5%;}
 	#linker{margin-right:25%;font-size:0.7em;width:30%;}
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
@@ -434,6 +435,7 @@ footer{
 
 }
 @media screen and (max-width: 750px) {
+	.paragraph{margin-top:2%;font-size:1em;}
 	#linker{margin-right:30%;font-size:0.5em;width:20%;}
 	footer{font-size:60%;}
 	#fttext{font-size:60%;}
@@ -443,7 +445,8 @@ footer{
 	.upper {display:none;max-height:0%;}
 	#infotable{margin:5%;}
 }
-
+@media screen and (max-width: 480px) {
+	.paragraph{margin-top:2%;font-size:0.7em;}
 }
 
 
