@@ -174,7 +174,7 @@ section{
 }
 		
 
-blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
+#blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
 	font-style:italic;
 	font-size:2.1em;
 	font-family:Yahei,"Lucida Family",Helvetica;
@@ -420,7 +420,7 @@ footer{
 
 @media screen and (max-width: 1450px) {
 .personal_info{	
-	height:70em;	/*background color: light yellow*/
+	height:75em;	/*background color: light yellow*/
 }
 .info{
 	flex-direction:column;
