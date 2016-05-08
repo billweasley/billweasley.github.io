@@ -24,7 +24,7 @@ header{
 	background-image:url(../resources/bg.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
-		background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+	background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
 	filter:brightness(70%);-webkit-filter: brightness(70%);			/*filter:endow background with an effect that covering a layer of shadow*/
 }
 
@@ -136,10 +136,10 @@ section{
 	font-style:italic;
 }
 
-.info{	display:block;									/*properties for container: flexible box model && leave space around every elements in this container */
-	/*display:flex;
+.info{									/*properties for container: flexible box model && leave space around every elements in this container */
+	display:flex;
 	justify-content:space-around;
-*/}
+}
 
 
 
@@ -147,9 +147,8 @@ section{
 	margin-left:5%;
 	margin-right:2%;
 	margin-top:1.5em;
-	float:left;
-/*	flex: 1;
-	flex-shrink:5;	*/
+	flex: 1;
+	flex-shrink:5;	
 	height:37em;
 	width:35%;
 	background-color:#EAF2D3;
@@ -168,10 +167,10 @@ section{
     	text-overflow: ellipsis;   
   }
 
-#video1{	float:right;								/*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
-/*	flex:1;	
+#video1{							/*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
+	flex:1;	
 	flex-shrink:3;
-	text-align:center;	*/
+	text-align:center;
 }
 		
 
