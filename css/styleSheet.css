@@ -174,7 +174,7 @@ section{
 }
 		
 
-#blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
+blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
 	font-style:italic;
 	font-size:2.1em;
 	font-family:Yahei,"Lucida Family",Helvetica;
@@ -437,6 +437,12 @@ footer{
 	margin-top:33em;
 	margin-left:auto;
 	margin:right:auto;	
+}
+blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
+	font-size:1.5em;
+	width:auto;
+	height:5%;
+
 }
 
 	.upper {display:none;max-height:0%;}
