@@ -418,7 +418,7 @@ footer{
 @media screen and (max-width: 1400px) {
 
 	.upper {display:none;max-height:0%;}
-	.paragraph{margin-top:20%;}
+	.paragraph{margin-top:10%;}
 }
 @media screen and (max-width: 1050px) {
 	.upper h2 img{display:none;}
