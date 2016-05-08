@@ -182,15 +182,18 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	background:#aec2c3;
 	border-left:0.2em solid #eaeaea;
 	padding:0.5em 1em;
-	width:30%;
+	width:auto%;
+	height:8%;
 	quotes:"\201C""\201D""\2018""\2019";
 	margin-top:auto;
 }
-#video1 video{								/*properties for the self introduction video*/
+#video1 video{
+	width:35%;
+	height:auto;/*properties for the self introduction video*/
 	max-height:35em;
 	float:right;
 	margin-left:auto;
-	margin-right:1em;
+	margin-right:3em;
 	overflow-x: hidden;
 }
 
@@ -416,7 +419,10 @@ footer{
 }
 #fttext a:link{color:#FFFAFA;}
 #fttext a:visited{color:#FFFAFA;}
-
+@media screen and (max-width: 1600px) {
+.personal_info{height:70em;}
+video1{margin-right:30em;}
+}
 @media screen and (max-width: 1450px) {
 
 	.upper {display:none;max-height:0%;}
