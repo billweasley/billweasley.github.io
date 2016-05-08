@@ -183,7 +183,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	width:auto;
 	height:8%;
 	quotes:"\201C""\201D""\2018""\2019";
-	margin-top:50%;
+	margin-top:30%;
 }
 #video1 video{
 	width:auto
@@ -456,9 +456,9 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	height:auto;/*properties for the self introduction video*/
 	max-height:32.5em;
 	margin-left:auto;
-	margin-right:3em;
+	margin-right:10em;
 	overflow-x: hidden;
-	margin-right:3em;
+	margin-top:30em;
 }
 
 	.upper {display:none;max-height:0%;}
