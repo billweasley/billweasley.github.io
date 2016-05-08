@@ -170,7 +170,6 @@ section{
 #video1{									/*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
 	flex:1;	
 	flex-shrink:3;
-	overflow-x: hidden;
 	text-align:center;
 }
 		
@@ -187,7 +186,7 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 }
 #video1 video{								/*properties for the self introduction video*/
 	max-height:35em;
-	width:90%;
+	float:right;
 	margin-left:auto;
 	margin-right:auto;
 	overflow-x: hidden;
