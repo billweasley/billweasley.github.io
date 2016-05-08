@@ -420,38 +420,24 @@ footer{
 
 @media screen and (max-width: 1450px) {
 .personal_info{	
-	height:70em;
-	flex-flow:column;	/*background color: light yellow*/
+	height:70em;	/*background color: light yellow*/
 }
 .personal_info h2{							/*properties for Section Title*/
 	margin-left:30%;
 }
 
-.info{									/*properties for container: flexible box model && leave space around every elements in this container */
-	display:flex;
-	justify-content:space-around;
-}
-
-
-
 #infotable{	display:block;								/*properties for table; flex:1 1 of total fractions(1+1)=2*/
 	margin-left:5%;
 	margin-right:2%;
 	margin-top:1.5em;
-	flex: 1;
-	flex-shrink:5;	
 	}
 
 #video1{							/*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
-	flex:1;	
-	flex-shrink:3;
+
+	display:block;
 	
 }
 		
-
-blockquote{									/*properties for inductive slogin ; quotes:define the quotation marks used*/
-
-}
 #video1 video{
 	width:auto
 	height:auto;/*properties for the self introduction video*/
