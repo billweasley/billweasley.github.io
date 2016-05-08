@@ -423,7 +423,7 @@ footer{
 @media screen and (max-width: 1050px) {
 	.upper h2 img{display:none;}
 	.upper {display:none;max-height:0%;}
-	.paragraph{margin-top:5%;}
+	.paragraph{margin-top:15%;}
 	#linker{margin-right:18%;font-size:1em;width:30%;}
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
@@ -433,7 +433,7 @@ footer{
 }
 @media screen and (max-width: 800px) {
 	
-	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:block;}
+	.computer{height:30em;overflow-y:hidden;display:block;}
 	.paragraph{font-size:1.3em;}
 	#linker{margin-right:90%;font-size:1em;width:5%;}
 	footer{font-size:60%;}
@@ -442,7 +442,7 @@ footer{
 
 }
 @media screen and (max-width: 650px) {
-	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:block;}
+	.computer{height:30em;overflow-y:hidden;display:block;}
 	.paragraph{font-size:1.25em;}.travelling .photography{display: block;}
 }
 
