@@ -1,7 +1,7 @@
 ﻿body{						
 	margin: auto;
 	font-size:100%;
-	min-width:10em;
+	min-width:20em;
 }
 
 img, object,video{ 
@@ -434,18 +434,18 @@ footer{
 	#audio_button{margin-left:2%;font-size:100%;}
 
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 	
-	.computer{overflow-y:hidden;display:inline;}
+	.computer{background-color:#1E90FF;overflow-y:hidden;display:inline;}
 	.paragraph{margin-top:2%;font-size:1.3em;}
-	#linker{margin-right:70%;font-size:0.5em;width:20%;}
+	#linker{margin-right:90%;font-size:1em;width:5%;}
 	footer{font-size:60%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
 
 }
 @media screen and (max-width: 650px) {
-	.paragraph{margin-top:2%;font-size:1.25em;}
+	.paragraph{background-color:#1E90FF;margin-top:2%;font-size:1.25em;}
 }
 
 
