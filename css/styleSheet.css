@@ -442,7 +442,7 @@ footer{
 
 }
 @media screen and (max-width: 700px) {
-	.computer{height:55em;overflow-y:hidden;display:block;margin-top:0%}
+	.computer{height:33em;overflow-y:hidden;display:block;margin-top:0%}
 	
 	.paragraph{margin-top:0%;font-size:1.10em;columns:1;}.travelling .photography{display: block;}
 }
