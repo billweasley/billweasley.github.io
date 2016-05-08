@@ -138,7 +138,6 @@ section{
 
 .info{									/*properties for container: flexible box model && leave space around every elements in this container */
 	display:flex;
-	flex-flow:column;
 	justify-content:space-around;
 }
 
@@ -439,7 +438,7 @@ footer{
 }
 		
 #video1 video{
-	width:auto
+	width:auto;
 	height:auto;/*properties for the self introduction video*/
 	max-height:32.5em;
 	margin-left:auto;
