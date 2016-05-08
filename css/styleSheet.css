@@ -445,8 +445,8 @@ footer{
 
 }
 @media screen and (max-width: 650px) {
-	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:inline;}
-	.paragraph{font-size:1.25em;}
+	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:block;}
+	.paragraph{font-size:1.25em;}.travelling .photography{display: block;}
 }
 
 
