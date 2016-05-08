@@ -445,7 +445,7 @@ footer{
 	.upper {display:none;max-height:0%;}
 .computer{display:float;overflow-y:hidden;}
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 	.paragraph{margin-top:2%;font-size:1.1em;}
 }
 
