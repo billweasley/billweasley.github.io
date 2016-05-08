@@ -418,12 +418,12 @@ footer{
 @media screen and (max-width: 1500px) {
 
 	.upper {display:none;max-height:0%;}
-
+	.paragraph{margin-top:15%;}
 }
 @media screen and (max-width: 1050px) {
 	.upper h2 img{display:none;}
 	.upper {display:none;max-height:0%;}
-	.paragraph{margin-top:15%;}
+	.paragraph{margin-top:8%;}
 	#linker{margin-right:18%;font-size:1em;width:30%;}
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
@@ -434,7 +434,7 @@ footer{
 @media screen and (max-width: 800px) {
 	
 	.computer{height:30em;overflow-y:hidden;display:block;}
-	.paragraph{font-size:1.3em;}
+	.paragraph{font-size:1.3em;margin-top:3%;}
 	#linker{margin-right:90%;font-size:1em;width:5%;}
 	footer{font-size:60%;}
 	#action_icon{width:25%;}
@@ -442,7 +442,8 @@ footer{
 
 }
 @media screen and (max-width: 650px) {
-	.computer{height:30em;overflow-y:hidden;display:block;}
-	.paragraph{font-size:1.25em;}.travelling .photography{display: block;}
+	.computer{height:30em;overflow-y:hidden;display:block;margin-top:0%}
+	
+	.paragraph{font-size:1.15em;columns:1;}.travelling .photography{display: block;}
 }
 
