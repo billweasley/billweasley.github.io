@@ -415,7 +415,7 @@ footer{
 #fttext a:link{color:#FFFAFA;}
 #fttext a:visited{color:#FFFAFA;}
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
 
 	.upper {display:none;max-height:0%;}
 	.paragraph{margin-top:5%;}
@@ -431,7 +431,7 @@ footer{
 	#audio_button{margin-left:2%;font-size:100%;}
 
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 	
 	.computer{height:30em;overflow-y:hidden;display:block;}
 	.paragraph{font-size:1.3em;margin-top:3%;}
@@ -442,7 +442,7 @@ footer{
 
 }
 @media screen and (max-width: 650px) {
-	.computer{height:30em;overflow-y:hidden;display:block;margin-top:0%}
+	.computer{height:50em;overflow-y:hidden;display:block;margin-top:0%}
 	
 	.paragraph{margin-top:0%;font-size:1.15em;columns:1;}.travelling .photography{display: block;}
 }
