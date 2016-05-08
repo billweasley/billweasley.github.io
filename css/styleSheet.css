@@ -445,7 +445,8 @@ footer{
 
 }
 @media screen and (max-width: 650px) {
-	.paragraph{background-color:#1E90FF;margin-top:2%;font-size:1.25em;}
+		.computer{background-color:#1E90FF;overflow-y:hidden;display:inline;}
+	.paragraph{margin-top:2%;font-size:1.25em;}
 }
 
 
