@@ -138,7 +138,6 @@ section{
 
 .info{										/*properties for container: flexible box model && leave space around every elements in this container */
 	display:flex;
-	flex-flow: column wrap;
 	justify-content:space-around;
 }
 
@@ -416,4 +415,35 @@ footer{
 }
 #fttext a:link{color:#FFFAFA;}
 #fttext a:visited{color:#FFFAFA;}
+
+@media screen and (max-width: 1500px) {
+
+	.upper {display:none;max-height:0%;}
+
+}
+@media screen and (max-width: 1050px) {
+	.upper h2 img{display:none;}
+	.upper {display:none;max-height:0%;}
+	.paragraph{margin-top:5%;}
+	#linker{margin-right:18%;font-size:1em;width:30%;}
+	footer{font-size:90%;}
+	#fttext{font-size:80%;}
+	#action_icon{width:25%;}
+	#audio_button{margin-left:2%;font-size:100%;}
+
+}
+@media screen and (max-width: 800px) {
+	
+	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:inline;}
+	.paragraph{font-size:1.3em;}
+	#linker{margin-right:90%;font-size:1em;width:5%;}
+	footer{font-size:60%;}
+	#action_icon{width:25%;}
+	#audio_button{margin-left:2%;font-size:100%;}
+
+}
+@media screen and (max-width: 650px) {
+	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:block;}
+	.paragraph{font-size:1.25em;}.travelling .photography{display: block;}
+}
 
