@@ -443,7 +443,7 @@ footer{
 	#audio_button{margin-left:2%;font-size:100%;}
 	.upper h2 img{display:none;}
 	.upper {display:none;max-height:0%;}
-	#infotable{margin:5%;}
+.computer{display:float;}
 }
 @media screen and (max-width: 600px) {
 	.paragraph{margin-top:2%;font-size:1.1em;}
