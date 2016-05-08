@@ -436,7 +436,7 @@ footer{
 }
 @media screen and (max-width: 800px) {
 	
-	.computer{background-color:#1E90FF;overflow-y:hidden;display:inline;}
+	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:inline;}
 	.paragraph{font-size:1.3em;}
 	#linker{margin-right:90%;font-size:1em;width:5%;}
 	footer{font-size:60%;}
@@ -445,7 +445,7 @@ footer{
 
 }
 @media screen and (max-width: 650px) {
-	.computer{background-color:#1E90FF;overflow-y:hidden;display:inline;}
+	.computer{height:30em;background-color:#1E90FF;overflow-y:hidden;display:inline;}
 	.paragraph{font-size:1.25em;}
 }
 
