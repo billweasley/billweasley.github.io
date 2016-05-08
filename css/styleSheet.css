@@ -441,8 +441,8 @@ footer{
 	#audio_button{margin-left:2%;font-size:100%;}
 
 }
-@media screen and (max-width: 650px) {
-	.computer{height:50em;overflow-y:hidden;display:block;margin-top:0%}
+@media screen and (max-width: 700px) {
+	.computer{height:70em;overflow-y:hidden;display:block;margin-top:0%}
 	
 	.paragraph{margin-top:0%;font-size:1.15em;columns:1;}.travelling .photography{display: block;}
 }
