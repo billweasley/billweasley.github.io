@@ -187,10 +187,9 @@ blockquote{									/*properties for inductive slogin ; quotes:define the quotat
 	margin-top:auto;
 }
 #video1 video{
-	width:35%;
+	width:auto
 	height:auto;/*properties for the self introduction video*/
-	max-height:35em;
-	float:right;
+	max-height:32.5em;
 	margin-left:auto;
 	margin-right:3em;
 	overflow-x: hidden;
