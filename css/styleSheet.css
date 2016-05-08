@@ -424,26 +424,26 @@ footer{
 
 }
 @media screen and (max-width: 1050px) {
+	.upper h2 img{display:none;}
+	.upper {display:none;max-height:0%;}
 	.paragraph{margin-top:5%;}
 	#linker{margin-right:25%;font-size:0.7em;width:30%;}
 	footer{font-size:90%;}
 	#fttext{font-size:80%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
-	.upper h2 img{display:none;}
-	.upper {display:none;max-height:0%;}
 
 }
 @media screen and (max-width: 750px) {
+		
+	.computer{overflow-y:hidden;}
 	.paragraph{margin-top:2%;font-size:1.3em;}
 	#linker{margin-right:30%;font-size:0.5em;width:20%;}
 	footer{font-size:60%;}
 	#fttext{font-size:60%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
-	.upper h2 img{display:none;}
-	.upper {display:none;max-height:0%;}
-.computer{display:float;overflow-y:hidden;}
+
 }
 @media screen and (max-width: 650px) {
 	.paragraph{margin-top:2%;font-size:1.25em;}
