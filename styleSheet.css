@@ -453,9 +453,9 @@ footer{
 	
 }
 #video1 video{
-	padding-top:5em;
+	padding-top:10em;
 	width:70%;
-	margin-top:24em;
+	margin-top:0em;;
 	margin-left:auto;
 	margin-right:auto;	
 }
@@ -477,7 +477,7 @@ blockquote{
 	#fttext{font-size:80%;}
 	#action_icon{width:25%;}
 	#audio_button{margin-left:2%;font-size:100%;}
-#video1 video{padding-top:10em;margin-top:0em;}
+
 
 }
 
