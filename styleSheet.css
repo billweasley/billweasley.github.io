@@ -10,7 +10,7 @@ img, object,video{
 
 /*header section*/
 .top{
-	position:absolute;				/*define the type of section position, the height of this section */
+	position:relative;				/*define the type of section position, the height of this section */
 	z-index:0;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
 	/*height: 50em;*/
 	height:20em;
