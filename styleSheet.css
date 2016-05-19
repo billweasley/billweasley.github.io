@@ -9,18 +9,24 @@ img, object,video{
 }
 
 /*header section*/
-header{
-	position:relative;				/*define the type of section position, the height of this section */
+.top{
+	position:absolute;				/*define the type of section position, the height of this section */
 	z-index:0;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
 	/*height: 50em;*/
 	height:20em;
         background: rgba(5,5,5,0.6);
 }
+
 .iframe{position:fixed;float:right;}
+header{
+position:absolute; /*define the type of section position, the height of this section */
+z-index:0; /*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
+height: 50em;
+}
 #background{						/*background: height,width,position,the stacking order of elemnts(have to lower than others),size and repeating way*/
 	width: 100%; 
 	position:absolute;
-	background-position: 0% 0%;	
+	background-position: 20em 0%;	
 	height: 100%;
 	z-index:-1;
 	background-image:url(../resources/bg.jpg);
