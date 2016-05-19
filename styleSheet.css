@@ -12,7 +12,9 @@ img, object,video{
 header{
 	position:relative;				/*define the type of section position, the height of this section */
 	z-index:0;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
-	height: 50em;
+	/*height: 50em;*/
+	height:20em;
+        background: rgba(5,5,5,0.6);
 }
 .iframe{position:fixed;float:right;}
 #background{						/*background: height,width,position,the stacking order of elemnts(have to lower than others),size and repeating way*/
