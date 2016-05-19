@@ -14,7 +14,7 @@ header{
 	z-index:0;						/*and let the whole z-index (the stacking order of elemnts) are higher than the background image*/
 	height: 50em;
 }
-
+.iframe{position:fixed;float:right;}
 #background{						/*background: height,width,position,the stacking order of elemnts(have to lower than others),size and repeating way*/
 	width: 100%; 
 	position:absolute;
@@ -519,7 +519,8 @@ display:none;
 @media screen and (max-width: 700px) {
 header{height:40em;}
 #titles,#cover,#place {font-size:60%;}
-#pgtext,#pgtexttitle{font-size:1em;}#trtextframe{font-size:0.48em;}
+#pgtext,#pgtexttitle{font-size:1em;}
+#trtextframe{font-size:0.48em;}
 .travelling.personal_info{	
 	height:30em;	/*background color: light yellow*/
 }
