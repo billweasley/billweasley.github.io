@@ -19,7 +19,7 @@ position:absolute;
 background-position: 0% 0%;
 height: 100%;
 z-index:-1;
-background-image:url(bg.jpg);
+background-image:url(resources/bg.jpg);
 background-repeat:no-repeat;
 background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
 filter:brightness(70%);-webkit-filter: brightness(70%); /*filter:endow background with an effect that covering a layer of shadow*/
