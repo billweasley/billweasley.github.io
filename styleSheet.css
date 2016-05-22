@@ -395,7 +395,7 @@ margin-right:auto;
 }
  /*hack for ie10/11, do not touch*/
 _:-ms-lang(x), .video1 { padding-top:30em }
-@media screen and (-webkit-min-device-pixel-ratio:0) { .demo {padding-top:30em } }
+@media screen and (-webkit-min-device-pixel-ratio:0) { .demo {padding-top:0em; } }
 
 
 blockquote{
