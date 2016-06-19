@@ -1,0 +1,36 @@
+# Site settings
+entitle: Shell Cottage
+cntitle: 贝壳小屋
+email: haoxuan.wang14@student.xjtlu.edu.cn
+description: A shelter for a lazy and terrible programmer, loving photograph and travelling!
+baseurl: ""
+url: "http://shellcottage.me"
+
+
+author:
+  name     : 'Horace Wang'
+  cnname   : '王昊轩'
+  email    : haoxuan.wang14@student.xjtlu.edu.cn
+  url      : http://shellcottage.me
+  facebook : https://www.facebook.com/weasley.bill.9
+  twitter  : 
+  
+weibo: http://weibo.com/1602545844
+zhihu: https://www.zhihu.com/people/wang-hao-xuan-26
+github: https://github.com/billweasley
+disqus_shortname: "billweaseley"
+google_analytics: 
+
+gems: [jekyll-paginate]
+paginate: 4
+comments: true
+paginate_path: "/page/:num"
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
+
