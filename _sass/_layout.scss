@@ -142,7 +142,7 @@ margin-right: 0%;
     //float: none;
    left:2%;
    right:2%;
-h1{font-size: 75%;margin-top:30%;line-height: 1em;}
+h1{font-size: 50%;margin-top:30%;line-height: 1em;}
   }
 
   & a:hover,
@@ -186,9 +186,7 @@ position:absolute;
 
   li {
 width: percentage(1/4);
-    &:first-child{
-padding-left: 0;
-}    
+
     max-height:5%;
     font-size:1.5rem;
     padding-left: 3em;
@@ -202,11 +200,14 @@ padding-left: 0;
     }
 
     @include media-query($on-phone) {
-
+    &:first-child{
+padding-left: 0;
+}    
+padding-left: 1em;
 &:last-child {
-      padding-left: 5em;
+      padding-left: 2em;
     }
-      font-size:0.4rem;
+      font-size:1rem;
     }
   }
 
@@ -442,6 +443,7 @@ padding-left: 0;
   padding: 30px 0;
   small {
     color: darken($gray-color-light, 25%);
-    font-size: 20px;
+    font-size: 10px;
   }
+
 }
