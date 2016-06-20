@@ -76,7 +76,7 @@ margin-right: 0%;
   @include background-size(cover);
   border-bottom: 1px solid $gray-color-light;
   //border-top: 3px solid $primary-color;
-  min-height: 50em;
+  min-height: 40em;
   position: relative;
   @extend %clearfix;
   padding: 60px 0;
@@ -209,7 +209,18 @@ padding-left: 1em;
       padding-left: 2em;
     }
       font-size:1rem;
+    }    
+@media-query and (max-width:360px) {
+padding-left: 0.5em;
+    &:last-child {
+      padding-left: 1em;
     }
+      font-size:0.4rem;
+    }
+  @media-query and (max-width:320px) {
+    li {display:none;}
+    }
+  
   }
 
   a {
