@@ -71,7 +71,8 @@ margin-right: 0%;
 //
 // Site header
 .header {
-  background: #292929 url(../images/cover.jpg) no-repeat 50% 0px;
+  //background: #292929 url(../images/cover.jpg) no-repeat 50% 0px;
+   background: #292929 url('https://source.unsplash.com/category/nature/2600x2000') no-repeat 50% 0px;
   @include background-size(cover);
   border-bottom: 1px solid $gray-color-light;
   //border-top: 3px solid $primary-color;
@@ -323,7 +324,7 @@ padding-left: 1em;
     display: inline-block;
     text-align: center;
     margin-right: 1em;
- 
+
    .wechat_image{display:none;}
     a:hover i.fa-wechat {
     background-color: #77FF00;
@@ -333,8 +334,13 @@ padding-left: 1em;
      height:10em;
      weight:auto;
      position:absolute;
-     margin-top:-12em;margin-left:-12em;}
+     margin-top:-12em;
+    margin-left:-6em;
+
+}
+
   }
+
     a {
       font-size: 30px;
       margin: 0;
