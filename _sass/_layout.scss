@@ -304,10 +304,7 @@ padding-left: 1em;
     }
 
     .post-content {
-     margin-top: 3em;
-     margin-bottom: 10%;
-
-
+     margin-top: 1.5em;
   }
 }
 }
@@ -326,7 +323,18 @@ padding-left: 1em;
     display: inline-block;
     text-align: center;
     margin-right: 1em;
-
+ 
+   .wechat_image{display:none;}
+    a:hover i.fa-wechat {
+    background-color: #77FF00;
+    color: #fff;
+    .wechat_image{
+     display:inline-block;
+     height:10em;
+     weight:auto;
+     position:absolute;
+     margin-top:-12em;margin-left:-12em;}
+  }
     a {
       font-size: 30px;
       margin: 0;
@@ -353,6 +361,7 @@ padding-left: 1em;
     -webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
   }
+ 
  a:hover i.fa-mail-forward {
     background-color: #99FF33 ;
     color: #fff;
@@ -361,10 +370,10 @@ padding-left: 1em;
     background-color: #3A5897;
     color: #fff;
   }
-  a:hover i.fa-twitter {
-    background-color: #00ABEC;
-    color: #fff;
-  }
+ // a:hover i.fa-twitter {
+ //   background-color: #00ABEC;
+ //   color: #fff;
+ // }
   a:hover i.fa-weibo {
     background-color: #f6dda4;
     color: #fff;
@@ -377,8 +386,17 @@ padding-left: 1em;
     background-color: #1E90FF ;
     color: #fff;
   }
+ a:hover i.fa-envelope-o {
+    background-color: #00ABEC;
+    color: #fff;
+  }
+
+
+
 
 }
+
+
 
 // Pagination
 //
@@ -446,4 +464,7 @@ padding-left: 1em;
     font-size: 10px;
   }
 
+}
+.space{
+margin-bottom: 3em;
 }
