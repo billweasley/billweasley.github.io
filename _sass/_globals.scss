@@ -125,13 +125,13 @@ h6 {
 sub {
   font-size: 0.8em;
   position: relative;
-  top: 0.5em;
+  top: 0.2em;
 }
 
 sup {
   font-size: 0.8em;
   position: relative;
-  top: -0.5em;
+  top: -0.2em;
 }
 
 hr {
@@ -149,12 +149,12 @@ hr {
  * Blockquotes
  */
 blockquote {
-  color: $gray-color;
+//  color: $gray-color;
   border-left: 4px solid $gray-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: -1px;
-  font-style: italic;
+//  font-style: italic;
 
   > :last-child {
     margin-bottom: 0;
