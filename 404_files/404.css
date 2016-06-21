@@ -1,0 +1,29 @@
+/** FLUID WALL */
+#viewport{
+    position:relative;
+	overflow:hidden;
+	background-color:#FFF;
+	width:675px;
+	height:509px;
+	margin:20px auto;
+}
+
+.wall {
+    z-index:1;
+}
+    .wall .tile{
+        overflow:hidden;
+        position:absolute;
+    }
+    .wall .tile p{
+        padding-right:12px;
+    }
+/** Overlay Msk */
+#overlay{
+    cursor:move;
+    position:absolute;
+	width:675px;
+	height:509px;
+    background:transparent url("../../images/404.png") no-repeat center center;
+    z-index:2;    
+}

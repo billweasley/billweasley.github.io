@@ -87,7 +87,7 @@ SD 4楼机房
 不如就这样结束这篇文章吧。天涯海角，请君安好。
 
 
-{% highlight c++ %}
+{% highlight c %}
 #include <stdio.h>
 
 int bye() 
