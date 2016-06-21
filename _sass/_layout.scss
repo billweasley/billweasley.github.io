@@ -203,13 +203,13 @@ width: percentage(1/4);
     @include media-query($on-phone) {
     &:first-child{
 padding-left: 0;
-}    
+}
 padding-left: 1em;
 &:last-child {
       padding-left: 2em;
     }
       font-size:1rem;
-    }    
+    }
 @media-query and (max-width:360px) {
 padding-left: 0.5em;
     &:last-child {
@@ -220,7 +220,7 @@ padding-left: 0.5em;
   @media-query and (max-width:320px) {
     li {display:none;}
     }
-  
+
   }
 
   a {
@@ -378,7 +378,7 @@ padding-left: 0.5em;
     -webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
   }
- 
+
  a:hover i.fa-mail-forward {
     background-color: #99FF33 ;
     color: #fff;
@@ -484,4 +484,13 @@ padding-left: 0.5em;
 }
 .space{
 margin-bottom: 3em;
+}
+.category_title{
+
+font-size: 3em;
+margin-bottom: 1em;
+@include media-query ($on-phone){
+font-size: 1em;
+margin-bottom: 0.5em;
+}
 }

@@ -29,11 +29,11 @@ body {
   font-family: $font-family-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: .5em;
+  letter-spacing: .01em;
 }
 
 p {
-  margin-bottom: .8em;spacing
+  margin-bottom: .8em;
 }
 
 body,
@@ -149,13 +149,11 @@ hr {
  * Blockquotes
  */
 blockquote {
-//  color: $gray-color;
+  color: $gray-color;
   border-left: 4px solid $gray-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: 22px;
-  letter-spacing: -1px;
+  font-size: 20px;
 //  font-style: italic;
-
   > :last-child {
     margin-bottom: 0;
   }
