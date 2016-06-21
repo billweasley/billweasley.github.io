@@ -88,10 +88,12 @@ SD 4楼机房
 
 
 {% highlight c++ linenos %}
+```
 #include <stdio.h>
 
 int bye() 
 { 
    return 0; 
 } 
+```
 {% endhighlight%}
