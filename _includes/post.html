@@ -18,6 +18,6 @@
 
   <div class="post-content">
     
-    {{ post.content | strip_html | truncatewords: 20 }} <a style= "text-decoration:none" href="{{ post.url | prepend: site.baseurl }}" class="readmore"><br><br>全文 | Further &raquo;</a>
+    {{ post.content | strip_html | truncatewords: 10 }} <a style= "text-decoration:none" href="{{ post.url | prepend: site.baseurl }}" class="readmore"><br><br>全文 | Further &raquo;</a>
   </div>
 </article>

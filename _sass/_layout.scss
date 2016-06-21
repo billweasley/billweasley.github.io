@@ -76,7 +76,7 @@ margin-right: 0%;
   @include background-size(cover);
   border-bottom: 1px solid $gray-color-light;
   //border-top: 3px solid $primary-color;
-  min-height: 50em;
+  min-height: 40em;
   position: relative;
   @extend %clearfix;
   padding: 60px 0;
@@ -92,6 +92,7 @@ margin-right: 0%;
   }
  @include media-query($on-phone) {
   margin-bottom: 0px;
+ min-height: 50em;
 }
 
   a {
