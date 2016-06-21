@@ -107,7 +107,7 @@ decrypt. Therefore, the secrecy of k must be protected.
 >RC4: stream cipher based (encrypt and decrypt a stream of bytes or bits rather than a block). This is useful when the length of a communication would make a block cipher
 too slow.
 
-### **非对称加密：**
+### ** 非对称加密：**
 
 >In an asymmetric encryption algorithm, there are different encryption and
 decryption keys.... Any sender can use that key to encrypt a communication,
@@ -115,7 +115,7 @@ but only the key creator can decrypt the communication. This scheme, known
 as public-key encryption, was a breakthrough in cryptography.
 在非对称加密算法，加密和解密密钥是不同的。...任何发送者能均够能使用那个密钥 （即公钥）加密通讯，但是只有密匙创建者能解密通讯。这种模式，被称为公钥加密，曾是密码学的一个突破。
 
-### **Example: RSA Algorithm 举例：RSA 加密算法 **
+### ** Example: RSA Algorithm 举例：RSA 加密算法 **
 
 
 >In RSA, k<sub>e</sub>  is the public key, and k<sub>d</sub>  is the private key. N is the product of
@@ -141,9 +141,11 @@ receiver via the private key.
 >图15.8一个比较小一点的例子。我们让 p = 7, q =13。然后计算N = 7*13 且 (p−1)(q−1) = 72。接着我们相应的给k<sub>e</sub>选择一个小于72的素数，得到5。最后我们通过k<sub>e</sub> k<sub>d</sub> mod 72=1计算得到 k<sub>d</sub> ，为29。因此现在k<sub>e</sub>,N = 5, 91；私钥 k<sub>d</sub> ,N = 29, 91。用公钥加密消息69得到密文结果62,然后通过私钥解密。
 
 
-   **RSA 算法： 数学知识**
+   ** RSA 算法： 数学知识 **
 
-  关于RSA算法用到的数学知识，请参见[阮一峰大神的教程I(前置数学知识)](http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)及[阮一峰大神的教程II（最后一部分:算法正确性的证明)](http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)
+  关于RSA算法用到的数学知识，请参见[阮一峰大神的教程I(前置数学知识)](http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)
+  及
+  [阮一峰大神的教程II（最后一部分:算法正确性的证明)](http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)
 
 
 >The use of asymmetric encryption begins with the publication of the public
@@ -186,27 +188,27 @@ is called authentication. Authentication is thus complementary to encryption.
 
 >An authentication algorithm using symmetric keys consists of the following
 components:
-+ A set K of keys.
-+ A set M of messages.
-+ A set A of authenticators.
-+ A function S : K → (M → A). That is, for each k ∈ K, S<sub>k</sub>  is a function for
+ + A set K of keys.
+ + A set M of messages.
+ + A set A of authenticators.
+ + A function S : K → (M → A). That is, for each k ∈ K, S<sub>k</sub>  is a function for
 generating authenticators from messages. Both S and S<sub>k</sub>  for any k should
 be efficiently computable functions.
-+ A function V : K → (M×A→{true, false}). That is, for each k ∈ K, V<sub>k</sub>
+ + A function V : K → (M×A→{true, false}). That is, for each k ∈ K, V<sub>k</sub>
 is a function for verifying authenticators on messages. Both V and V<sub>k</sub>  for
 any k should be efficiently computable functions.
 
 >使用对称密钥的认证算法由下面的部分构成：
 
->+ 一个密钥集合K
+> + 一个密钥集合K
 
->+ 一个消息集合M
+> + 一个消息集合M
 
->+ 一个验证器集合A
+> + 一个验证器集合A
 
->+ 一个验证器生成函数 S : K → (M→A). 即，对于每个密钥 k ∈ K, S<sub>k</sub> 是一个用消息生成验证器的函数。对任意k来说， S和S<sub>k</sub> 都是高效的且可计算的函数。
+> + 一个验证器生成函数 S : K → (M→A). 即，对于每个密钥 k ∈ K, S<sub>k</sub> 是一个用消息生成验证器的函数。对任意k来说， S和S<sub>k</sub> 都是高效的且可计算的函数。
 
->+ 一个验证器验证函数 E : K → (M×A→{true, false}). 即，对于每个密钥 k ∈ K, V<sub>k</sub> 是一个用来验证特定消息的验证器的函数。对任意k来说， V 和V<sub>k</sub>  都是高效的且可计算的函数。
+> + 一个验证器验证函数 E : K → (M×A→{true, false}). 即，对于每个密钥 k ∈ K, V<sub>k</sub> 是一个用来验证特定消息的验证器的函数。对任意k来说， V 和V<sub>k</sub>  都是高效的且可计算的函数。
 
 >The critical property that an authentication algorithm must possess is this:
 for a message m, a computer can generate an authenticator a ∈ A such
@@ -254,7 +256,7 @@ message; but if H is known, then someone could modify m to m<sup>'</sup>  and re
 > + **Example: RSA digital-signature algorithm**，similar to the RSA encryption algorithm, but the key use is reversed. The digital signature of a message is derived by computing S<sub>k<sub>s</sub></sub> (m) = H(m)<sup>k<sub>s</sub></sup>  mod N.The key k<sub>s</sub>  again is a pair <d, N>, where N is the product of two large, randomly chosen prime numbers p and q. The verification algorithm is then
 V<sub>k<sub>v</sub></sub> = ?  ( a<sup>k<sub>v</sub></sup>  mod N = H(m)), where k<sub>v</sub>  satisfies k<sub>v</sub> k<sub>s</sub> mod (p − 1)(q − 1) = 1.
 
->+ 例子：RSA 数字签名算法, 和RSA加密算法类似，但是key的使用是相反的(译者注：即私钥算出验证器，公钥验证验证器)。一个消息的数字签名S<sub>k<sub>s</sub></sub> (m)是通过计算S<sub>k<sub>s</sub></sub> (m) =H(m)<sup>k<sub>s</sub></sup> mod N 得到的。密钥k<sub>s</sub> 同样是有序数对<d,N>,N同样是两个巨大的且随机选出的素数p和q之积。验证算法是V<sub>k<sub>v</sub></sub> = ? ( a<sup>k<sub>v</sub></sup>  mod N =H(m)),同样k<sub>v</sub> 满足k<sub>v</sub> k<sub>s</sub>  mod (p − 1)(q − 1) = 1.
+> + 例子：RSA 数字签名算法, 和RSA加密算法类似，但是key的使用是相反的(译者注：即私钥算出验证器，公钥验证验证器)。一个消息的数字签名S<sub>k<sub>s</sub></sub> (m)是通过计算S<sub>k<sub>s</sub></sub> (m) =H(m)<sup>k<sub>s</sub></sup> mod N 得到的。密钥k<sub>s</sub> 同样是有序数对<d,N>,N同样是两个巨大的且随机选出的素数p和q之积。验证算法是V<sub>k<sub>v</sub></sub> = ? ( a<sup>k<sub>v</sub></sup>  mod N =H(m)),同样k<sub>v</sub> 满足k<sub>v</sub> k<sub>s</sub>  mod (p − 1)(q − 1) = 1.
 
 
 
