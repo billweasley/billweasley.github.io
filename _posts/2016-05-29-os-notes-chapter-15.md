@@ -1,12 +1,17 @@
 ---
 layout: post
-title: [Operating System Concepts搬运工] 关于加密，验证, SSL / TLS3.0的基础知识
+title: Operating System Concepts搬运工 关于加密，验证, SSL / TLS3.0的基础知识
 date: 2016-05-29T06:30:00.000Z
 author: Author
 category: coding
-tags: [加密，验证，笔记，龙书]
+tags:
+     - 加密
+     - 验证
+     - 笔记
+     - 龙书
 comments: true
 ---
+
 ## **写在前面**：
 
 作为一个初学的弱渣，写这篇东西完全是在当笔记做。
