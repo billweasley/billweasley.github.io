@@ -1,8 +1,8 @@
 
-<h1 class="txt-center category_title"> "码畜の日常 | Coding"</h1>
+<!--<h1 class="txt-center category_title"> {{ page.title }} </h1>-->
 <div class="post-list">
 {% for catagory in site.categories %}
- {% if catagory[0] == "coding" %}
+ {% if catagory[0] == page.categories %}
         {% for post in catagory[1] and in paginator.posts %}
           {% include post.html %}
 {% endfor %}

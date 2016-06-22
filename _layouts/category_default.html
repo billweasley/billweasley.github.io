@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="{{ page.slug }}">
+    <main class="main">
+      {% include header.html %}
+      {% include headerpluscategory.html %}
+      </header>
+      <br>
+      <span style="font-size:2em" class="category_phone_title shownOnPhone t-center">Category: </span>
+        <br>
+      <span class="category_phone_title shownOnPhone t-center">{{page.title}}</span>
+      <br>
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </body>
+</html>

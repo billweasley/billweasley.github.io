@@ -6,7 +6,7 @@
       <span class="post-author">by {{ site.author.name }}</span>
       <br>
       <span class="post-category">分类: {{post.category}}</span>
-   
+
 <br>
 {%if {{post.tags}}!=[] %}
  <span class="post-tags">标签:
@@ -17,7 +17,7 @@
   </header>
 
   <div class="post-content">
-    
-    {{ post.content | strip_html | truncatewords: 10 }} <a style= "text-decoration:none" href="{{ post.url | prepend: site.baseurl }}" class="readmore"><br><br>全文 | Further &raquo;</a>
+
+    {{ post.content | strip_html | truncate: 300}} <a style= "text-decoration:none" href="{{ post.url | prepend: site.baseurl }}" class="readmore"><br><br>全文 | Further &raquo;</a>
   </div>
 </article>

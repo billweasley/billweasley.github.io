@@ -5,8 +5,8 @@
     <description>A shelter for a lazy and terrible programmer, loving photograph and travelling!</description>
     <link>http://shellcottage.me/</link>
     <atom:link href="http://shellcottage.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Jun 2016 00:10:31 +0800</pubDate>
-    <lastBuildDate>Wed, 22 Jun 2016 00:10:31 +0800</lastBuildDate>
+    <pubDate>Thu, 23 Jun 2016 04:18:21 +0800</pubDate>
+    <lastBuildDate>Thu, 23 Jun 2016 04:18:21 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -16,7 +16,6 @@
 &lt;/blockquote&gt;
 
 &lt;hr /&gt;
-
 &lt;p&gt;6月，苏州的雨季，潮气像藤蔓一样蜿蜒着，让人无所适从。&lt;/p&gt;
 
 &lt;p&gt;“烘托了悲凉的气氛”是语文阅读答卷里最常见的语汇之一，偶尔在现实里也很贴切。比如现在，雨中的西浦，搬家的学子是匆匆忙忙的。大四的各奔出路；大二大三留下来的要被强制搬到2公里开外的新宿舍；大二2去英国的一部分卷了铺盖儿回了家，一部分要搬去只住两个月的临时宿舍；大一党，大约也会有一部分受到牵连被强制办了宿舍。&lt;/p&gt;
@@ -496,26 +495,6 @@ V&lt;sub&gt;k&lt;sub&gt;v&lt;/sub&gt;&lt;/sub&gt; = ?  ( a&lt;sup&gt;k&lt;sub&gt
         <category>验证</category>
         
         <category>笔记</category>
-        
-        
-        <category>coding</category>
-        
-      </item>
-    
-      <item>
-        <title>(For test purpose)你好 Blog</title>
-        <description>&lt;p&gt;(This is an test article)
-说起来，已经有多久没有用中文写过大于四百字的文章了？ 记得高三的时候对文字兴趣可大了，当时每到自习课我都要写黄文，一写就能写好几张， 现在反而没有当时那种劲头了。 想起来从那时起，已经很久没有写一些记录性的东西了，中间在新浪更过两篇，QQ更过两篇，又感觉太过矫情，删掉了。所以跑到Github pages来更这个博客， 就像是一个归档一样的东西，不然以后想起来这两年干了啥， 不要只想到赶不完的 deadline ， 做不完的视频，以及总是用完的卷纸，感觉这样有点荒废。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 29 Jan 2016 08:00:00 +0800</pubDate>
-        <link>http://shellcottage.me/hello-blog/</link>
-        <guid isPermaLink="true">http://shellcottage.me/hello-blog/</guid>
-        
-        <category>fuck</category>
-        
-        <category>record</category>
-        
-        <category>jekyll</category>
         
         
         <category>coding</category>
