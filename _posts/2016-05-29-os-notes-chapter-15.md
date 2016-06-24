@@ -87,7 +87,7 @@ ciphertexts. Since ciphertexts are generally exposed (for example, sent on a
 network), it is important that it be infeasible to derive k from the ciphertexts.
 There are two main types of encryption algorithms: symmetric and
 asymmetric.
- ** 一个加密算法必须提供这个必要属性：给定一个密文c ∈ 密文集合C， 只有计算机掌握k的时候才能通过计算加密函数E<sub>k</sub> (m) = c得到消息m。**  因此，只有掌握密钥k的计算机可以解密密文，但是没有掌握k的计算机却不可以。因为密文常常是被暴露出来的（比如在网络中发送的时候），所以很重要的一点是让从密文推出密钥k变得不可能。一共有两种加密：对称加密和非对称加密。
+ **一个加密算法必须提供这个必要属性：给定一个密文c ∈ 密文集合C， 只有计算机掌握k的时候才能通过计算加密函数E<sub>k</sub> (m) = c得到消息m。**  因此，只有掌握密钥k的计算机可以解密密文，但是没有掌握k的计算机却不可以。因为密文常常是被暴露出来的（比如在网络中发送的时候），所以很重要的一点是让从密文推出密钥k变得不可能。一共有两种加密：对称加密和非对称加密。
 
 ## **Symmetric encryption algorithm and Asymmetric encryption algorithm**
 
@@ -229,7 +229,7 @@ must not be feasible to derive k from the authenticators. Practically, if V<sub>
 the message has k. If we share k with only one entity, then we know that the
 message originated from k.
 
->验证算法的重要属性是：** 对一个消息m,只有计算机掌握k的时候可以生成一个验证器 a ∈ A 使得验证函数 V<sub>k</sub> (m, a) = true 。** 因此，任何持有密钥k的计算机可以生成关于消息m的验证器，这个验证器可被其它任意一台任何持有密钥k的计算机通过V<sub>k</sub> 来验证。因为验证器通常是被暴露的（比如，在网络上和消息一起被发送），所以很重要的一点是让从验证器推出密钥k变得不可能。实际上，如果V<sub>k</sub> (m, a) = true,我们就可以知道消息没被更改过。如果我们只把k分享给过一个实体，那么我们就能知道消息源自最初的发布者。
+>验证算法的重要属性是：**对一个消息m,只有计算机掌握k的时候可以生成一个验证器 a ∈ A 使得验证函数 V<sub>k</sub> (m, a) = true 。** 因此，任何持有密钥k的计算机可以生成关于消息m的验证器，这个验证器可被其它任意一台任何持有密钥k的计算机通过V<sub>k</sub> 来验证。因为验证器通常是被暴露的（比如，在网络上和消息一起被发送），所以很重要的一点是让从验证器推出密钥k变得不可能。实际上，如果V<sub>k</sub> (m, a) = true,我们就可以知道消息没被更改过。如果我们只把k分享给过一个实体，那么我们就能知道消息源自最初的发布者。
 
 > Just as there are two types of encryption algorithms, there are two main varieties of authentication algorithms.
 
