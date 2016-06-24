@@ -73,11 +73,11 @@ function for generating messages from ciphertexts. Both D and D<sub>k</sub> for 
 k should be efficiently computable functions.
 >
 >加密算法由下面部分构成：
- + 一个密钥集合K
- + 一个消息集合M
- + 一个密文集合C
- + 一个加密函数 E : K → (M→C). 即，对于每个密钥 k ∈ K, E<sub>k</sub>是一个用消息生成密文的函数。对任意k来说， E 和 E<sub>k</sub>都是高效的且可计算的函数。大致来说，E<sub>k</sub> 是从消息到密文的一个随机映射。
- + 一个解密函数 E : K → (C→M). 即，对于每个密钥 k ∈ K, D<sub>k</sub>是一个用密文生成消息的函数。对任意k来说， D 和 D<sub>k</sub>都是高效的且可计算的函数。大致来说，D<sub>k</sub>是从密文到消息的一个随机映射。
+ > + 一个密钥集合K
+ > + 一个消息集合M
+ > + 一个密文集合C
+ > + 一个加密函数 E : K → (M→C). 即，对于每个密钥 k ∈ K, E<sub>k</sub>是一个用消息生成密文的函数。对任意k来说， E 和 E<sub>k</sub>都是高效的且可计算的函数。大致来说，E<sub>k</sub> 是从消息到密文的一个随机映射。
+ > + 一个解密函数 E : K → (C→M). 即，对于每个密钥 k ∈ K, D<sub>k</sub>是一个用密文生成消息的函数。对任意k来说， D 和 D<sub>k</sub>都是高效的且可计算的函数。大致来说，D<sub>k</sub>是从密文到消息的一个随机映射。
 
 > An encryption algorithm must provide this essential property: given a
 ciphertext c ∈ C, a computer can compute m such that E<sub>k</sub>  (m) = c only if
@@ -194,15 +194,14 @@ is called authentication. Authentication is thus complementary to encryption.
 
 >验证也能确保信息不被更改。
 
->An authentication algorithm using symmetric keys consists of the following
-components:
- + A set K of keys.
- + A set M of messages.
- + A set A of authenticators.
- + A function S : K → (M → A). That is, for each k ∈ K, S<sub>k</sub>  is a function for
+>An authentication algorithm using symmetric keys consists of the following components:
+> + A set K of keys.
+> + A set M of messages.
+> + A set A of authenticators.
+> + A function S : K → (M → A). That is, for each k ∈ K, S<sub>k</sub>  is a function for
 generating authenticators from messages. Both S and S<sub>k</sub>  for any k should
 be efficiently computable functions.
- + A function V : K → (M×A→{true, false}). That is, for each k ∈ K, V<sub>k</sub>
+> + A function V : K → (M×A→{true, false}). That is, for each k ∈ K, V<sub>k</sub>
 is a function for verifying authenticators on messages. Both V and V<sub>k</sub>  for
 any k should be efficiently computable functions.
 
