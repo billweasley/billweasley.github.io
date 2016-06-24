@@ -107,7 +107,7 @@ decrypt. Therefore, the secrecy of k must be protected.
 
 >triple DES: DES algorithm is repeated three times (two encryptions and one decryption) on the same plaintext using two or three keys—for example, c = E<sub>k<sub>3</sub></sub> (D<sub>k<sub>2</sub></sub> (E<sub>k<sub>1</sub></sub> (m))). When three keys are used, the effective key length is 168 bits (i.e. 56*3).
 
->advanced encryption standard (AES)：another block cipher, use key lengths of 128, 192, or 256 bits and works on 128-bit blocks. * 这里block cipher应该是按照固定bit长度加密的意思 *
+>advanced encryption standard (AES)：another block cipher, use key lengths of 128, 192, or 256 bits and works on 128-bit blocks. *这里block cipher应该是按照固定bit长度加密的意思*
 
 >RC4: stream cipher based (encrypt and decrypt a stream of bytes or bits rather than a block). This is useful when the length of a communication would make a block cipher
 too slow.
