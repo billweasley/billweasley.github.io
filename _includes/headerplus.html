@@ -9,13 +9,12 @@
  <span  class="post-meta" style="font-size: 30%;">
       <time class="post-date" style="font-style: italic;" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
       <span class="post-author">by {{ site.author.name }}</span>
-
     </span>
-    <span style="font-size: 30%;" class="post-category">
-      <br>  分类: </span>
-    <span style="font-size: 70%;" class="post-category">{{page.category}}</span>
+    <span style="font-size: 40%;" class="post-category">
+      <br>  <i class="fa fa-bookmark"></i>: </span>
+    <span style="font-size: 70%;" class="post-category">{{page.category}}</span>&nbsp;
 {%if {{page.tags}}!=[] %}
-  <span  class="post-tags" style="font-size: 30%;">标签:
+  <span  class="post-tags" style="font-size: 40%;"> <i class="fa fa-tag"> </i>
 </span>
 <span style="font-size: 70%;"class="post-tags">
 {%for tags in  {{page.tags}} %}

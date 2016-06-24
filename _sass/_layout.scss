@@ -72,7 +72,9 @@ margin-right: 0%;
 // Site header
 .header {
   //background: #292929 url(../images/cover.jpg) no-repeat 50% 0px;
-   background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') no-repeat 50% 0px;
+
+background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') no-repeat 50% 0px;
+
   @include background-size(cover);
   border-bottom: 1px solid $gray-color-light;
   //border-top: 3px solid $primary-color;
@@ -168,14 +170,18 @@ position:absolute;
   }
 }
 .page_description{
-text-align:left;
-top:66%;
-margin-right:5%;
-margin-left:15%;
+  display: inline-block;
+text-align:center;
+top:65%;
 font-size:1.8em;
-max-height:1.5em;
-right:0%;
-position:absolute;
+max-height:1em;
+float: right;
+right:15%;
+position: absolute;
+margin-left: 15%;
+@include media-query($on-pad) {
+  font-size:1.5em;
+}
   @include media-query($on-phone) {
     display: none;
   }

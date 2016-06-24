@@ -3,11 +3,61 @@
 @import url("//fonts.googleapis.com/css?family=Lato:400,300,400italic,700");
 @import url("//fonts.googleapis.com/css?family=Lora:400,400italic,700italic,700");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
-@import url("//lexrus.com/fontdiao/fontdiao/css/fontdiao.css");          
+@import url("//lexrus.com/fontdiao/fontdiao/css/fontdiao.css");
 
 // Our variables
-$font-family-base  : Yahei, Helvetica, sans-serif, Arial !default;
-$font-family-serif : Yahei, Arial, serif !default;
+$font-family-base  :
+
+// System Font            // https://www.webkit.org/blog/3709/using-the-system-font-in-web-content/
+-apple-system,            // OSX ^10.11 & iOS ^9  San Francisco & 苹方
+
+// English First
+"Helvetica Neue",         // OSX
+"Arial",                  // Win "Helvetica"
+//" Segoe UI",            // Win ^8
+
+// Chinese Fallback
+"PingFang SC",            // OSX ^10.11 & iOS ^9  苹方（华康信凭黑）
+"Hiragino Sans GB",       // OSX ^10.6            冬青黑体
+"STHeiti",                // OSX <10.6  & iOS <9  华文黑体
+"Microsoft YaHei",        // Win                  微软雅黑
+"Microsoft JhengHei",     // Win                  微软正黑
+"Source Han Sans SC",     // SourceHan - begin    思源黑体
+"Noto Sans CJK SC",
+"Source Han Sans CN",
+"Noto Sans SC",
+"Source Han Sans TC",
+"Noto Sans CJK TC",       // SourceHan - end
+"WenQuanYi Micro Hei",    // Linux                文泉驿微米黑
+SimSun,                   // Win old              中易宋体
+sans-serif;               // System Fallback
+
+$font-family-serif :
+
+// System Font            // https://www.webkit.org/blog/3709/using-the-system-font-in-web-content/
+-apple-system,            // OSX ^10.11 & iOS ^9  San Francisco & 苹方
+
+// English First
+"Helvetica Neue",         // OSX
+"Arial",                  // Win "Helvetica"
+//" Segoe UI",            // Win ^8
+
+// Chinese Fallback
+"PingFang SC",            // OSX ^10.11 & iOS ^9  苹方（华康信凭黑）
+"Hiragino Sans GB",       // OSX ^10.6            冬青黑体
+"STHeiti",                // OSX <10.6  & iOS <9  华文黑体
+"Microsoft YaHei",        // Win                  微软雅黑
+"Microsoft JhengHei",     // Win                  微软正黑
+"Source Han Sans SC",     // SourceHan - begin    思源黑体
+"Noto Sans CJK SC",
+"Source Han Sans CN",
+"Noto Sans SC",
+"Source Han Sans TC",
+"Noto Sans CJK TC",       // SourceHan - end
+"WenQuanYi Micro Hei",    // Linux                文泉驿微米黑
+SimSun,                   // Win old              中易宋体
+sans-serif;               // System Fallback
+
 $font-size-base    : 1.21rem !default;
 $line-height-base  : 1.6 !default;
 $small-font-size   : $font-size-base * 0.875 !default;
@@ -36,3 +86,4 @@ $gray-color-dark:  darken($gray-color, 25%) !default;
 $content-width:    95% !default;
 $on-laptop:        $content-width !default;
 $on-phone:         741px !default;
+$on-pad:         1000px !default;

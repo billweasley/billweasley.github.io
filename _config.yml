@@ -13,13 +13,13 @@ author:
   email    : haoxuan.wang14@student.xjtlu.edu.cn
   url      : http://shellcottage.me/about/aboutMe.html
   facebook : https://www.facebook.com/weasley.bill.9
-  twitter  : 
-  
+  twitter  :
+
 weibo: http://weibo.com/1602545844
 zhihu: https://www.zhihu.com/people/wang-hao-xuan-26
 github: https://github.com/billweasley
 disqus_shortname: 'shellcottage'
-google_analytics: 
+google_analytics:
 
 gems: [jekyll-paginate]
 paginate: 4
@@ -34,4 +34,3 @@ sass:
 markdown  : kramdown
 permalink : /:title/
 highlighter: pygments
-

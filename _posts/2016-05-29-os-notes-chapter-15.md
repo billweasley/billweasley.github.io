@@ -9,8 +9,8 @@ tags:
      - 验证
      - 笔记
 comments: true
+background: /img/2016-05-29-os-notes-chapter-15/cover.png
 ---
-![](/img/2016-05-29-os-notes-chapter-15/cover.png)
 
 
 ## **写在前面** ：

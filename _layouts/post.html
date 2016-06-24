@@ -4,14 +4,14 @@ slug: single
 ---
 <article class="post container card">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title shownOnPhone">{{ page.title }}</h1>
     <span class="post-meta shownOnPhone">
      <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
       <span class="post-author">by {{ site.author.name }}</span>
       <br>
-      <span class="post-category shownOnPhone">分类: {{page.category}}</span>
+      <span class="post-category shownOnPhone"><i class="fa fa-bookmark"></i> {{page.category}}</span>
 {%if {{page.tags}}!=[] %}
- <span class="post-tags shownOnPhone">标签:
+ <span class="post-tags shownOnPhone"><i class="fa fa-tag"></i>
 {%for tags in  {{page.tags}} %}
       {{tags}}
 {%endfor%}

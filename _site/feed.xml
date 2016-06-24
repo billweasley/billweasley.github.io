@@ -5,8 +5,8 @@
     <description>A shelter for a lazy and terrible programmer, loving photograph and travelling!</description>
     <link>http://shellcottage.me/</link>
     <atom:link href="http://shellcottage.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 23 Jun 2016 04:52:44 +0800</pubDate>
-    <lastBuildDate>Thu, 23 Jun 2016 04:52:44 +0800</lastBuildDate>
+    <pubDate>Sat, 25 Jun 2016 01:03:56 +0800</pubDate>
+    <lastBuildDate>Sat, 25 Jun 2016 01:03:56 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -109,9 +109,7 @@
     
       <item>
         <title>关于加密，验证, SSL / TLS3.0的基础知识 [OS concepts 搬运工系列]</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/2016-05-29-os-notes-chapter-15/cover.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;&lt;strong&gt;写在前面&lt;/strong&gt; ：&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;section&quot;&gt;&lt;strong&gt;写在前面&lt;/strong&gt; ：&lt;/h2&gt;
 
 &lt;p&gt;作为一个初学的弱渣，写这篇东西完全是在当笔记做。&lt;/p&gt;
 
@@ -165,24 +163,52 @@ system operates.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;An encryption algorithm consists of the following components:
-+A set K of keys.
-+ A set M of messages.
-+ A set C of ciphertexts.
-+ An encrypting function E : K → (M→C). That is, for each k ∈ K, E&lt;sub&gt;k&lt;/sub&gt;  is a
-function for generating ciphertexts from messages. Both E and E&lt;sub&gt;k&lt;/sub&gt; for any k
-should be efficiently computable functions. Generally, E{k} is a randomized
-mapping from messages to ciphertexts.
-+ A decrypting function D : K → (C → M). That is, for each k ∈ K, D&lt;sub&gt;k&lt;/sub&gt; is a
-function for generating messages from ciphertexts. Both D and D&lt;sub&gt;k&lt;/sub&gt; for any
-k should be efficiently computable functions.&lt;/p&gt;
+  &lt;p&gt;An encryption algorithm consists of the following components:&lt;/p&gt;
 
-  &lt;p&gt;加密算法由下面部分构成：
-+ 一个密钥集合K
-+ 一个消息集合M
-+ 一个密文集合C
-+ 一个加密函数 E : K → (M→C). 即，对于每个密钥 k ∈ K, E&lt;sub&gt;k&lt;/sub&gt;是一个用消息生成密文的函数。对任意k来说， E 和 E&lt;sub&gt;k&lt;/sub&gt;都是高效的且可计算的函数。大致来说，E&lt;sub&gt;k&lt;/sub&gt; 是从消息到密文的一个随机映射。
-+ 一个解密函数 E : K → (C→M). 即，对于每个密钥 k ∈ K, D&lt;sub&gt;k&lt;/sub&gt;是一个用密文生成消息的函数。对任意k来说， D 和 D&lt;sub&gt;k&lt;/sub&gt;都是高效的且可计算的函数。大致来说，D&lt;sub&gt;k&lt;/sub&gt;是从密文到消息的一个随机映射。&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;A set K of keys.&lt;/li&gt;
+    &lt;li&gt;A set M of messages.&lt;/li&gt;
+    &lt;li&gt;A set C of ciphertexts.&lt;/li&gt;
+    &lt;li&gt;An encrypting function E : K → (M→C). That is, for each k ∈ K, E&lt;sub&gt;k&lt;/sub&gt;  is a
+function for generating ciphertexts from messages. Both E and E&lt;sub&gt;k&lt;/sub&gt; for any k
+should be efficiently computable functions. Generally, E&lt;sub&gt;k&lt;/sub&gt; is a randomized
+mapping from messages to ciphertexts.&lt;/li&gt;
+    &lt;li&gt;A decrypting function D : K → (C → M). That is, for each k ∈ K, D&lt;sub&gt;k&lt;/sub&gt; is a
+function for generating messages from ciphertexts. Both D and D&lt;sub&gt;k&lt;/sub&gt; for any
+k should be efficiently computable functions.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;加密算法由下面部分构成：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;一个密钥集合K&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;一个消息集合M&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;一个密文集合C&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;一个加密函数 E : K → (M→C). 即，对于每个密钥 k ∈ K, E&lt;sub&gt;k&lt;/sub&gt;是一个用消息生成密文的函数。对任意k来说， E 和 E&lt;sub&gt;k&lt;/sub&gt;都是高效的且可计算的函数。大致来说，E&lt;sub&gt;k&lt;/sub&gt; 是从消息到密文的一个随机映射。&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;一个解密函数 E : K → (C→M). 即，对于每个密钥 k ∈ K, D&lt;sub&gt;k&lt;/sub&gt;是一个用密文生成消息的函数。对任意k来说， D 和 D&lt;sub&gt;k&lt;/sub&gt;都是高效的且可计算的函数。大致来说，D&lt;sub&gt;k&lt;/sub&gt;是从密文到消息的一个随机映射。&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -194,7 +220,7 @@ ciphertexts. Since ciphertexts are generally exposed (for example, sent on a
 network), it is important that it be infeasible to derive k from the ciphertexts.
 There are two main types of encryption algorithms: symmetric and
 asymmetric.
- ** 一个加密算法必须提供这个必要属性：给定一个密文c ∈ 密文集合C， 只有计算机掌握k的时候才能通过计算加密函数E&lt;sub&gt;k&lt;/sub&gt; (m) = c得到消息m。**  因此，只有掌握密钥k的计算机可以解密密文，但是没有掌握k的计算机却不可以。因为密文常常是被暴露出来的（比如在网络中发送的时候），所以很重要的一点是让从密文推出密钥k变得不可能。一共有两种加密：对称加密和非对称加密。&lt;/p&gt;
+ &lt;strong&gt;一个加密算法必须提供这个必要属性：给定一个密文c ∈ 密文集合C， 只有计算机掌握k的时候才能通过计算加密函数E&lt;sub&gt;k&lt;/sub&gt; (m) = c得到消息m。&lt;/strong&gt;  因此，只有掌握密钥k的计算机可以解密密文，但是没有掌握k的计算机却不可以。因为密文常常是被暴露出来的（比如在网络中发送的时候），所以很重要的一点是让从密文推出密钥k变得不可能。一共有两种加密：对称加密和非对称加密。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;symmetric-encryption-algorithm-and-asymmetric-encryption-algorithm&quot;&gt;&lt;strong&gt;Symmetric encryption algorithm and Asymmetric encryption algorithm&lt;/strong&gt;&lt;/h2&gt;
@@ -226,7 +252,7 @@ decrypt. Therefore, the secrecy of k must be protected.
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;advanced encryption standard (AES)：another block cipher, use key lengths of 128, 192, or 256 bits and works on 128-bit blocks. * 这里block cipher应该是按照固定bit长度加密的意思 *&lt;/p&gt;
+  &lt;p&gt;advanced encryption standard (AES)：another block cipher, use key lengths of 128, 192, or 256 bits and works on 128-bit blocks. &lt;em&gt;这里block cipher应该是按照固定bit长度加密的意思&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -342,17 +368,41 @@ is called authentication. Authentication is thus complementary to encryption.&lt
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;An authentication algorithm using symmetric keys consists of the following
-components:
- + A set K of keys.
- + A set M of messages.
- + A set A of authenticators.
- + A function S : K → (M → A). That is, for each k ∈ K, S&lt;sub&gt;k&lt;/sub&gt;  is a function for
+  &lt;p&gt;An authentication algorithm using symmetric keys consists of the following components:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;A set K of keys.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;A set M of messages.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;A set A of authenticators.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;A function S : K → (M → A). That is, for each k ∈ K, S&lt;sub&gt;k&lt;/sub&gt;  is a function for
 generating authenticators from messages. Both S and S&lt;sub&gt;k&lt;/sub&gt;  for any k should
-be efficiently computable functions.
- + A function V : K → (M×A→{true, false}). That is, for each k ∈ K, V&lt;sub&gt;k&lt;/sub&gt;
+be efficiently computable functions.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;A function V : K → (M×A→{true, false}). That is, for each k ∈ K, V&lt;sub&gt;k&lt;/sub&gt;
 is a function for verifying authenticators on messages. Both V and V&lt;sub&gt;k&lt;/sub&gt;  for
-any k should be efficiently computable functions.&lt;/p&gt;
+any k should be efficiently computable functions.&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -403,7 +453,7 @@ message originated from k.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;验证算法的重要属性是：** 对一个消息m,只有计算机掌握k的时候可以生成一个验证器 a ∈ A 使得验证函数 V&lt;sub&gt;k&lt;/sub&gt; (m, a) = true 。** 因此，任何持有密钥k的计算机可以生成关于消息m的验证器，这个验证器可被其它任意一台任何持有密钥k的计算机通过V&lt;sub&gt;k&lt;/sub&gt; 来验证。因为验证器通常是被暴露的（比如，在网络上和消息一起被发送），所以很重要的一点是让从验证器推出密钥k变得不可能。实际上，如果V&lt;sub&gt;k&lt;/sub&gt; (m, a) = true,我们就可以知道消息没被更改过。如果我们只把k分享给过一个实体，那么我们就能知道消息源自最初的发布者。&lt;/p&gt;
+  &lt;p&gt;验证算法的重要属性是：&lt;strong&gt;对一个消息m,只有计算机掌握k的时候可以生成一个验证器 a ∈ A 使得验证函数 V&lt;sub&gt;k&lt;/sub&gt; (m, a) = true 。&lt;/strong&gt; 因此，任何持有密钥k的计算机可以生成关于消息m的验证器，这个验证器可被其它任意一台任何持有密钥k的计算机通过V&lt;sub&gt;k&lt;/sub&gt; 来验证。因为验证器通常是被暴露的（比如，在网络上和消息一起被发送），所以很重要的一点是让从验证器推出密钥k变得不可能。实际上，如果V&lt;sub&gt;k&lt;/sub&gt; (m, a) = true,我们就可以知道消息没被更改过。如果我们只把k分享给过一个实体，那么我们就能知道消息源自最初的发布者。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;

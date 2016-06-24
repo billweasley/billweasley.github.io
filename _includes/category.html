@@ -3,7 +3,7 @@
 <div class="post-list">
 {% for catagory in site.categories %}
  {% if catagory[0] == page.categories %}
-        {% for post in catagory[1] and in paginator.posts %}
+        {% for post in catagory[1]%}
           {% include post.html %}
 {% endfor %}
 {% endif %}

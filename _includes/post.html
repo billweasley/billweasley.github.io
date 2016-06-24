@@ -5,19 +5,13 @@
       <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
       <span class="post-author">by {{ site.author.name }}</span>
       <br>
-      <span class="post-category">分类: {{post.category}}</span>
-
-<br>
+      <span class="post-category"><i class="fa fa-bookmark"></i>  {{post.category}}</span>
 {%if {{post.tags}}!=[] %}
- <span class="post-tags">标签:
-{%for tags in  {{post.tags}} %}
-      {{tags}}
-{%endfor%}
-{%endif%}  </span></span>
-  </header>
+  &nbsp;    <span class="post-tags"><i class="fa fa-tag"></i>{%for tags in  {{post.tags}} %} {{tags}} {%endfor%}  </span> {%endif%}
+</span>
+</header>
 
   <div class="post-content">
-
     {{ post.content | strip_html | truncate: 300}} <a style= "text-decoration:none" href="{{ post.url | prepend: site.baseurl }}" class="readmore"><br><br>全文 | Further &raquo;</a>
   </div>
 </article>
