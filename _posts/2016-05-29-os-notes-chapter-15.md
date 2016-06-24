@@ -60,25 +60,26 @@ system operates.
 
 
 >An encryption algorithm consists of the following components:
-+A set K of keys.
-+ A set M of messages.
-+ A set C of ciphertexts.
-+ An encrypting function E : K → (M→C). That is, for each k ∈ K, E<sub>k</sub>  is a
+>
+ + A set K of keys.
+ + A set M of messages.
+ + A set C of ciphertexts.
+ + An encrypting function E : K → (M→C). That is, for each k ∈ K, E<sub>k</sub>  is a
 function for generating ciphertexts from messages. Both E and E<sub>k</sub> for any k
-should be efficiently computable functions. Generally, E{k} is a randomized
+should be efficiently computable functions. Generally, E<sub>k</sub> is a randomized
 mapping from messages to ciphertexts.
-+ A decrypting function D : K → (C → M). That is, for each k ∈ K, D<sub>k</sub> is a
+ + A decrypting function D : K → (C → M). That is, for each k ∈ K, D<sub>k</sub> is a
 function for generating messages from ciphertexts. Both D and D<sub>k</sub> for any
 k should be efficiently computable functions.
 >
 >加密算法由下面部分构成：
-+ 一个密钥集合K
-+ 一个消息集合M
-+ 一个密文集合C
-+ 一个加密函数 E : K → (M→C). 即，对于每个密钥 k ∈ K, E<sub>k</sub>是一个用消息生成密文的函数。对任意k来说， E 和 E<sub>k</sub>都是高效的且可计算的函数。大致来说，E<sub>k</sub> 是从消息到密文的一个随机映射。
-+ 一个解密函数 E : K → (C→M). 即，对于每个密钥 k ∈ K, D<sub>k</sub>是一个用密文生成消息的函数。对任意k来说， D 和 D<sub>k</sub>都是高效的且可计算的函数。大致来说，D<sub>k</sub>是从密文到消息的一个随机映射。
+ + 一个密钥集合K
+ + 一个消息集合M
+ + 一个密文集合C
+ + 一个加密函数 E : K → (M→C). 即，对于每个密钥 k ∈ K, E<sub>k</sub>是一个用消息生成密文的函数。对任意k来说， E 和 E<sub>k</sub>都是高效的且可计算的函数。大致来说，E<sub>k</sub> 是从消息到密文的一个随机映射。
+ + 一个解密函数 E : K → (C→M). 即，对于每个密钥 k ∈ K, D<sub>k</sub>是一个用密文生成消息的函数。对任意k来说， D 和 D<sub>k</sub>都是高效的且可计算的函数。大致来说，D<sub>k</sub>是从密文到消息的一个随机映射。
 
->An encryption algorithm must provide this essential property: given a
+> An encryption algorithm must provide this essential property: given a
 ciphertext c ∈ C, a computer can compute m such that E<sub>k</sub>  (m) = c only if
 it possesses k. Thus, a computer holding k can decrypt ciphertexts to the
 plaintexts used to produce them, but a computer not holding k cannot decrypt
