@@ -21,4 +21,4 @@ comments: true
 # **夜与便利店**
 
 深更半夜的时候，如果你刚刚从机房出来，赶了一天的ddl，肚子空空的时候。通常街上的景象是这样的。
-![](/img/2016-06-26-foody-in-suzhou-part-one/DSC_0689.png)
+![](/img/2016-06-26-foody-in-suzhou-part-one/DSC_0689.jpg)
