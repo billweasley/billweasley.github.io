@@ -10,12 +10,7 @@ layout: compress
     <main class="main">
       {% include header.html %}
       {% include headerpluscategory.html %}
-      </header>
-      <br>
-      <span style="font-size:2em" class="category_phone_title shownOnPhone t-center"><i class="fa fa-bookmark"></i></span>
-        <br>
-      <span class="category_phone_title shownOnPhone t-center">{{page.title}}</span>
-      <br>
+      <span style="font-size:1.7em; padding:1em;"class="category_phone_title shownOnPhone t-center"><i class="fa fa-bookmark"></i> {{page.title}}</span>
       {{ content }}
       {% include footer.html %}
     </main>

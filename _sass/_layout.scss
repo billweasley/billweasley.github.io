@@ -427,10 +427,10 @@ padding-left: 0.5em;
     background-color: #3A5897;
     color: #fff;
   }
- // a:hover i.fa-twitter {
- //   background-color: #00ABEC;
- //   color: #fff;
- // }
+ a:hover i.fa-twitter {
+   background-color: #00ABEC;
+   color: #fff;
+ }
   a:hover i.fa-weibo {
     background-color: #f6dda4;
     color: #fff;
@@ -538,6 +538,7 @@ margin-top: 1em;
 }
 .shownOnPhone{
  display:none;
+  margin:0em;
   @include media-query ($on-phone){
 display: inline-block;
   }
