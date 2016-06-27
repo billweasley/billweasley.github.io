@@ -10,15 +10,21 @@ url: "http://shellcottage.me"
 author:
   name     : 'Horace Wang'
   cnname   : '王昊轩'
+  introductive_url      : http://shellcottage.me/about/aboutMe.html
+  enable_email: true
   email    : haoxuan.wang14@student.xjtlu.edu.cn
-  url      : http://shellcottage.me/about/aboutMe.html
+  enable_facebook: true
   facebook : https://www.facebook.com/weasley.bill.9
-  enable_twitter: true
-  twitter  : http://weibo.com/1602545844
+  enable_twitter: false
+  twitter  :
+  enable_weibo: true
   weibo    : http://weibo.com/1602545844
+  enable_zhihu: true
   zhihu    : https://www.zhihu.com/people/wang-hao-xuan-26
+  enable_github: true
   github   : https://github.com/billweasley
-
+  enable_wechat : true
+  url_wechatOR : http://shellcottage.me/about/myWeChat.jpeg
 
 
 comments: true

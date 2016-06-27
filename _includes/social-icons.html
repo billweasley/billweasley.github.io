@@ -1,15 +1,27 @@
 <div class="social-icons">
 <span> 找到我 Find me @</span>
   <ul class="text-left">
+    {% if site.author.enable_email %}
     <li><a title= Send&nbsp;Email&nbsp;发邮件 href="mailto:{{ site.author.mail }}" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+    {% endif %}
+      {% if site.author.enable_github %}
     <li><a title= Github href="{{ site.author.github }}" target="_blank"><i class="fa fa-github"></i></a></li>
+    {% endif %}
+    {% if site.author.enable_facebook %}
     <li><a title= Facebook href="{{ site.author.facebook }}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    {% endif %}
+    {% if site.author.enable_weibo %}
     <li><a title= 微博&nbsp;Weibo href="{{ site.author.weibo }}" target="_blank"><i class="fa fa-weibo"></i></a></li>
+    {% endif %}
+    {% if site.author.enable_zhihu %}
      <li><a title= 知乎&nbsp;Zhihu href="{{ site.author.zhihu }}" target="_blank"><i class="icon-zhihu"></i></a></li>
-     <li><a title= 微信二维码&nbsp;WeChat&nbsp;QR><i class="fa fa-wechat"><img class="wechat_image" src="{{ site.url }}/about/myWeChat.jpeg"/></i></a></li>
-
+    {% endif %}
+    {% if site.author.enable_wechat %}
+     <li><a title= 微信二维码&nbsp;WeChat&nbsp;QR><i class="fa fa-wechat"><img class="wechat_image" src="{{ site.author.url_wechatOR}}"/></i></a></li>
+     {% endif %}
+     {% if site.author.enable_twitter %}
      <li><a title= “” href="{{ site.author.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-
+     {% endif %}
  </ul>
 
 </div>
