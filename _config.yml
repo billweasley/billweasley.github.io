@@ -19,7 +19,7 @@ weibo: http://weibo.com/1602545844
 zhihu: https://www.zhihu.com/people/wang-hao-xuan-26
 github: https://github.com/billweasley
 disqus_shortname: 'shellcottage'
-google_analytics:
+google_analytics: UA-79915174-1
 
 gems: [jekyll-paginate]
 paginate: 4
