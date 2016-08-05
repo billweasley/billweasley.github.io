@@ -30,7 +30,7 @@ author:
 comments: true
 enable_disqus: true             #need to rebuild if you change this setting (run jekyll build)
 disqus_shortname: 'shellcottage'
-enable_duosuo: false             #need to rebuild if you change this setting
+enable_duosuo: true             #need to rebuild if you change this setting
 duoshuo_shortname: 'shellcottage'
 google_analytics: UA-79915174-1
 
