@@ -25,7 +25,7 @@ comments: true
 
 大一的时候，
 
-![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0772.JPG)
+![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0772.jpg)
 
 在FB 1楼疯子般的闹过，发过传单，
 
@@ -33,7 +33,7 @@ comments: true
 
 在每一层的大教室里听着郭爷爷的微积分睡着，
 
-![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0771.JPG)
+![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0771.jpg)
 
 在小教室里听LC老师讲着听起来很高大上可是并卵的EAP，
 
@@ -71,7 +71,7 @@ G13和G23,其实好久都没去过，好久都没再碰过那些曾经热衷的�
 
 对西浦的安保表示担忧，原来在一个妹子的指引下从S栋潜入过CB，大半夜的。不过这条通道很方便，尤其下雨的时候。现在应该可以通南校区。
 
-![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0778.JPG)
+![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0778.jpg)
 
 SD 4楼机房
 
@@ -80,11 +80,11 @@ SD 4楼机房
 说住在这里，毫不夸张，附近有饮水机有厕所（而且有厕纸供应，笑），旁边是老师办公室（关爷爷每天早上6点半或七点都会到办公室，睡不醒的年轻人表示真心服。）；楼下不远有便利店；一楼有饮料贩售机；可以通宵；空调随便开，软件老旧了点（好用的ide编辑器要自己装，没有git真的也比较麻烦）但是硬件杠杠的（大屏幕，而且i7４核8G内存跑４个Linux虚拟机组个虚拟局域网真的不虚）；系里专用账号，所以基本不用担心没有机位...唯一的问题是电梯，感觉该修了，咯吱咯吱的容易出事故。
 
 
-![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0680.JPG)
+![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0680.jpg)
 
 不大的另一篇校区，樱花开了的时候很是漂亮。
 
-![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0696.JPG)
+![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0696.jpg)
 
 忘记吃饭的时候，午夜就会去学校附近的全家卖一份便当或者方便面填饱肚子。
 
@@ -102,7 +102,7 @@ SD 4楼机房
 然而，终究是要离开了。
 
 
-![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0828.JPG)
+![](/img/2016-06-09-words-when-leaving-XJTLU/DSC_0828.jpg)
 
 {% highlight c %}
 #include <stdio.h>
