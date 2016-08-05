@@ -20,7 +20,7 @@ var duoshuoQuery = {short_name:"{{ site.duoshuo_shortname }}"};
 	</script>
 {% endif %}
 
-<!--{% if site.enable_disqus %}-->
+{% if site.enable_disqus %}
     <div id="disqus_thread"></div>
 
    <script type="text/javascript">
@@ -42,5 +42,5 @@ var duoshuoQuery = {short_name:"{{ site.duoshuo_shortname }}"};
     </noscript>
   </aside>
 <div class="space"></div>
-<!--{% endif %}-->
+{% endif %}
 {% endif %}
