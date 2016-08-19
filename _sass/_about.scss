@@ -1,5 +1,9 @@
 
 /*The Personal Info. Section : css3 flexible box model*/
+
+.aboutheader{
+margin-bottom: 0;
+}
 .personal_info{
 background-color:#FFFFE0; /*background color: light yellow*/
 }
@@ -7,6 +11,7 @@ background-color:#FFFFE0; /*background color: light yellow*/
 height:0%;
 font-size:3em;
 z-index:0;
+margin-left:2%;
 margin-left:3%;
 font-style:italic;
 }
@@ -17,7 +22,8 @@ justify-content:space-around;
 #infotable{ /*properties for table; flex:1 1 of total fractions(1+1)=2*/
 margin-left:5%;
 margin-right:2%;
-margin-top:1.5em;
+margin-top:1em;
+margin-bottom: :1em;
 flex: 1;
 flex-shrink:5;
 height:37em;
@@ -70,28 +76,16 @@ display: flex;
 font-family:Lucida;
 color:#FFFAFA;
 }
-.upper{
-flex:2; /*properties for upper container (containing the title and picture):flex:2 of total fractions (2+3) && hidden if the height of the elements overflow*/
-max-height:30%;
-min-height:0%;
-}
+
 .upper h2{ /*properties for the title*/
-overflow-x: hidden;
 float:left;
-text-overflow:ellipsis;width:50%;
+text-overflow:ellipsis;
+width:50%;
 max-height:4.8em;
 font-size:4.6em;
 z-index:-1;
 margin-left:5%;}
-.upper img{ /*properties for the picture*/
-float:right;
-margin-top:2%;
-margin-right:10%;
-height:10em;
-min-width:30em;
-width:20%;
--webkit-filter:opacity(0.25);filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=25);filter:opacity(0.3);
-}
+
 .paragraph{ /*properties for text container (containing the main paragraph):flex:3 of total fractions (2+3) */
 margin-top:2%;
 max-height: 40em;
@@ -273,13 +267,9 @@ padding-bottom:1.3em;
 }
 
 @media screen and (max-width: 1050px) {
-#titles #cover #place{font-size:80%;}
-.upper h2 img{display:none;}
+.upper h2{display:none;}
 .upper {display:none;max-height:0%;}
 .paragraph{margin-top:8%;}
-#fttext{font-size:80%;}
-#action_icon{width:25%;}
-#audio_button{margin-left:2%;font-size:100%;}
 #video1 video{padding-top:5%;}
 }
 @media screen and (max-width: 920px) {
