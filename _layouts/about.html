@@ -3,30 +3,21 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
-
+  {% include head.html %}
 
       <header class="header" style="margin-bottom:0em; background: #00CED1 url('{{site.url}}{{page.background}}') no-repeat 50% 0px;background-size:200%">
-
-
       <div class="overlay">
         <div class = "coverbox">
           <div class ="title">
-          <h1>
-           <LARGE> <a href="{{ site.baseurl }}/" >{{ site.entitle }}</a></LARGE><br>
-          </h1>
-
-          <h2 class = txt-center>
-            <a href="{{ site.baseurl }}/" >{{ site.cntitle }}</a>
-          </h2>
-     </div>
+          <h1><LARGE> <a href="{{ site.baseurl }}/" >{{ site.entitle }}</a></LARGE><br></h1>
+          <h2 class = txt-center><a href="{{ site.baseurl }}/" >{{ site.cntitle }}</a></h2>
+          </div>
           <nav class="navbar">
             <a href="#" class="menu-icon">
               <span></span>
               <span></span>
               <span></span>
             </a>
-
             <ul class="nav">
                <li><a href="{{ site.baseurl }}/category/coding/">码畜の日常 | Coding </a></li>
                <li><a href="{{ site.baseurl }}/category/life/" >一本正经的扯淡 | Life</a></li>
@@ -35,14 +26,10 @@ layout: compress
             </ul>
           </nav>
     </div>
-  </head>
-  <div class="aboutheader">
-   {% include header.html %}
- </div>
-   <div class="site_description txt-left">
-      {% include social-icons.html %}
-   </div>
-</header>
+      <div class="site_description txt-left">
+        {% include social-icons.html %}
+      </div>
+  </header>
   <body class="{{ page.slug }}">
     <main class="main">
       {{ content }}
