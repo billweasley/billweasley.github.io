@@ -71,7 +71,6 @@ margin-right: 0%;
 //
 // Site header
 .header {
-  //background: #292929 url(../images/cover.jpg) no-repeat 50% 0px;
 
 background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') no-repeat 50% 0px;
 
@@ -82,7 +81,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   position: relative;
   @extend %clearfix;
   padding: 60px 0;
-  margin-bottom: 50px;
+
 
   .overlay {
     background: rgba(#000, .35);
@@ -93,7 +92,6 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
     top: 0;
   }
  @include media-query($on-phone) {
-  margin-bottom: 0px;
  min-height: 50em;
 }
 
@@ -116,7 +114,6 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   padding: 260px 0 200px;
 }
 
-//
 // site title
 .title {
 
