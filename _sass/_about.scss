@@ -73,7 +73,6 @@ color:#FFFAFA;
 .upper{
 flex:2; /*properties for upper container (containing the title and picture):flex:2 of total fractions (2+3) && hidden if the height of the elements overflow*/
 max-height:30%;
-overflow-y: hidden;
 min-height:0%;
 }
 .upper h2{ /*properties for the title*/
@@ -278,7 +277,6 @@ padding-bottom:1.3em;
 .upper h2 img{display:none;}
 .upper {display:none;max-height:0%;}
 .paragraph{margin-top:8%;}
-footer{font-size:90%;}
 #fttext{font-size:80%;}
 #action_icon{width:25%;}
 #audio_button{margin-left:2%;font-size:100%;}
@@ -310,10 +308,6 @@ _:-ms-lang(x), .video1 { padding-top:0em }
 
 .computer{height:30em;overflow-y:hidden;display:block;}
 .paragraph{font-size:1.3em;margin-top:3%;}
-#linker{display:none;}
-footer{font-size:60%;}
-#action_icon{width:25%;}
-#audio_button{margin-left:2%;font-size:100%;}
 }
 @media screen and (max-width: 700px) {
 header{height:40em;}
@@ -334,7 +328,6 @@ _:-ms-lang(x), #infotable{margin-top:20%;}
 }
 @media screen and (max-width: 400px) {
 header{height:30em;}
-#fttext{display:none;}
 #titles,#cover,#place {font-size:55%;}
 #titles h1{font-size:400%;}
 #pgtext,#pgtexttitle{font-size:0.8em;}#trtextframe{font-size:0.4em;}
