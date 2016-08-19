@@ -1,3 +1,5 @@
+encoding: utf-8
+
 # Site settings
 entitle: Shell Cottage
 cntitle: 贝壳小屋
@@ -10,7 +12,7 @@ url: "http://shellcottage.me"
 author:
   name     : 'Horace Wang'
   cnname   : '王昊轩'
-  introductive_url      : http://shellcottage.me/about/aboutMe.html
+  introductive_url      : http://shellcottage.me/about
   enable_email: true
   email    : haoxuan.wang14@student.xjtlu.edu.cn
   enable_facebook: true
@@ -24,11 +26,11 @@ author:
   enable_github: true
   github   : https://github.com/billweasley
   enable_wechat : true
-  url_wechatOR : http://shellcottage.me/about/myWeChat.jpeg
+  url_wechatOR : http://shellcottage.me/img/myWeChat.jpeg
 
 
 comments: true
-enable_disqus: true             #need to rebuild if you change this setting (run jekyll build)
+enable_disqus: false             #need to rebuild if you change this setting (run jekyll build)
 disqus_shortname: 'shellcottage'
 enable_duosuo: true             #need to rebuild if you change this setting
 duoshuo_shortname: 'shellcottage'
