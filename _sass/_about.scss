@@ -103,7 +103,7 @@ margin-right:5%;
 /*The photograph*/
 .photography{
 background-color:#C22F22; /*background color:red*/
-height: 20%;
+height: calc(20%);
 }
 .photography ul {
 list-style:none; /*ready for the carousel effect: clear the point before every unordered list item*/
@@ -161,7 +161,7 @@ height: 20%;
 #trtextframe{ /*properties for text container on the left*/
 margin-top:5%;
 float:left;
-width:20%;
+width:calc(20%);
 max-height:40em;
 margin-left:5%;
 margin-bottom:5%;
