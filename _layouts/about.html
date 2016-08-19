@@ -5,11 +5,9 @@ layout: compress
 <html lang="zh-cn">
   <head>
 
-      {%if page.background%}
-      <header class="header" style="background: #00CED1 url('{{site.url}}{{page.background}}') no-repeat 50% 0px;background-size:200%">
-      {%else%}
-      <header class="header">
-        {%endif%}
+
+      <header class="header" style="margin-bottom:0em; background: #00CED1 url('{{site.url}}{{page.background}}') no-repeat 50% 0px;background-size:200%">
+
 
       <div class="overlay">
         <div class = "coverbox">
@@ -38,15 +36,15 @@ layout: compress
           </nav>
     </div>
   </head>
+  <div class="aboutheader">
+   {% include header.html %}
+ </div>
+   <div class="site_description txt-left">
+      {% include social-icons.html %}
+   </div>
+</header>
   <body class="{{ page.slug }}">
     <main class="main">
-      <div class="aboutheader">
-       {% include header.html %}
-     </div>
-       <div class="site_description txt-left">
-          {% include social-icons.html %}
-       </div>
-    </header>
       {{ content }}
     </main>
   </body>
