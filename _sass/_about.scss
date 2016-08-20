@@ -3,19 +3,17 @@
 
 .personal_info{
 background-color:#FFFFE0; /*background color: light yellow*/
-}
-.personal_info h2{ /*properties for Section Title*/
+h2{ /*properties for Section Title*/
 height:0%;
 font-size:3em;
 z-index:0;
-margin-left:2%;
 margin-left:3%;
 font-style:italic;
+padding-top: 2%;
 }
 .info{ /*properties for container: flexible box model && leave space around every elements in this container */
 display:flex;
 justify-content:space-around;
-h2{margin-top: 2%;}
 }
 #infotable{ /*properties for table; flex:1 1 of total fractions(1+1)=2*/
 margin-left:5%;
@@ -31,13 +29,13 @@ text-align:center;
 border-collapse:collapse;
 z-index:0;
 text-overflow:ellipsis;
-}
-#infotable td, #infotable th{
+td, th{
 border:thin solid #66DD00;
 text-overflow: ellipsis;
 }
 #experience{ /*properties for unordered list in the table*/
 text-overflow: ellipsis;
+}
 }
 #video1{ /*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
 flex:1;
@@ -46,6 +44,12 @@ text-align:center;
 margin-right:2%;
 margin-top:4%;
 padding-left:2%;
+video{
+height:auto;/*properties for the self introduction video*/
+max-height:32.5em;
+margin-left:auto;
+margin-right:3em;
+overflow-x: hidden;
 }
 blockquote{ /*properties for inductive slogin ; quotes:define the quotation marks used*/
 font-style:italic;
@@ -58,13 +62,17 @@ width:auto;
 height:8%;
 quotes:"\201C""\201D""\2018""\2019";
 }
-#video1 video{
-height:auto;/*properties for the self introduction video*/
-max-height:32.5em;
-margin-left:auto;
-margin-right:3em;
-overflow-x: hidden;
 }
+
+}
+
+
+
+
+
+
+
+
 /*The programming section*/
 .computer{ /*properties for section: flexible box model && box model arraies in column order && leave space around every elements in this container */
 background-color:#1E90FF; /*backgraound color: blue*/
@@ -82,7 +90,8 @@ text-overflow:ellipsis;
 max-height:4.8em;
 font-size:4.6em;
 z-index:-1;
-margin-left:5%;}
+margin-left:5%;
+padding-top:2%; }
 
 .paragraph{ /*properties for text container (containing the main paragraph):flex:3 of total fractions (2+3) */
 margin-top:2%;
@@ -148,9 +157,10 @@ float:right;
 font-family:Yahei,"Lucida Family",Helvetica;
 color:#FFFAFA;
 font-size:2.5em;
-margin-top:5%;
 }
+
 #pgtexttitle{ /*enlarge the title on the right*/
+margin-top:5%;
 font-size:4em;
 }
 /*The travelling*/
