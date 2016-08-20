@@ -252,7 +252,7 @@ _:-ms-lang(x), .video1 { padding-top:30em }
 @media screen and (-webkit-min-device-pixel-ratio:0) {.video1 {padding-top:0em;}
  }
 
-
+@media screen and (max-width: 1450px) {
 blockquote{
 margin-top:1.5em;
 padding-bottom:1.3em;
@@ -260,7 +260,7 @@ padding-bottom:1.3em;
 .upper {display:none;max-height:0%;}
 
 
-.paragraph{margin-top:5%;}
+.paragraph{margin-top:5%;}}
 @media screen and (max-width: 1050px) {
 .upper h2{display:none;}
 .upper {display:none;max-height:0%;}
