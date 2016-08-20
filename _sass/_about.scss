@@ -295,8 +295,6 @@ _:-ms-lang(x), .video1 { padding-top:0em }
 .paragraph{font-size:1.3em;margin-top:3%;}
 }
 @media screen and (max-width: 700px) {
-header{height:40em;}
-#titles,#cover,#place {font-size:60%;}
 #pgtext,#pgtexttitle{font-size:1em;}#trtextframe{font-size:0.48em;}
 .travelling.personal_info{
 height:30em;
@@ -312,8 +310,6 @@ _:-ms-lang(x), #infotable{margin-top:20%;}
 #infotable{margin-left:10%}
 }
 @media screen and (max-width: 400px) {
-header{height:30em;}
-#titles,#cover,#place {font-size:55%;}
 #titles h1{font-size:400%;}
 #pgtext,#pgtexttitle{font-size:0.8em;}#trtextframe{font-size:0.4em;}
 .personal_info{
