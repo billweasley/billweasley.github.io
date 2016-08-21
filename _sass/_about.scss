@@ -14,7 +14,6 @@ padding-top: 2%;
 .info{ /*properties for container: flexible box model && leave space around every elements in this container */
 display:flex;
 justify-content:space-around;
-}
 #infotable{ /*properties for table; flex:1 1 of total fractions(1+1)=2*/
 margin-left:5%;
 margin-right:2%;
@@ -37,6 +36,8 @@ text-overflow: ellipsis;
 text-overflow: ellipsis;
 }
 }
+}
+
 #video1{ /*properties for video container (containing the slogin and video); flex:1 of total fractions; hidden if the width of the elements overflow */
 flex:1;
 flex-shrink:3;
