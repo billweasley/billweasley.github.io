@@ -4,8 +4,7 @@ title:  西浦信息与计算科学(ICS)专业大二刷分tips
 date: 2016-08-23T06:00:00.000Z
 author: Author
 category:
-    - coding
-    - life
+     - life
 tags:
      - 学术
      - 西浦
