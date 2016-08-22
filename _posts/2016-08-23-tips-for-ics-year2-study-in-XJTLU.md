@@ -26,9 +26,9 @@ comments: true
 
 ## 分科目攻略
 
-#### 在这里我只说专业课；至于EAP（或者high level 的语言成绩），鉴于本学渣EAP成绩实在惨不忍睹，就不卖萌了。但是EAP很重要，很重要，很重要。能不能拿奖学金赢取高富帅白富美走上人生巅峰全看你的语言了，而且，写东西的时候才知道词汇量少有多痛苦啊QAQ。
+####  在这里我只说专业课；至于EAP（或者high level 的语言成绩），鉴于本学渣EAP成绩实在惨不忍睹，就不卖萌了。但是EAP很重要，很重要，很重要。能不能拿奖学金赢取高富帅白富美走上人生巅峰全看你的语言了，而且，写东西的时候才知道词汇量少有多痛苦啊QAQ。
 
-### the 1st Semester
+###  the 1st Semester
 ####   0. CSE 101 Computer Systems
 教材：COMPUTER SYSTEMS： ARCHITECTURE A NETWORKING APPROACH
 
