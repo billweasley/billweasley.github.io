@@ -134,7 +134,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   padding: 60px 0;
 
   @include media-query($on-pda) {
-  min-height: 15em;
+  min-height: 5em;
  }
  @include media-query($on-phone) {
  min-height: 30em;
@@ -159,7 +159,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   }
   @include media-query($on-pda) {
     text-align: center;
-    min-height: 15em;
+    min-height: 5em;
   }
 
 
@@ -203,10 +203,6 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
    left:2%;
    right:2%;
 h1{font-size: 50%;margin-top:0%;line-height: 1em;}
-  }
-  @include media-query($on-pda) {
-h1{font-size: 25%;margin-top:5%;line-height: 1em;}
- h2{display: none;}
   }
   & a:hover,
   & a:focus {
