@@ -134,10 +134,10 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   padding: 60px 0;
 
   @include media-query($on-pda) {
-  min-height: 40em;
+  min-height: 20em;
  }
  @include media-query($on-phone) {
- min-height: 20em;
+ min-height: 40em;
 }
 
   .overlay {
