@@ -179,7 +179,8 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   h1{
   font-size: 1em;
   line-height: 0.1em;
-  letter-spacing: -1px;}
+  letter-spacing: -1px;
+}
 
   h1:hover a {
     color: lighten($primary-color, 10%);
@@ -203,7 +204,10 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
    right:2%;
 h1{font-size: 50%;margin-top:0%;line-height: 1em;}
   }
-
+  @include media-query($on-pda) {
+h1{font-size: 25%;margin-top:5%;line-height: 1em;}
+ h2{font-size:25%;}
+  }
   & a:hover,
   & a:focus {
     color: lighten($white-color, 10%);
