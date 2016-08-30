@@ -134,7 +134,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   padding: 60px 0;
 
   @include media-query($on-pda) {
-  min-height: 5em;
+  min-height: 15em;
  }
  @include media-query($on-phone) {
  min-height: 30em;
@@ -159,7 +159,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   }
   @include media-query($on-pda) {
     text-align: center;
-    min-height: 5em;
+    min-height: 15em;
   }
 
 
@@ -273,8 +273,7 @@ margin-left: 15%;
   margin: 0;
 
   li {
-width: percentage(1/4);
-
+    width: percentage(1/4);
     max-height:5%;
     font-size:1.5rem;
     padding-left: 3em;
@@ -282,7 +281,6 @@ width: percentage(1/4);
     float: left;
     display: inline-block;
     @include transition(background .2s linear);
-
     &:last-child {
       padding-right: 0;
     }
@@ -291,10 +289,10 @@ width: percentage(1/4);
   }
     @include media-query($on-phone) {
     &:first-child{
-padding-left: 0;
-}
-padding-left: 1em;
-&:last-child {
+      padding-left: 0;
+   }
+   padding-left: 1em;
+    &:last-child {
       padding-left: 2em;
     }
       font-size:1rem;
