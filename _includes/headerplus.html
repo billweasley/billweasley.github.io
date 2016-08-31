@@ -2,10 +2,6 @@
 <div class="site_description txt-left">
  {{ site.description }}
  </div>
- {% if page.title == 'tag' %}
- <div class="site_description txt-left">
-  {{ page.description }}
-  </div>
 {% else %}
 <div class="page_description txt-left ">
  {{ page.title }}
@@ -25,8 +21,8 @@
 {%for tags in  {{page.tags}} %}
     {{tags}}
 {%endfor%}
-</span>
 {%endif%}
+</span>
 </div>
 {%endif%}
 </header>
