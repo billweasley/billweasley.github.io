@@ -1,9 +1,10 @@
 ---
 layout: default
-description: Tags
+description: Tags | 标签
+title:Tags
 ---
 
-<div class="post container cards">
+<div class="post">
 
 			<div class="tags">
 				{% for tag in site.tags %}
@@ -12,13 +13,13 @@ description: Tags
 			</div>
 
 			{% for tag in site.tags %}
-			<div class="one-tag-list">
+			<div class="one-tag-list container">
 			  	<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
                     <span class="tag-text">{{ tag[0] }}</span>
                 </span>
 
 				{% for post in tag[1] %}
-				 <div class="cards">
+				 <div class="post-preview">
 				    <a href="{{ post.url | prepend: site.baseurl }}">
 				        <h2 class="post-title">
                             {{ post.title }}
