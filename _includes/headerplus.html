@@ -2,6 +2,10 @@
 <div class="site_description txt-left">
  {{ site.description }}
  </div>
+ {% if page.title == 'tag' %}
+ <div class="site_description txt-left">
+ {{ page.title }}
+  </div>
 {% else %}
 <div class="page_description txt-left ">
  {{ page.title }}
