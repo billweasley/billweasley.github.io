@@ -338,7 +338,9 @@ ul:hover li {
 ul:hover .currentNavItem {
     background: url(../img/check.jpg) no-repeat 10px 7px;
 }
-li {display:none; margin: 0; }
+li {display:none;
+  margin: 0;
+   width: auto;}
 .currentNavItem {
     display: block; /* show only current • item */
     a {
