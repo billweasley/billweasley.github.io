@@ -337,7 +337,6 @@ margin-left: 15%;
     box-shadow: 0 1px 2px rgba(0,0,0,.3);
     li {display:none; margin: 0; }
 }
-
 .nav .currentNavItem {
     display: block; /* show only current • item */
     a {
@@ -347,17 +346,16 @@ margin-left: 15%;
 }
 .nav ul:hover {
     background-image: none;
-}
-.nav ul:hover li {
-    display: block;
-    margin: 0 0 5px;
-}
-.nav ul:hover .currentNavItem {
-    background: url(img/check.jpg) no-repeat 10px 7px;
-}
+    li {
+        display: block;
+        margin: 0 0 5px;
+    }
+    .currentNavItem {
+        background: url(img/check.jpg) no-repeat 10px 7px;
+    }
 }
 
-
+}
 }
 
 //
