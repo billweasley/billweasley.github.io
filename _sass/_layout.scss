@@ -319,7 +319,7 @@ margin-left: 15%;
         text-align: left;
       }
 ul {
-    width: 5%;
+    width: 70px;
     padding: 5px 0;
     position: absolute;
     top: 0;
@@ -333,9 +333,6 @@ ul:hover {
     background-image: none;
     opacity:1;
     width: 90%;
-}
-ul:hover{
-  left: 5%;
 }
 ul:hover li {
     display: block;
