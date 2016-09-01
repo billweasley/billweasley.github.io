@@ -315,7 +315,7 @@ margin-left: 15%;
 
 
 @include media-query($on-pda) {
-
+.nav{
       position: relative;
       min-height: 40px;
       a {
@@ -323,7 +323,7 @@ margin-left: 15%;
         padding: 5px 5px 5px 32px;
         text-align: left;
     }
-
+}
 .nav ul {
     left: auto;
     right: 0;
@@ -332,11 +332,12 @@ margin-left: 15%;
     position: absolute;
     top: 0;
     border: solid 1px #aaa;
-    background: #fff url(img/menu.png) no-repeat 10px 11px;
+    background: #fff url(img/menu.jpg) no-repeat 10px 11px;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0,0,0,.3);
+    li {display:none; margin: 0; }
 }
-.nav li {display:none; margin: 0; }
+
 .nav .currentNavItem {
     display: block; /* show only current • item */
     a {
@@ -352,7 +353,7 @@ margin-left: 15%;
     margin: 0 0 5px;
 }
 .nav ul:hover .currentNavItem {
-    background: url(img/check.png) no-repeat 10px 7px;
+    background: url(img/check.jpg) no-repeat 10px 7px;
 }
 }
 
