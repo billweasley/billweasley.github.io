@@ -260,15 +260,16 @@ margin-left: 15%;
 //
 // navbar
 .navbar {
-  float: right;
-  @include media-query($on-phone) {
-    float: none;
-  }
+
 }
 
 //
 // ul nav
 .nav {
+  float: right;
+  @include media-query($on-phone) {
+    float: none;
+  }
   list-style: none;
   padding: 0;
   margin: 0;
