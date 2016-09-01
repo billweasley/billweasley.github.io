@@ -310,6 +310,7 @@ margin-left: 15%;
 @include media-query($on-pda) {
       position: relative;
       min-height: 40px;
+      margin-top: -50px;
       a {
         display: block;
         padding: 5px 5px 5px 32px;
@@ -317,16 +318,16 @@ margin-left: 15%;
       }
 ul {
     left: auto;
-    right: 0;
+    right: auto;
     width: 300px;
     padding: 5px 0;
     position: absolute;
     top: 0;
     border: solid 1px #aaa;
     background: #fff url(../img/menu.jpg) no-repeat 10px 11px;
+    opacity:0.4;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0,0,0,.3);
-
 }
 ul:hover {
     background-image: none;
