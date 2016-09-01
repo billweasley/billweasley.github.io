@@ -342,7 +342,8 @@ ul:hover .currentNavItem {
 }
 li {display:none;
   margin: 0;
-   width: auto;}
+   width: auto;
+ min-height: 8px;}
 .currentNavItem {
     display: block; /* show only current • item */
     a {
