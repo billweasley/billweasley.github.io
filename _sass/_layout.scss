@@ -285,9 +285,6 @@ margin-left: 15%;
     &:last-child {
       padding-right: 0;
     }
-  @include media-query($on-pda) {
-      display: none;
-  }
     @include media-query($on-phone) {
     &:first-child{
       padding-left: 0;
@@ -298,17 +295,6 @@ margin-left: 15%;
     }
       font-size:1rem;
     }
-@media-query and (max-width:360px) {
-padding-left: 0.5em;
-    &:last-child {
-      padding-left: 1em;
-    }
-      font-size:0.4rem;
-    }
-  @media-query and (max-width:320px) {
-    li {display:none;}
-    }
-
   }
 
   a {
@@ -325,6 +311,46 @@ padding-left: 0.5em;
     color: lighten($primary-color, 10%);
     text-decoration: none;
   }
+
+
+@include media-query($on-pda) {
+  li {display:none; margin: 0; }
+  ul {
+    width: 180px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px #aaa;
+    background: #fff url(images/menu.png) no-repeat 10px 11px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+.currentNavItem {
+    display: block; /* show only current • item */
+    a {
+        background: none;
+        color: #666;
+    }
+}
+.nav ul:hover {
+    background-image: none;
+}
+.nav ul:hover li {
+    display: block;
+    margin: 0 0 5px;
+}
+.nav ul:hover .currentNavItem {
+    background: url(images/check.png) no-repeat 10px 7px;
+}
+.nav.right ul {
+        left: auto;
+        right: 0;
+    }
+
+}
+
+
 }
 
 //
