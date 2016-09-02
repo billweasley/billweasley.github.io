@@ -307,8 +307,8 @@ margin-left: 15%;
 @include media-query($on-pda) {
       position: relative;
       min-height: 40px;
-      margin-top: -60px;
-      right: 5%;
+      margin-top: -65px;
+      left: 5px;
       left: auto;
       a {
         display: block;
@@ -329,9 +329,26 @@ ul {
 ul:hover {
     background-image: none;
     opacity:1Z;
-    width: 70%;
-    opacity:0.7;
+    width: 200px;
+    .title{
+      display: none;
+    }
 }
+ul:hover::after {
+  .title{
+    display: block;
+  }
+  width: 50px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  border: solid 1px #aaa;
+  background: url(../img/menu.jpg) no-repeat 15px 11px;
+  opacity:0.7;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
 ul:hover li {
     display: block;
     margin: 0 0 5px;
@@ -339,6 +356,7 @@ ul:hover li {
 ul:hover .currentNavItem {
     background: url(../img/check.jpg) no-repeat 10px 7px;
 }
+
 li {display:none;
   margin: 0;
    width: auto;
