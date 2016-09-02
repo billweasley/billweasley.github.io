@@ -133,14 +133,12 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
   @extend %clearfix;
   padding: 60px 0;
 
-  @include media-query($on-pda) {
-  min-height: 15em;
-  height: 50%;
- }
  @include media-query($on-phone) {
- min-height: 30em;
+ min-height: 20em;
 }
-
+@include media-query($on-pda) {
+min-height: 15em;
+}
   .overlay {
     background: rgba(#000, .35);
     z-index: 1;
@@ -151,7 +149,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
 
       @include media-query($on-phone) {
         text-align: center;
-        min-height: 30em;
+        min-height: 20em;
       }
       @include media-query($on-pda) {
         text-align: center;
