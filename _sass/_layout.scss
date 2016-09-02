@@ -170,12 +170,6 @@ height: 50%;
   }
 
 }
-.home .header {
-  padding: 260px 0 200px;
-  @include media-query($on-pda) {
-    padding-bottom:0；
-  }
-}
 
 // site title
 .title {
