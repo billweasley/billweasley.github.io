@@ -135,6 +135,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
 
   @include media-query($on-pda) {
   min-height: 15em;
+  height: 50%;
  }
  @include media-query($on-phone) {
  min-height: 30em;
@@ -155,6 +156,7 @@ background: #00CED1 url('https://source.unsplash.com/category/nature/2000x800') 
       @include media-query($on-pda) {
         text-align: center;
         min-height: 15em;
+          height: 50%;
       }
   }
 
