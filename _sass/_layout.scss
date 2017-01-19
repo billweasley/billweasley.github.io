@@ -450,13 +450,16 @@ float: none;}
   .post {
     padding-bottom: $spacing-unit;
   //  margin-bottom: $spacing-unit;
-    border-bottom: 1.3px solid $link-hover-color;
+    border-bottom: 1.3px dashed $link-hover-color;
 
     &:last-child {
       border-bottom: none;
       margin-bottom: 0;
     }
-    &:nth-last-child(2){margin-bottom: 0;border-bottom: none;}
+    &:nth-child(1){border-bottom-color:#FFFFE0}
+    &:nth-child(2){border-bottom-color:#1E90FF}
+    &:nth-child(3){border-bottom-color:#C22F22}
+    &:nth-child(4){border-bottom-color:#F0FFF0}
     .post-content {
      margin-top: 1.5em;
   }
