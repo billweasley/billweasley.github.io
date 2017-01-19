@@ -563,13 +563,14 @@ float: none;}
 // Pagination
 //
 .pagination {
-  display: inline-block;
+  background-color:#fff;
+  //display: inline-block;
   width: 100%;
   text-align: center;
-  margin: 0 0 20px;
+  margin: 0 0 0 0;
   padding-left: 0;
   position: relative;
-
+	
   ul {
     display: inline-block;
     list-style-type: none;
