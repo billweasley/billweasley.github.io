@@ -429,6 +429,7 @@ float: none;}
   }
 }
 
+
 .single {
   .post-header {
     margin-bottom: $spacing-unit;
@@ -449,12 +450,13 @@ float: none;}
   .post {
     padding-bottom: $spacing-unit;
   //  margin-bottom: $spacing-unit;
-    border-bottom: 1px solid $gray-color-light;
+    border-bottom: 1.3px solid $link-hover-color;
 
     &:last-child {
       border-bottom: none;
       margin-bottom: 0;
     }
+    &:nth-last-child(2){margin-bottom: 0;border-bottom: none;}
     .post-content {
      margin-top: 1.5em;
   }
@@ -562,7 +564,7 @@ float: none;}
   //display: inline-block;
   width: 100%;
   text-align: center;
-  margin: 0 0 0 0;
+  padding: 0 20px 0 0;
   padding-left: 0;
   position: relative;
 	
@@ -574,8 +576,7 @@ float: none;}
   }
 
   .page-number {
-    color: #999;
-    font-size: .8em;
+    color: #999;    font-size: 1em;
   }
   .page-number, a {
     height: 38px;
