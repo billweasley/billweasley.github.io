@@ -303,8 +303,9 @@ margin-left: 15%;
 
 @include media-query($on-phone) {
     float: none;
+    display: inline-block;
   }
-@include media-query($on-pda) {
+@include media-query($on-pda) { 
       position: relative;
       min-height: 40px;
       margin-top: -65px;
