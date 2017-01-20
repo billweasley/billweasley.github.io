@@ -179,10 +179,7 @@ height: 50%;
   line-height: 0.1em;
   letter-spacing: -1px;
 	  @include media-query($on-phone){
-	     font-size: 50%;
- 	    margin-top:0%;
-          line-height: 1em;
-		  float:right;
+	     		
 	  }
 }
 
@@ -206,6 +203,9 @@ height: 50%;
   @include media-query($on-phone) {
    left:2%;
    right:2%;
+	  font-size: 50%;
+ 	    margin-top:0%;
+          line-height: 1em;
   }
   & a:hover,
   & a:focus {
@@ -308,8 +308,7 @@ margin-left: 15%;
 
 @include media-query($on-phone) {
     float: left;
-    display: inline-block;
-	margin-left: -400px;
+    display: inline-block;	
   }
 @include media-query($on-pda) { 
       position: relative;
