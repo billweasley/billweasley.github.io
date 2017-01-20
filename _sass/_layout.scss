@@ -182,7 +182,7 @@ height: 50%;
 	     		
 	  }
 }
-
+1
   h1:hover a {
     color: lighten($primary-color, 10%);
     text-decoration: none;
@@ -203,9 +203,9 @@ height: 50%;
   @include media-query($on-phone) {
    left:2%;
    right:2%;
-	  font-size: 50%;
+	 h1{ font-size: 50%;
  	    margin-top:0%;
-          line-height: 1em;
+		 line-height: 1em;}
   }
   & a:hover,
   & a:focus {
@@ -295,7 +295,7 @@ margin-left: 15%;
     padding: 0;
     display: inline-block;
     text-decoration: none;
-    color: darken($white-color, 35%);
+    color: darken($white-color, 15%);
     @include transition(color .2s linear);
   }
 
