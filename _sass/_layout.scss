@@ -178,7 +178,7 @@ height: 50%;
   font-size: 1em;
   line-height: 0.1em;
   letter-spacing: -1px;
-	   include media-query($on-phone) {
+	   @include media-query($on-phone) {
 	 font-size: 50%;
  	 margin-top:0%;
 	 line-height: 1em;
@@ -204,7 +204,7 @@ height: 50%;
   position:absolute;
  h2{
 	 padding-left:5%;
-    include media-query($on-phone) {
+    @include media-query($on-phone) {
 	 font-size: 50%;
  	 margin-top:0%;
 	 line-height: 1em;
