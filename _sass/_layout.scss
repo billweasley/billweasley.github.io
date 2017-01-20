@@ -178,11 +178,7 @@ height: 50%;
   font-size: 1em;
   line-height: 0.1em;
   letter-spacing: -1px;
-	  @include media-query($on-phone){
-	     		
-	  }
 }
-1
   h1:hover a {
     color: lighten($primary-color, 10%);
     text-decoration: none;
