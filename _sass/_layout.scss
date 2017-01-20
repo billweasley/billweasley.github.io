@@ -199,7 +199,7 @@ height: 50%;
   @include media-query($on-phone) {
    left:2%;
    right:2%;
-	 h1{ font-size: 50%;
+	 h1,h2{ font-size: 30%;
  	    margin-top:0%;
 		 line-height: 1em;}
   }
@@ -308,8 +308,6 @@ margin-left: 15%;
 	min-height: 40px;
       margin-top: -15px;
       left: 5px;
-	h1,h2{font-size:50%;}
-	
   }
 @include media-query($on-pda) { 
       position: relative;
