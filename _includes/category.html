@@ -17,12 +17,12 @@ $(function(){
  {% if catagory[0] == page.categories %}
    {% assign counter = 0 %}
    {% for post in catagory[1]%}
+  <div>
           <li>
-            <div>
           {% include post.html %}
           {% assign counter = counter | plus: 1 %}
-              </div>
           </li>
+     </div>
    {% endfor %}
 {% endif %}
     {% endfor %}
