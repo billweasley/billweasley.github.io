@@ -12,12 +12,12 @@ $(function(){
 });
 </script>
 <!--<h1 class="txt-center category_title"> {{ page.title }} </h1>-->
-<ul class="post-list"id="pag-itemContainer" style="list-style:none;margin-left: 0%;" >
+<ul class="post-list"id="pag-itemContainer" style="list-style:none;margin-left: -5%;" >
 {% for catagory in site.categories %}
  {% if catagory[0] == page.categories %}
    {% assign counter = 0 %}
    {% for post in catagory[1]%}
-  <div>
+  <div class="post card container">
           <li>
           {% include post.html %}
           {% assign counter = counter | plus: 1 %}
