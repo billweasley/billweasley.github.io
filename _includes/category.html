@@ -12,9 +12,8 @@ $(function(){
 });
 </script>
 <!--<h1 class="txt-center category_title"> {{ page.title }} </h1>-->
-<div class="post-list" >
+<ul class="post-list"id="pag-itemContainer" style="list-style:none;" >
 {% for catagory in site.categories %}
-  <ul id="pag-itemContainer" style="list-style:none;">
  {% if catagory[0] == page.categories %}
    {% assign counter = 0 %}
    {% for post in catagory[1]%}
@@ -24,7 +23,6 @@ $(function(){
           </li>
    {% endfor %}
 {% endif %}
-    </ul>
     {% endfor %}
  {% include jspagination.html %}
-</div>
+</ul>
