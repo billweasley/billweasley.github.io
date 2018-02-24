@@ -1,0 +1,52 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+ #Tags: /tags
+  Categories: /categories
+  About ME: /about
+ # Github:
+ #   url: https://github.com/klugjo/hexo-theme-clean-blog
+ #   icon: github
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: Shell Cottage
+
+# URL of the Home page image
+index_cover: https://source.unsplash.com/category/nature/2000x800?dark
+
+# Default post title
+default_post_title: Untitled
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname:
+  # Facebook comments
+  facebook:
+    appid:
+    comment_count: 5
+    comment_colorscheme: light
+  gitment:
+    gitment_id: 06199a23a20db6cd355e
+    gitment_secret: d58c16c76ab1b84dc65f24c25edcbc3974cc0a49
+    github_id: billweasley
+    gitment_storage_repo: billweasley.github.io
+
+# Google Analytics Tracking ID
+google_analytics: UA-79915174-1
+
+# Addthis ID
+addthis:
+
+# set your own favicon
+favicon:
+
+# Social Accounts
+twitter_url:
+twitter_handle:
+facebook_url:
+github_url: https://github.com/billweasley
+linkedin_url: https://www.linkedin.com/in/horace-haoxuan-wang
+gitlab_url:
+mailto: billweasley20092@gmail.com
