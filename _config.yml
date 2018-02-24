@@ -81,4 +81,6 @@ theme: clean-blog-horace-unstable
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/billweasley/billweasley.github.io.git
+  branch: master
