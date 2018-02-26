@@ -4,7 +4,7 @@
     if (page.tag) title = "#" + page.tag;
     if (page.archive) {
         if (page.year) title = page.year + (page.month ? '/' + page.month : '');
-        else title = __('archive_a');
+        else title =  __('archive_a');
     }
 %>
 
@@ -16,6 +16,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
                     <h1><%- title %></h1>
+                    <% if (page.archive) {%> <span class="subheading"> Everything is here.</span> <%}%>
                 </div>
             </div>
         </div>
@@ -25,10 +26,44 @@
 <!-- Main Content -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <% page.posts.each(function(item){ %>
-                <%- partial('_partial/article-archive', {item: item}) %>
-            <% }); %>
+        <div class="space-fix col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <% page.posts.each(function(item){
+            if(page.archive){
+               var thisYear = item.date.format('YYYY')
+               var thisMonth = item.date.format('MMMM')
+               if (item.prev == null){
+                 %> <div id="<%- thisYear %>"> <h2><%- thisYear %></h2></div><%
+                 %> <legend id="<%- thisYear %> - <%- thisMonth %>"> <%- thisMonth %> </legend><ul> <%
+               }
+               %>
+                 <li>
+                   <small>
+                   <%- item.date.format('YYYY-MM-DD') %> &raquo;
+                   <a href="<%- config.root %><%- item.path %>" style="margin-left: 10px">
+                           <%- item.title || theme.default_post_title || "Untitled" %>
+                   </a>
+                  </small>
+                 </li>
+               <%
+               if (item.next == null){
+                 %> </ul> <%
+               }else{
+                 var nextYear = item.next.date.format('YYYY')
+                 var nextMonth = item.next.date.format('MMMM')
+                 if(thisYear != nextYear){
+                   %></ul> <div id="<%- nextYear %>"> <h2> <%- nextYear %></h2><div> <%
+                 }
+                 if( thisMonth != nextMonth){
+                   %></ul> <legend id="<%- nextYear %> - <%- nextMonth %>"> <%- nextMonth %> </legend><ul> <%
+                 }
+               }
+            }else{
+              %>
+               <%- partial('_partial/article-archive', {item: item}) %>
+              <%
+            }
+           });
+        %>
             <div class="archive-before-pagination"></div>
             <%- partial('_partial/pagination') %>
         </div>

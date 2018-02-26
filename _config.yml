@@ -7,7 +7,7 @@ title: 贝壳小屋
 subtitle: Shell Cottage
 description: A shelter for a lazy and terrible programmer, loving photograph and travelling!
 author: Haoxuan (Horace) Wang
-language: zh
+language: [zh-CN, en]
 timezone: Asia/Shanghai
 
 # URL
@@ -76,8 +76,6 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 ##theme: landscape
-plugins:
-- hexo-generator-cname
 theme: clean-blog-horace-unstable
 
 # Deployment

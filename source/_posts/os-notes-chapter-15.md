@@ -10,7 +10,7 @@ tags:
      - 笔记
 comments: true
 cover: /img/2016-05-29-os-notes-chapter-15/cover.png
---- 
+---
 
 ## **写在前面** ：
 
