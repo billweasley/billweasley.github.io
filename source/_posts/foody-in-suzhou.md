@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  屌丝吃遍苏州系列·一
+title:  屌丝吃遍苏州系列
 date: 2016-06-26T12:30:00.000Z
 author: Haoxuan (Horace)
 category: experience

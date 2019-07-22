@@ -100,14 +100,21 @@
     <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
 	<!-- mathjax support for latex math -->
-	<script type="text/x-mathjax-config">
-	  MathJax.Hub.Config({
-        tex2jax: {
-           skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-           inlineMath: [['$','$']]
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		displayMath: [ ["$$","$$"], ["\\[", "\\]"] ],
+		processEscapes: true
+      },
+	  TeX: {
+		Macros: {
+		'\\_': '_'
         }
+      }
     });
-	</script>
-	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+	 
 	
 </head>
