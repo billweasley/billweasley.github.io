@@ -22,7 +22,7 @@ The recurrent neural network (RNN) was a major neural network architecture that 
 
 ## Self-attention [8, 11]
 
-Attention mechanism could give a better encoder summary representation, say $s$, than that produced from the vanilla RNN, say $h\_T$ (with input sequence $(x\_1, ... x\_T)$ and corresponding hidden states $(h\_1, ... h\_T)$ of the vanilla RNN): \begin{aligned} u\_t &= \tanh(Wh\_t) \\\\ \alpha\_t &= \frac{exp(score(u\_t, u))}{\sum^{T}\_{t=1}exp(score(u\_t, u))} \\\\ &= \sum^{T}\_{t=1} \alpha\_t h\_t\end{aligned}  where $u$ could be randomly initialised.
+Attention mechanism could give a better encoder summary representation, say $s$, than that produced from the vanilla RNN, say $h\_T$ (with input sequence $(x\_1, ... x\_T)$ and corresponding hidden states $(h\_1, ... h\_T)$ of the vanilla RNN): \begin{aligned} u\_t &= \tanh(Wh\_t) \\\\ \alpha\_t &= \frac{exp(score(u\_t, u))}{\sum^{T}\_{t=1}exp(score(u\_t, u))} \\\\ & s = \sum^{T}\_{t=1} \alpha\_t h\_t\end{aligned}  where $u$ could be randomly initialised. Hence, $u$ would be a better summery represenatation for our input sequences.
 
 ## Transformer [9]
 
