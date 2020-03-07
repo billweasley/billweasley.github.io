@@ -3,7 +3,9 @@ language: node_js
 node_js:
   - 12 
 cache: npm
-branches: dev
+branches:
+  only:
+    - dev
 script:
   - hexo generate # generate static files
 deploy:
@@ -11,5 +13,6 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   provider: pages
-  branch: master
+  on:
+    branch: master
   local-dir: public
