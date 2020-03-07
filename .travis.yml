@@ -3,20 +3,17 @@ language: node_js
 node_js:
   - 12 
 cache: npm
-on:
-  repo:  billweasley / billweasley.github.io
-  branches:
-    only:
-      - dev
+branches:
+  only:
+    - dev
 script:
   - hexo generate # generate static files
 deploy:
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
+  provider: pages
+  target_branch: master
   on:
-    repo: billweasley / billweasley.github.io
-    branches:
-      only:
-        - master
+    branch: dev
   local-dir: public
