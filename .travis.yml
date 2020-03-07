@@ -13,7 +13,7 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   on:
-    repo: https://github.com/billweasley/billweaasley.github.io
+    repo: https://github.com/billweasley/billweasley.github.io
     branches:
       only:
         - master
