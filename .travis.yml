@@ -12,7 +12,6 @@ deploy:
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
-  provider: pages
   on:
     repo: https://github.com/billweasley/billweaasley.github.io
     branches:
