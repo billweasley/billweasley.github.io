@@ -14,5 +14,8 @@ deploy:
   keep-history: true
   provider: pages
   on:
-    branch: master
+    repo: https://github.com/billweasley/billweaasley.github.io
+    branches:
+      only:
+        - master
   local-dir: public
