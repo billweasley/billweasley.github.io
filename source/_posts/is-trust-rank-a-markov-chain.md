@@ -17,7 +17,7 @@ Probably this is a boring topic with no-body-care models, but still we can have 
 
 The short answer to this question: yes (if I do not make any mistakes), Trust Rank is a Markov chain, with the selected initial seed vector is a essential part to determine its transition matrix. 
 
-I would start with page rank to have a unified math annotations and then move to trust rank very briefly. The Page Rank part comes from the [link](http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf). Credit to Prof. Ryan Tibshirani in Stanford.
+I would start with page rank to have uniformed math annotations and then move to trust rank very briefly. The Page Rank part comes from the [link](http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf). Credit to Prof. Ryan Tibshirani in Stanford.
 
 Suppose we have $n$ websites, then what a search engine does is to sort these $n$ websites. Assuming that $p\_i$ is the score (weight) of the website, $p = \left(\begin{array}{cc} p\_1 \\\\ p\_2 \\\\ \vdots \\\\ p\_n \\\\ \end{array} \right)$. Naturally, search engines can rank the websites according to this score $p$
 
