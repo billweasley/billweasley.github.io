@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Is trust rank a Markov chain?">
+        <meta property="og:title" content="Is Trust Rank a Markov chain?">
     
 
     <!--Open Graph Description-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>Is trust rank a Markov chain? - 贝壳小屋</title>
+    <title>Is Trust Rank a Markov chain? - 贝壳小屋</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -174,7 +174,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Is trust rank a Markov chain?</h1>
+                    <h1>Is Trust Rank a Markov chain?</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
@@ -225,7 +225,7 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>So literally this is a note for answering a <a href="https://www.zhihu.com/question/373709342" target="_blank" rel="noopener">Zhihu question</a> (the question itself is in Mandarin), but hopefully if it can help someone. The question asked why the “inital seeds” in Trust Rank could have an effect the final results if it is a Markov chain, because we know that the final convergence value of a Markov process should only depending on the transition matrix, which normally considered as the link topology in between web pages (note this “which”, the question actually come from here).</p>
+                <p>So literally this is a note for answering a <a href="https://www.zhihu.com/question/373709342" target="_blank" rel="noopener">Zhihu question</a> (the question itself is in Mandarin), but hopefully if it can help someone. The question asked why the “inital seeds” in Trust Rank could have an effect the final ranking results. Because we know that if it is a Markov chain, the final convergence value of a Markov process should only depending on the transition matrix<br>which normally considered as the link topology in between web pages (note this “which”, the question actually comes from here).</p>
 <p>Probably this is a boring topic with no-body-care models, but still we can have a quick discussion on this. Before start, I assume the reader has some basic knowledge in linear algebra, and know the basics about page rank and trust rank.</p>
 <p>The short answer to this question: yes (if I do not make any mistakes), Trust Rank is a Markov chain, with the selected initial seed vector is a essential part to determine its transition matrix. </p>
 <p>I would start with page rank to have a unified math annotations and then move to trust rank very briefly. The Page Rank part comes from the <a href="http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf" target="_blank" rel="noopener">link</a>. Credit to Prof. Ryan Tibshirani in Stanford.</p>
