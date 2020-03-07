@@ -3,9 +3,11 @@ language: node_js
 node_js:
   - 12 
 cache: npm
-branches:
-  only:
-    - dev
+on:
+  repo:  billweasley / billweasley.github.io
+  branches:
+    only:
+      - dev
 script:
   - hexo generate # generate static files
 deploy:
@@ -13,7 +15,7 @@ deploy:
   github-token: $GH_TOKEN
   keep-history: true
   on:
-    repo: https://github.com/billweasley/billweasley.github.io
+    repo: billweasley / billweasley.github.io
     branches:
       only:
         - master
