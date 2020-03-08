@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 
-So literally this is a note for answering a [Zhihu question](https://www.zhihu.com/question/373709342) (the question itself is in Mandarin), but hopefully if it can help someone. The question asked why the "inital seeds" in Trust Rank could have an effect the final ranking results. Because we know that if it is a Markov chain, the final convergence value of a Markov process should only depending on the transition matrix
+So literally this is a note for answering a [Zhihu question](https://www.zhihu.com/question/373709342) (the question itself is in Chinese), but hopefully if it can help someone. The question asked why the "inital seeds" in Trust Rank could have an effect the final ranking results. Because we know that if it is a Markov chain, the final convergence value of a Markov process should only depending on the transition matrix
 which normally considered as the link topology in between web pages (note this "which", the question actually comes from here).
 
 Probably this is a boring topic with no-body-care models, but still we can have a quick discussion on this. Before start, I assume the reader has some basic knowledge in linear algebra, and know the basics about page rank and trust rank.
@@ -31,3 +31,5 @@ $ L =  \\left( \\begin{array}{cc} L\_{11} & L\_{12} &  \\dots & L\_{1n} \\\\ L\_
 Let $m\_j = \\sum\_{k = 1}^j L\_{kj}$, i.e. all outbound links for site $j$, $M =  \\left(   \\begin{array}{cc} m\_1 & 0 &  \\dots & 0 \\\\ 0 & m\_2 &  \\dots & 0 \\\\ \\vdots \\\\ 0 & 0 &  \\dots & m\_n \\\\ \\end{array} \\right)$
 
 We can think of the weight $p_i$ of a website as the sum of the weights of the contributions of other websites to this website $i$, or the probability of jumping from other websites to this website. The weight of the contribution of other sites $j$ to this site $i$ can be simply deemed as $\\frac{L\_{ij}}{m\_j} p\_j$, that is, the ratio of this $L\_{ij}$ link to all outbound links of site $j$ multiplied by the site $j$ ’s own score. So we can recursively calculate $p\_i = \\sum\_{j = 1}^{n} \\frac{L\_{ij}}{m\_j} p\_j$, and this can written in matrix form $p = LM^{-1} p$
+
+If we let $A = LM^{-1}$, the equation above can be written as $p = Ap$. We also find $p$ as the eigenvector of matrix $A$ when the eigenvalue is $1$. This equation can of course also be understood as a Markov chain. If we define $P(\\text{go from} j \\text{to} i) = P\_{ij}, we have $A\_ {ij} = L\_{ij} / m\_j$ i.e. $P\_{ij} = \\begin{cases} 1 / m\_j, \\text{if site} j \text{has a link to} i \\\\ 0, otherwise \\end{cases}$. Then $p^{(i + 1)}$ = $Ap^{(i)}$ and $A$ is the transition matrix. **Note here that we are assuming that users click on links in a uniformly distributed way, or in a random way.**
