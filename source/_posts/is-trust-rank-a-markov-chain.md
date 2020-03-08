@@ -29,3 +29,5 @@ Let  $L\_{ij} = \\begin{cases}     1, \\text{there is link from website $j$ poin
 $ L =  \\left( \\begin{array}{cc} L\_{11} & L\_{12} &  \\dots & L\_{1n} \\\\ L\_{21} & L\_{22} &  \\dots & L\_{2n} \\\\ \\vdots \\\\ L\_{n1} & L\_{n2} &  \\dots & L\_{nn} \\\\ \\end{array} \\right)$
 
 Let $m\_j = \\sum\_{k = 1}^j L\_{kj}$, i.e. all outbound links for site $j$, $M =  \\left(   \\begin{array}{cc} m\_1 & 0 &  \\dots & 0 \\\\ 0 & m\_2 &  \\dots & 0 \\\\ \\vdots \\\\ 0 & 0 &  \\dots & m\_n \\\\ \\end{array} \\right)$
+
+We can think of the weight $p_i$ of a website as the sum of the weights of the contributions of other websites to this website $i$, or the probability of jumping from other websites to this website. The weight of the contribution of other sites $j$ to this site $i$ can be simply deemed as $\\frac{L\_{ij}}{m\_j} p\_j$, that is, the ratio of this $L\_{ij}$ link to all outbound links of site $j$ multiplied by the site $j$ ’s own score. So we can recursively calculate $p\_i = \\sum\_{j = 1}^{n} \\frac{L\_{ij}}{m\_j} p\_j, and this can written in matrix form $p = LM^{-1} p$
