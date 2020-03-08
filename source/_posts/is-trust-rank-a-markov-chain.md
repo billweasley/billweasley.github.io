@@ -16,7 +16,9 @@ Probably this is a boring topic with no-body-care models, but still we can have 
 
 The short answer to this question: yes (if I do not make any mistakes), Trust Rank is a Markov chain, with the selected initial seed vector is a essential part to determine its transition matrix. 
 
-I would start with page rank to have uniformed math annotations and then move to trust rank very briefly. The Page Rank part comes from the [link](http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf). Credit to Prof. Ryan Tibshirani in Stanford.
+I would start with page rank to have uniformed math annotations and then move to trust rank very briefly. The Page Rank part comes from the [link](http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf). 
+
+*Credit to Prof. Ryan Tibshirani in Stanford*
 
 Suppose we have $n$ websites, then what a search engine does is to sort these $n$ websites. Assuming that $p\_i$ is the score (weight) of the website, $p = \left(\begin{array}{cc} p\_1 \\\\ p\_2 \\\\ \vdots \\\\ p\_n \\\\ \end{array} \right)$. Naturally, search engines can rank the websites according to this score $p$.
 
@@ -43,5 +45,13 @@ We can still think of the above equation as $p^{(i + 1)} = Ap^{(i)}$, but here t
 Sorry for my long rambling, and the boring copying & pasting above.  Finally we could mention the Trust Rank. Still I think those rambling is essential because it is important to unify the math symbols. Honestly, I have not read the Trust Rank paper carefully, so I would sincerely apologize for any mistakes or omissions below :)
 
 The original papers of Trust Rank and almost all articles mentioning Trust Rank on Internet will use the following equation (in matrix form):
-$p = (1-d)t + dLM^{-1} p$, where $t$ is the seed vector, and other parts of the equation are same as those equation defined in Page Rank above. Here I am not going to explore how the $t$ vector cames (well I did not take a closer look... TBH)
-A fact is that we know $t^{t} E = I^{t}$ (because the sum of the components of the seed vector $t$ is also $1$. Here $^{t}$ means transpose for clear).
+$p = (1-d)t + dLM^{-1} p$, where $t$ is the seed vector, and other parts of the equation are same as the equation defined in Page Rank above. Here I am not going to explore how the $t$ vector comes (well I did not take a closer look... TBH)
+A fact is that we know $t^{t} E = I^{t}$ (because the sum of the components of the seed vector $t$ is also $1$. Here the superscript $^{t}$ means transpose for clear).
+Hence,
+$$ 
+p = (1 - d) t (I^t I / n) + dLM^{-1} p \\\\ 
+p =\\frac{(1 - d)}{n} t t^t E E p + dLM^{-1} p \\\\ 
+p =(\\frac{(1 - d)}{n} t t^t E E  + dLM^{-1}) p \\\\  
+p =((1 - d) t t^t E + dLM^{-1}) p 
+$$ 
+Obviously for Trust Rank, we can also write the equation as $p^{(i + 1)}= A p^{(i)}$ ，and the value of $A$ needs to be determined by $t$.
