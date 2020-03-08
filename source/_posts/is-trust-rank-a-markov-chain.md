@@ -51,6 +51,7 @@ $$
 p = (1 - d) t (I^t I / n) + dLM^{-1} p \\\\ 
 p =\\frac{(1 - d)}{n} t t^t E E p + dLM^{-1} p \\\\ 
 p =(\\frac{(1 - d)}{n} t t^t E E  + dLM^{-1}) p \\\\  
-p =((1 - d) t t^t E + dLM^{-1}) p 
+p =((1 - d) t t^t E + dLM^{-1}) p \\\\
+p =((1 - d) t I^t + dLM^{-1}) p 
 $$ 
 Obviously for Trust Rank, we can also write the equation as $p^{(i + 1)}= A p^{(i)}$ ，and the value of $A$ needs to be determined by $t$.
