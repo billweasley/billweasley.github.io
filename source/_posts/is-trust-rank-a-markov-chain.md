@@ -25,7 +25,7 @@ Suppose we have $n$ websites, then what a search engine does is to sort these $n
 
 A website with many incoming links is likely to be a good website (of course not absolute). So we define the link matrix as follows:
 
-Let  $L\_{ij} = \\begin{cases}     1, there is link from website j pointing to website i\\\\     0, otherwise \\end{cases}$,
+Let  $L\_{ij} = \\begin{cases}     1, \\text{there is link from website j pointing to website i}\\\\     0, \\text{otherwise} \\end{cases}$,
 $ L =  \\left( \\begin{array}{cc} L\_{11} & L\_{12} &  \\dots & L\_{1n} \\ L\_{21} & L\_{22} &  \\dots & L\_{2n} \\\\ \\vdots \\\\ L\_{n1} & L\_{n2} &  \\dots & L\_{nn} \\\\ \\end{array} \\right)$
 
 Let $m\_j = \\sum\_{k = 1}^j L\_{kj}$, i.e. all outbound links for site $j$, $M =  \\left(   \\begin{array}{cc} m\_1 & 0 &  \\dots & 0 \\\\ 0 & m\_2 &  \\dots & 0 \\\\ \\vdots \\\\ 0 & 0 &  \\dots & m\_n \\\\ \\end{array} \\right)$
