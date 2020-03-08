@@ -46,7 +46,7 @@ Sorry for my long rambling, and the boring copying & pasting above.  Finally we 
 
 The original papers of Trust Rank and almost all articles mentioning Trust Rank on Internet will use the following equation (in matrix form):
 $p = (1-d)t + dLM^{-1} p$, where $t$ is the seed vector, and other parts of the equation are same as the equation defined in Page Rank above. Here I am not going to explore how the $t$ vector comes (well I did not take a closer look... TBH)
-A fact is that we know $t^{t} E = I^{t}$ (because the sum of the components of the seed vector $t$ is also $1$. Here the superscript $^{t}$ means transpose for clear).
+A fact is that we know $t^{t} E = I^{t}$. (Because the sum of the components of the seed vector $t$ is also $1$. Here the superscript $^{t}$ means transpose, for clear.)
 Hence,
 $$ 
 p = (1 - d) t (I^t I / n) + dLM^{-1} p \\\\ 
