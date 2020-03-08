@@ -14,7 +14,7 @@ So literally this is a note for answering a [Zhihu question](https://www.zhihu.c
 
 Probably this is a boring topic with no-body-care models, but still we can have a quick discussion on this. Before start, I assume the reader has some basic knowledge in linear algebra, and know the basics about page rank and trust rank.
 
-The short answer to this question: yes (if I do not make any mistakes), Trust Rank is a Markov chain, with the selected initial seed vector is a essential part to determine its transition matrix. 
+The short answer to this question: yes (if I do not make any mistakes), Trust Rank is a Markov chain, with the selected initial seed vector as a essential part to determine its transition matrix. 
 
 I would start with page rank to have uniformed math annotations and then move to trust rank very briefly. The Page Rank part comes from the [link](http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf). 
 
