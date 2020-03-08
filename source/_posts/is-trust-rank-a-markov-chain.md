@@ -19,7 +19,11 @@ The short answer to this question: yes (if I do not make any mistakes), Trust Ra
 
 I would start with page rank to have uniformed math annotations and then move to trust rank very briefly. The Page Rank part comes from the [link](http://statweb.stanford.edu/~tibs/sta306bfiles/pagerank/ryan/01-24-pr.pdf). Credit to Prof. Ryan Tibshirani in Stanford.
 
-Suppose we have $n$ websites, then what a search engine does is to sort these $n$ websites. Assuming that $p\_i$ is the score (weight) of the website, $p = \left(\begin{array}{cc} p\_1 \\\\ p\_2 \\\\ \vdots \\\\ p\_n \\\\ \end{array} \right)$. Naturally, search engines can rank the websites according to this score $p$
+Suppose we have $n$ websites, then what a search engine does is to sort these $n$ websites. Assuming that $p\_i$ is the score (weight) of the website, $p = \left(\begin{array}{cc} p\_1 \\\\ p\_2 \\\\ \vdots \\\\ p\_n \\\\ \end{array} \right)$. Naturally, search engines can rank the websites according to this score $p$.
 
-(to continue)
+## Broken Rank
 
+A website with many incoming links is likely to be a good website (of course not absolute). So we define the link matrix as follows:
+
+Let  $L\_{ij} = \\begin{cases}     1, there is link from website j pointing to website i\\\\     0, otherwise \\end{cases}$,
+$ L =  \\left( \\begin{array}{cc} L\_{11} & L\_{12} &  \\dots & L\_{1n} \\ L\_{21} & L\_{22} &  \\dots & L\_{2n} \\\\ \vdots \\\\ L\_{n1} & L\_{n2} &  \\dots & \L_{nn} \\\\ \\end{array} \\right)$
