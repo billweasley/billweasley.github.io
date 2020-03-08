@@ -21,7 +21,7 @@ I would start with page rank to have uniformed math annotations and then move to
 *Credit to Prof. Ryan Tibshirani in Stanford*
 
 Suppose we have $n$ websites, then what a search engine does is to sort these $n$ websites. Assuming that $p\_i$ is the score (weight) of the website, $p = \left(\begin{array}{cc} p\_1 \\\\ p\_2 \\\\ \vdots \\\\ p\_n \\\\ \end{array} \right)$. Naturally, search engines can rank the websites according to this score $p$.
-n
+
 ## Broken Rank
 
 A website with many incoming links is likely to be a good website (of course not absolute). So we define the link matrix as follows:
