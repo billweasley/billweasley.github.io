@@ -38,20 +38,20 @@ If we let $A = LM^{-1}$, the equation above can be written as $p = Ap$. We can a
 As we all know (or you may not know), the linking graph of the Internet is not strongly connected (octopus model), that is, some of the websites are self-contained, i.e. they have no links to external websites; and in some cases, some websites are incoming only or outgoing only. When more the graph is not strongly connected, the solution for the eigenvector of the matrix $A$ given the eigenvalue of 1 is non-unique. (There is an example on Stanford's slide... but I am not going to copy it here...)
 
 ## Page Rank
-What we can do to fix the issue in our "Broken Rank" is to assume that there is a small probability that the user may not jump to a new website through the outgoing link of the current website, but enter directly from the address bar. This allows that any websites can be reached directly and hence fixes the non-strong connectivity graph problem in the Broken Rank. The improved algorithm has a famous name called Page Rank. Broken Rank's $p$ is calculated as follows: $p\_i = \\sum\_{j = 1}^{n}\\frac{L\_{ij}}{m\_j} p\_j$, and the Page Rank correction for $p$ is $p\_i = \\frac{\\left(1-d \\right)}{n} + d \\sum_{j = 1}^{n}\\frac{L\_{ij}}{m\_j} p\_j$, where $d$ is a constant less than $1$ and greater than $0$. Write it in matrix form: $p = (\\frac{1-d}{n}E + dLM^{-1}) p$, where $E$ is an all $1$ matrix of size $n \\times n$. The matrix form holds obviously. Because if we treat $p$ as a (discrete) probability distribution, then $Ep = \\left(\\begin{array}{cc} 1 \\\\ 1 \\\\ \\vdots \\\\ 1 \\end{array} \\right) \\stackrel{def}{=} I $. Here we define a $n \times 1$ all $1$ vector, $I$.
+What we can do to fix the issue in our "Broken Rank" is to assume that there is a small probability that the user may not jump to a new website through the outgoing link of the current website, but enter directly from the address bar. This allows that any websites can be reached directly and hence fixes the non-strong connectivity graph problem in the Broken Rank. The improved algorithm has a famous name called Page Rank. Broken Rank's $p$ is calculated as follows: $p\_i = \\sum\_{j = 1}^{n}\\frac{L\_{ij}}{m\_j} p\_j$, and the Page Rank correction for $p$ is $p\_i = \\frac{\\left(1-d \\right)}{n} + d \\sum_{j = 1}^{n}\\frac{L\_{ij}}{m\_j} p\_j$, where $d$ is a constant less than $1$ and greater than $0$. Write it in matrix form: $p = (\\frac{1-d}{n}E + dLM^{-1}) p$, where $E$ is an all $1$ matrix of size $n \\times n$. The matrix form holds obviously. Because if we treat $p$ as a (discrete) probability distribution, then $Ep = \\left(\\begin{array}{cc} 1 \\\\ 1 \\\\ \\vdots \\\\ 1 \\end{array} \\right) \\stackrel{def}{=} e $. Here we define a $n \times 1$ all $1$ vector, $e$.
 We can still think of the above equation as $p^{(i + 1)} = Ap^{(i)}$, but here the "new" $A\_{\\text{page rank}}$ is slightly changed compared with the $A\_{\\text{broken rank}}$ in the Broken Rank.
 
 ## Trust Rank
 Sorry for my long rambling, and the boring copying & pasting above.  Finally, we could mention the Trust Rank. Still, I think those rambling is essential because it is important to unify the math symbols. Honestly, I have not read the Trust Rank paper carefully, so I would sincerely apologize for any mistakes or omissions below :)
 
 The original papers of Trust Rank and almost all articles mentioning Trust Rank on Internet will use the following equation (in matrix form):$p = (1-d)t + dLM^{-1} p$, where $t$ is the seed vector, and other parts of the equation are same as the equation defined in Page Rank above. Here I am not going to explore how the $t$ vector comes. (well, I did not take a closer look... TBH.)
-A fact is that we know $t^{t} E = I^{t}$. (Because the sum of the components of the seed vector $t$ is also $1$. Here the superscript $^{t}$ means transpose, for clear.)
+A fact is that we know $t^{t} E = e^{t}$. (Because the sum of the components of the seed vector $t$ is also $1$. Here the superscript $^{t}$ means transpose, for clear.)
 Hence,
 $$ 
-p = (1 - d) t (I^t I / n) + dLM^{-1} p \\\\ 
+p = (1 - d) t (e^t e / n) + dLM^{-1} p \\\\ 
 p =\\frac{(1 - d)}{n} t t^t E E p + dLM^{-1} p \\\\ 
 p =(\\frac{(1 - d)}{n} t t^t E E  + dLM^{-1}) p \\\\  
 p =((1 - d) t t^t E + dLM^{-1}) p \\\\
-p =((1 - d) t I^t + dLM^{-1}) p 
+p =((1 - d) t e^t + dLM^{-1}) p 
 $$ 
 Obviously, for Trust Rank, we can also write the equation as $p^{(i + 1)}= A p^{(i)}$ ，and the value of $A$ needs to be determined by $t$.
