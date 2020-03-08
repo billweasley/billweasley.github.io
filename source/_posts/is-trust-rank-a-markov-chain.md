@@ -44,7 +44,7 @@ We can still think of the above equation as $p^{(i + 1)} = Ap^{(i)}$, but here t
 ## Trust Rank
 Sorry for my long rambling, and the boring copying & pasting above.  Finally we could mention the Trust Rank. Still I think those rambling is essential because it is important to unify the math symbols. Honestly, I have not read the Trust Rank paper carefully, so I would sincerely apologize for any mistakes or omissions below :)
 
-The original papers of Trust Rank and almost all articles mentioning Trust Rank on Internet will use the following equation (in matrix form):$p = (1-d)t + dLM^{-1} p$, where $t$ is the seed vector, and other parts of the equation are same as the equation defined in Page Rank above. Here I am not going to explore how the $t$ vector comes (well I did not take a closer look... TBH)
+The original papers of Trust Rank and almost all articles mentioning Trust Rank on Internet will use the following equation (in matrix form):$p = (1-d)t + dLM^{-1} p$, where $t$ is the seed vector, and other parts of the equation are same as the equation defined in Page Rank above. Here I am not going to explore how the $t$ vector comes. (well I did not take a closer look... TBH.)
 A fact is that we know $t^{t} E = I^{t}$. (Because the sum of the components of the seed vector $t$ is also $1$. Here the superscript $^{t}$ means transpose, for clear.)
 Hence,
 $$ 
