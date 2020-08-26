@@ -14,6 +14,7 @@ menu_title: Shell Cottage
 
 # URL of the Home page image
 index_cover: https://source.unsplash.com/category/nature/2000x800?dark
+alternative_index_cover: https://api.towdium.me/unsplash/source/category/nature/2600x500?dark 
 
 # Default post title
 default_post_title: Untitled
@@ -50,3 +51,8 @@ github_url: https://github.com/billweasley
 linkedin_url: https://www.linkedin.com/in/horace-haoxuan-wang
 gitlab_url:
 mailto: billweasley20092@gmail.com
+
+friend:
+  - Towdium
+friend_url:
+  - https://www.towdium.me/
