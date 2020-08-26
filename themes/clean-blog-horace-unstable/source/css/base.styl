@@ -42,6 +42,8 @@ hr.small
   left 0
   width 100%
   z-index 3
+  background-color transparent
+  border-bottom 1px solid transparent
   @extend .sans-serif
   .nav
     li
@@ -49,11 +51,12 @@ hr.small
         font-size 12px
         letter-spacing 1px
         text-decoration none
+        color black
+  .navbar-brand
+      color white
   @media only screen and (min-width: 768px)
     background transparent
     border-bottom 1px solid transparent
-    .navbar-brand
-      color white
       padding 20px
       &:hover, &:focus
         color brand-primary
@@ -80,13 +83,10 @@ hr.small
       /* when the user scrolls down, we hide the header right above the viewport */
       position fixed
       top -61px
-      background-color rgba(255, 255, 255, 0.9)
-      border-bottom 1px solid darken(rgb(255, 255, 255, 1), 5%)
+      background-color transparent
       -webkit-transition -webkit-transform 0.3s
       -moz-transition -moz-transform 0.3s
       transition transform 0.3s
-      .navbar-brand
-        color gray-dark
         &:hover, &:focus
           color brand-primary
       .nav
@@ -107,9 +107,20 @@ hr.small
   display inline-block
   float none
   vertical-align top
+  border-color transparent
 
 .navbar .navbar-collapse
   text-align center
+  @media only screen and (max-width: 768px)
+    background-color white
+    float right 
+    margin-right 0em
+    padding-left 2em
+    padding-right 2em
+    
+.navbar .navbar-toggle
+  &:hover, &:focus
+    background-color: transparent;
 
 .space-fix
   @media only screen and (max-width: 768px)
