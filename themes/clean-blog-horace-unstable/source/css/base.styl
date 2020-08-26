@@ -54,6 +54,8 @@ hr.small
         color black
   .navbar-brand
       color white
+      &:hover, &:focus
+        color brand-primary
   @media only screen and (min-width: 768px)
     background transparent
     border-bottom 1px solid transparent
@@ -117,6 +119,7 @@ hr.small
     margin-right 0em
     padding-left 2em
     padding-right 2em
+    border-radius 0.4em
     
 .navbar .navbar-toggle
   &:hover, &:focus
@@ -189,6 +192,7 @@ hr.small
       font-size 30px
       margin-top 30px
       margin-bottom 10px
+      text-align justify
       &.archive
         font-size 22px
     > .post-subtitle

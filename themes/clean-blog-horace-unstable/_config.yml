@@ -14,7 +14,7 @@ menu_title: Shell Cottage
 
 # URL of the Home page image
 index_cover: https://source.unsplash.com/category/nature/2000x800?dark
-alternative_index_cover: https://api.towdium.me/unsplash/source/category/nature/2600x500?dark 
+alternative_index_cover: https://api.towdium.me/unsplash/source/category/nature/2000x800?dark 
 
 # Default post title
 default_post_title: Untitled
