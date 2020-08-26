@@ -336,7 +336,7 @@ hr.small {
   height: 30px;
 }
 footer {
-  padding: 50px 0 65px;
+  padding: 0 0 65px;
 }
 footer .list-inline {
   margin: 0;
@@ -427,6 +427,7 @@ form .row:first-child .floating-label-form-group {
   padding: 15px 25px;
   background-color: #fff;
   border-radius: 0;
+  text-decoration: none;
 }
 .pager li > a:hover,
 .pager li > a:focus {
