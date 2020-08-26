@@ -92,6 +92,10 @@ hr.small {
 .navbar-custom .navbar-brand {
   color: #fff;
 }
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #0085a1;
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     background: transparent;
@@ -169,6 +173,7 @@ hr.small {
     margin-right: 0em;
     padding-left: 2em;
     padding-right: 2em;
+    border-radius: 0.4em;
   }
 }
 .navbar .navbar-toggle:hover,
@@ -269,6 +274,7 @@ hr.small {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: justify;
 }
 .post-preview > a > .post-title.archive {
   font-size: 22px;
