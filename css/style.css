@@ -264,6 +264,7 @@ hr.small {
 }
 .post-preview > a {
   color: #404040;
+  word-spacing: -0.15em;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
