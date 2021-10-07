@@ -50,6 +50,3 @@ P_T(\mathcal{Y} = y | \mathcal{X})  = \frac{P_A(\mathcal{Y} = y | \mathcal{X}) P
 $$
 {% endraw %}
 The equation above can be generalised as long as $P_A(\mathcal{X})$ does not changed much from $P_T(\mathcal{X})$ .
-
-
-
