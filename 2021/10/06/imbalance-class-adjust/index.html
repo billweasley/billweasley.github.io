@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="贝壳小屋">
+        <meta property="og:title" content="Handle imbalance class by adjusting output distribution">
     
 
     <!--Open Graph Description-->
@@ -33,7 +33,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website">
+        <meta property="og:type" content="article">
     
 
     <!--Page Cover-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>归档：2016/6 - 贝壳小屋</title>
+    <title>Handle imbalance class by adjusting output distribution - 贝壳小屋</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -166,55 +166,126 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://source.unsplash.com/category/nature/2000x800?dark'), url('https://api.towdium.me/unsplash/source/category/nature/2000x800?dark')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2016/6</h1>
-                     <span class="subheading"> Everything is here.</span> 
+                <div class="post-heading">
+                    <h1>Handle imbalance class by adjusting output distribution</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Haoxuan (Horace) on
+                        
+                        
+                            2021-10-06
+                        
+                    </span>
+                    <!-- Tags and categories -->
+                  
+                        <!--<div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">-->
+
+                        <div class="post-tags">
+                            
+                                
+
+
+<a href="/tags/学术/">#学术</a>
+
+                            
+                        </div>
+                      <!--  <div class="col-lg-4 col-md-5 post-categories">
+                            
+                                
+
+<a href="/categories/coding/" style="float: right">coding</a>
+
+                            
+                        </div>-->
+                    
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="space-fix col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          
-                 <li>
-                   <small>
-                   2016-06-26 &raquo;
-                   <a href="/2016/06/26/foody-in-suzhou/" style="margin-left: 10px">
-                           苏州美食短记
-                   </a>
-                  </small>
-                 </li>
-               
-                 <li>
-                   <small>
-                   2016-06-09 &raquo;
-                   <a href="/2016/06/09/words-when-leaving-XJTLU/" style="margin-left: 10px">
-                           写在西浦别离时
-                   </a>
-                  </small>
-                 </li>
-               </ul> <legend id="2016 - May"> May </legend><ul> 
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
+
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="Some-nonsonses"><a href="#Some-nonsonses" class="headerlink" title="Some nonsonses"></a>Some nonsonses</h2><p>It becomes somehow boring in my current work - well, what one should expect from a bank’s job? Those trivial data pre-processing/ETL actually made my days, and these thing really push me back from login my working laptop every morning. There are no interesting projects here, because of the poor management and poor understanding of data science from management team. There is no labeled data and computational resources here at all. Even for unlabeled data, the comapany does not provide any really useful meta-data or data dictionary. It is hell for any data scientists I believe - one can only guess everything unless you find the correct person who understands the business/dataset - this often takes days and even months. </p>
+<p>Despite all these frustrations I came across in my early career, there are still some flashes there. For example, we do have a share session - a few weeks ago, one of my colleagues shared the commonly used methods for handling label-imbalanced datasets - basically a summary of those general methods like down/up-sampling, SMOTE, etc. His presentation was discussed warmly among us because it is always a normal circumstance for those who have been working in the industry for a while to find that they need to handle imbalanced datasets unless they produce some dataset themselves. Unfortunately, the real world is very ugly - in general, the human world follows a power-law distribution, where you will often see the majority and the minority class - or a long-tail distribution rather than a sort of uniform distribution/gaussian distribution. Prof. Adam Kelleher gave us his suggestion dusing the duscussion - I do hope I correctly understand his idea and try to note it here becasuse I think this is something useful. I am not from a math background - in fact, I have failed my exames for a few times during my studies when it comes to math…so please do not hestiate figure out any mistakes there if you could identify one.</p>
+<p>Here we go.</p>
+<h2 id="Main-things"><a href="#Main-things" class="headerlink" title="Main things"></a>Main things</h2><p>Up-sampling/down-sampling/reweighting are common ways of making a data become balanced - well this essentially changes the distribution of data and may imported some baises there. We now consider a slightly change that does not affect this distribution too much in a naive Bayes classifier setting. The reason we consider a naive Bayes classifier is that its clearly build the mapping between the prior and the posterior and hence we can easily see how our adjustments to the data affect the distribution.</p>
+<p>Given a set of labeled data $T$ with data $\mathcal{X}$ and labels $\mathcal{Y}$, a corresponding $\mathcal{Y}$ adjusted data $A$, and a naive Bayes classifier fitted on $A$, $P_A(\mathcal{Y}=y | \mathcal{X})$. We want to know $P_T(\mathcal{Y}=y|\mathcal{X})$. Assume $A$ has only slight changes from $T$. i.e. $P_A(\mathcal{X} = x) \approx P_T (\mathcal{X} = x), \forall x \in \mathcal{X}$ .</p>
+<p>Simply as in bayes rule:<br>
+$$
+P_A(\mathcal{Y} = y | \mathcal{X})  = \frac{P(\mathcal{X}  | \mathcal{Y} = y) P_A(\mathcal{Y}=y)}{P_A(\mathcal{X})}
+$$
+<br>
+$$
+P_T(\mathcal{Y} = y | \mathcal{X})  = \frac{P(\mathcal{X}  | \mathcal{Y} = y) P_T(\mathcal{Y}=y)}{P_T(\mathcal{X})}
+$$
+</p>
+<p>In our settings, we only adjusted $P_T(\mathcal{Y})$ to $P_A(\mathcal{Y})$. Simply by a ration, we have<br>
+$$
+\frac{P_A(\mathcal{Y} = y | \mathcal{X})}{P_T(\mathcal{Y} = y | \mathcal{X})} = \frac{P_A(\mathcal{Y})}{P_T(\mathcal{Y})}
+$$
+<br>Hence,<br>
+$$
+P_T(\mathcal{Y} = y | \mathcal{X})  = \frac{P_A(\mathcal{Y} = y | \mathcal{X}) P_T(\mathcal{Y})}{P_A(\mathcal{Y})}
+
+$$
+<br>The equation above can be generalised as long as $P_A(\mathcal{X})$ does not changed much from $P_T(\mathcal{X})$ .</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+
+
+    <hr />
+      <h3>留言:</h3>
+    <div id="container"></div>
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
+  <script>
+  var gitment = new Gitment({
+    id: 'Wed Oct 06 2021 03:00:00 GMT+0000',
+    owner: 'billweasley',
+    repo: 'billweasley.github.io',
+    oauth: {
+      client_id: '06199a23a20db6cd355e',
+      client_secret: 'd58c16c76ab1b84dc65f24c25edcbc3974cc0a49',
+    },
+  })
+  gitment.render('container')
+  </script>
+
+
+                </div>
+            
         </div>
     </div>
-</div>
+</article>
 
 
     <!-- Footer -->
